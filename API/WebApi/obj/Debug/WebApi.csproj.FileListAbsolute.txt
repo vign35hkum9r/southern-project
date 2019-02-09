@@ -1,0 +1,937 @@
+E:\CMS_New\KPMES\API\WebApi\bin\WebApi.dll.config
+E:\CMS_New\KPMES\API\WebApi\bin\WebApi.dll
+E:\CMS_New\KPMES\API\WebApi\bin\WebApi.pdb
+E:\CMS_New\KPMES\API\WebApi\bin\BusinessEntities.dll
+E:\CMS_New\KPMES\API\WebApi\bin\BusinessServices.dll
+E:\CMS_New\KPMES\API\WebApi\bin\EntityFramework.dll
+E:\CMS_New\KPMES\API\WebApi\bin\EntityFramework.SqlServer.dll
+E:\CMS_New\KPMES\API\WebApi\bin\EPPlus.dll
+E:\CMS_New\KPMES\API\WebApi\bin\Microsoft.Practices.ServiceLocation.dll
+E:\CMS_New\KPMES\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\CMS_New\KPMES\API\WebApi\bin\Microsoft.Practices.Unity.dll
+E:\CMS_New\KPMES\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\CMS_New\KPMES\API\WebApi\bin\Microsoft.Web.Infrastructure.dll
+E:\CMS_New\KPMES\API\WebApi\bin\Newtonsoft.Json.dll
+E:\CMS_New\KPMES\API\WebApi\bin\NLog.dll
+E:\CMS_New\KPMES\API\WebApi\bin\Resolver.dll
+E:\CMS_New\KPMES\API\WebApi\bin\System.Net.Http.Formatting.dll
+E:\CMS_New\KPMES\API\WebApi\bin\System.Web.Helpers.dll
+E:\CMS_New\KPMES\API\WebApi\bin\System.Web.Http.dll
+E:\CMS_New\KPMES\API\WebApi\bin\System.Web.Http.Tracing.dll
+E:\CMS_New\KPMES\API\WebApi\bin\System.Web.Http.WebHost.dll
+E:\CMS_New\KPMES\API\WebApi\bin\System.Web.Mvc.dll
+E:\CMS_New\KPMES\API\WebApi\bin\System.Web.Razor.dll
+E:\CMS_New\KPMES\API\WebApi\bin\System.Web.WebPages.Deployment.dll
+E:\CMS_New\KPMES\API\WebApi\bin\System.Web.WebPages.dll
+E:\CMS_New\KPMES\API\WebApi\bin\System.Web.WebPages.Razor.dll
+E:\CMS_New\KPMES\API\WebApi\bin\Unity.Mvc5.dll
+E:\CMS_New\KPMES\API\WebApi\bin\Unity.WebApi.dll
+E:\CMS_New\KPMES\API\WebApi\bin\DataModel.dll
+E:\CMS_New\KPMES\API\WebApi\bin\AutoMapper.dll
+E:\CMS_New\KPMES\API\WebApi\bin\MongoDB.Driver.dll
+E:\CMS_New\KPMES\API\WebApi\bin\MongoDB.Bson.dll
+E:\CMS_New\KPMES\API\WebApi\bin\MongoDB.Driver.Core.dll
+E:\CMS_New\KPMES\API\WebApi\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\CMS_New\KPMES\API\WebApi\bin\BusinessEntities.pdb
+E:\CMS_New\KPMES\API\WebApi\bin\BusinessServices.pdb
+E:\CMS_New\KPMES\API\WebApi\bin\Resolver.pdb
+E:\CMS_New\KPMES\API\WebApi\bin\EntityFramework.xml
+E:\CMS_New\KPMES\API\WebApi\bin\EntityFramework.SqlServer.xml
+E:\CMS_New\KPMES\API\WebApi\bin\EPPlus.xml
+E:\CMS_New\KPMES\API\WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\CMS_New\KPMES\API\WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+E:\CMS_New\KPMES\API\WebApi\bin\Microsoft.Practices.Unity.xml
+E:\CMS_New\KPMES\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+E:\CMS_New\KPMES\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\CMS_New\KPMES\API\WebApi\bin\Newtonsoft.Json.xml
+E:\CMS_New\KPMES\API\WebApi\bin\NLog.xml
+E:\CMS_New\KPMES\API\WebApi\bin\System.Net.Http.Formatting.xml
+E:\CMS_New\KPMES\API\WebApi\bin\System.Web.Helpers.xml
+E:\CMS_New\KPMES\API\WebApi\bin\System.Web.Http.xml
+E:\CMS_New\KPMES\API\WebApi\bin\System.Web.Http.Tracing.xml
+E:\CMS_New\KPMES\API\WebApi\bin\System.Web.Http.WebHost.xml
+E:\CMS_New\KPMES\API\WebApi\bin\System.Web.Mvc.xml
+E:\CMS_New\KPMES\API\WebApi\bin\System.Web.Razor.xml
+E:\CMS_New\KPMES\API\WebApi\bin\System.Web.WebPages.xml
+E:\CMS_New\KPMES\API\WebApi\bin\System.Web.WebPages.Deployment.xml
+E:\CMS_New\KPMES\API\WebApi\bin\System.Web.WebPages.Razor.xml
+E:\CMS_New\KPMES\API\WebApi\bin\DataModel.pdb
+E:\CMS_New\KPMES\API\WebApi\bin\AutoMapper.xml
+E:\CMS_New\KPMES\API\WebApi\bin\MongoDB.Driver.xml
+E:\CMS_New\KPMES\API\WebApi\bin\MongoDB.Bson.xml
+E:\CMS_New\KPMES\API\WebApi\bin\MongoDB.Driver.Core.xml
+E:\CMS_New\KPMES\API\WebApi\obj\Debug\WebApi.csprojResolveAssemblyReference.cache
+E:\CMS_New\KPMES\API\WebApi\obj\Debug\WebApi.dll
+E:\CMS_New\KPMES\API\WebApi\obj\Debug\WebApi.pdb
+E:\CMS_New\KPMES\API\WebApi\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\CMS_New\KPMES\API\WebApi\bin\CrystalDecisions.ReportSource.dll
+E:\CMS_New\KPMES\API\WebApi\bin\CrystalDecisions.Shared.dll
+E:\CMS_New\KPMES\API\WebApi\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\CMS_New\KPMES\API\WebApi\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\CMS_New\KPMES\API\WebApi\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\CMS_New\KPMES\API\WebApi\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\CMS_New\KPMES\API\WebApi\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\CMS_New\KPMES\API\WebApi\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\CMS_New\KPMES\API\WebApi\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\CMS_New\KPMES\API\WebApi\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\CMS_New\KPMES\API\WebApi\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\CMS_New\KPMES\API\WebApi\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\CMS_New\KPMES\API\WebApi\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\CMS_New\KPMES\API\WebApi\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\CMS_New\KPMES\API\WebApi\bin\stdole.dll
+F:\projects\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.csprojResolveAssemblyReference.cache
+F:\projects\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.dll
+F:\projects\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.pdb
+F:\projects\ERP(Bangalore)\API\WebApi\bin\WebApi.dll.config
+F:\projects\ERP(Bangalore)\API\WebApi\bin\WebApi.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\WebApi.pdb
+F:\projects\ERP(Bangalore)\API\WebApi\bin\BusinessEntities.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\BusinessServices.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\EntityFramework.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\EntityFramework.SqlServer.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\EPPlus.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.ServiceLocation.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\Microsoft.Web.Infrastructure.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\Newtonsoft.Json.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\NLog.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\Resolver.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Net.Http.Formatting.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Web.Helpers.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.Tracing.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.WebHost.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Web.Mvc.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Web.Razor.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Deployment.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Razor.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\Unity.Mvc5.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\Unity.WebApi.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\DataModel.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\AutoMapper.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\MongoDB.Bson.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.Core.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\projects\ERP(Bangalore)\API\WebApi\bin\BusinessEntities.pdb
+F:\projects\ERP(Bangalore)\API\WebApi\bin\BusinessServices.pdb
+F:\projects\ERP(Bangalore)\API\WebApi\bin\Resolver.pdb
+F:\projects\ERP(Bangalore)\API\WebApi\bin\EntityFramework.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\EntityFramework.SqlServer.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\EPPlus.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+F:\projects\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\Newtonsoft.Json.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\NLog.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Net.Http.Formatting.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Web.Helpers.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.Tracing.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.WebHost.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Web.Mvc.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Web.Razor.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Deployment.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Razor.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\DataModel.pdb
+F:\projects\ERP(Bangalore)\API\WebApi\bin\AutoMapper.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\MongoDB.Bson.xml
+F:\projects\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.Core.xml
+E:\ERP(Bangalore)\API\WebApi\bin\WebApi.dll.config
+E:\ERP(Bangalore)\API\WebApi\bin\WebApi.dll
+E:\ERP(Bangalore)\API\WebApi\bin\WebApi.pdb
+E:\ERP(Bangalore)\API\WebApi\bin\BusinessEntities.dll
+E:\ERP(Bangalore)\API\WebApi\bin\BusinessServices.dll
+E:\ERP(Bangalore)\API\WebApi\bin\EntityFramework.dll
+E:\ERP(Bangalore)\API\WebApi\bin\EntityFramework.SqlServer.dll
+E:\ERP(Bangalore)\API\WebApi\bin\EPPlus.dll
+E:\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.ServiceLocation.dll
+E:\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.dll
+E:\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\ERP(Bangalore)\API\WebApi\bin\Microsoft.Web.Infrastructure.dll
+E:\ERP(Bangalore)\API\WebApi\bin\Newtonsoft.Json.dll
+E:\ERP(Bangalore)\API\WebApi\bin\NLog.dll
+E:\ERP(Bangalore)\API\WebApi\bin\Resolver.dll
+E:\ERP(Bangalore)\API\WebApi\bin\System.Net.Http.Formatting.dll
+E:\ERP(Bangalore)\API\WebApi\bin\System.Web.Helpers.dll
+E:\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.dll
+E:\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.Tracing.dll
+E:\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.WebHost.dll
+E:\ERP(Bangalore)\API\WebApi\bin\System.Web.Mvc.dll
+E:\ERP(Bangalore)\API\WebApi\bin\System.Web.Razor.dll
+E:\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Deployment.dll
+E:\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.dll
+E:\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Razor.dll
+E:\ERP(Bangalore)\API\WebApi\bin\Unity.Mvc5.dll
+E:\ERP(Bangalore)\API\WebApi\bin\Unity.WebApi.dll
+E:\ERP(Bangalore)\API\WebApi\bin\DataModel.dll
+E:\ERP(Bangalore)\API\WebApi\bin\AutoMapper.dll
+E:\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.dll
+E:\ERP(Bangalore)\API\WebApi\bin\MongoDB.Bson.dll
+E:\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.Core.dll
+E:\ERP(Bangalore)\API\WebApi\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\ERP(Bangalore)\API\WebApi\bin\BusinessEntities.pdb
+E:\ERP(Bangalore)\API\WebApi\bin\BusinessServices.pdb
+E:\ERP(Bangalore)\API\WebApi\bin\Resolver.pdb
+E:\ERP(Bangalore)\API\WebApi\bin\EntityFramework.xml
+E:\ERP(Bangalore)\API\WebApi\bin\EntityFramework.SqlServer.xml
+E:\ERP(Bangalore)\API\WebApi\bin\EPPlus.xml
+E:\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+E:\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.xml
+E:\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+E:\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\ERP(Bangalore)\API\WebApi\bin\Newtonsoft.Json.xml
+E:\ERP(Bangalore)\API\WebApi\bin\NLog.xml
+E:\ERP(Bangalore)\API\WebApi\bin\System.Net.Http.Formatting.xml
+E:\ERP(Bangalore)\API\WebApi\bin\System.Web.Helpers.xml
+E:\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.xml
+E:\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.Tracing.xml
+E:\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.WebHost.xml
+E:\ERP(Bangalore)\API\WebApi\bin\System.Web.Mvc.xml
+E:\ERP(Bangalore)\API\WebApi\bin\System.Web.Razor.xml
+E:\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.xml
+E:\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Deployment.xml
+E:\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Razor.xml
+E:\ERP(Bangalore)\API\WebApi\bin\DataModel.pdb
+E:\ERP(Bangalore)\API\WebApi\bin\AutoMapper.xml
+E:\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.xml
+E:\ERP(Bangalore)\API\WebApi\bin\MongoDB.Bson.xml
+E:\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.Core.xml
+E:\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.dll
+E:\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.pdb
+E:\ERP(Bangalore)\API\WebApi\bin\Swashbuckle.Core.dll
+E:\ERP(Bangalore)\API\WebApi\bin\WebActivatorEx.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\WebApi.dll.config
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\WebApi.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\WebApi.pdb
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\BusinessEntities.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\BusinessServices.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\EntityFramework.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\EntityFramework.SqlServer.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\EPPlus.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\Newtonsoft.Json.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\NLog.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\Resolver.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\Swashbuckle.Core.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Net.Http.Formatting.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Helpers.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.Tracing.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.WebHost.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Mvc.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Razor.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Razor.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\Unity.Mvc5.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\Unity.WebApi.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\WebActivatorEx.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\DataModel.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\AutoMapper.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\MongoDB.Bson.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.Core.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\BusinessEntities.pdb
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\BusinessEntities.dll.config
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\BusinessServices.pdb
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\BusinessServices.dll.config
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\Resolver.pdb
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\Resolver.dll.config
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\EntityFramework.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\EntityFramework.SqlServer.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\EPPlus.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\Newtonsoft.Json.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\NLog.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Net.Http.Formatting.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Helpers.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.Tracing.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.WebHost.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Mvc.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Razor.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Razor.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\DataModel.pdb
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\DataModel.dll.config
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\AutoMapper.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\MongoDB.Bson.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.Core.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.csprojAssemblyReference.cache
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.csproj.CopyComplete
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.pdb
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\WebApi.dll.config
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\WebApi.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\WebApi.pdb
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\BusinessEntities.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\BusinessServices.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\EntityFramework.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\EntityFramework.SqlServer.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\EPPlus.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.ServiceLocation.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Web.Infrastructure.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\Newtonsoft.Json.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\NLog.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\Resolver.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\Swashbuckle.Core.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Net.Http.Formatting.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Helpers.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.Tracing.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.WebHost.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Mvc.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Razor.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Deployment.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Razor.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\Unity.Mvc5.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\Unity.WebApi.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\WebActivatorEx.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\DataModel.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\AutoMapper.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\MongoDB.Bson.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.Core.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\BusinessEntities.pdb
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\BusinessEntities.dll.config
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\BusinessServices.pdb
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\BusinessServices.dll.config
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\Resolver.pdb
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\Resolver.dll.config
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\EntityFramework.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\EntityFramework.SqlServer.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\EPPlus.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\Newtonsoft.Json.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\NLog.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Net.Http.Formatting.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Helpers.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.Tracing.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.WebHost.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Mvc.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Razor.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Deployment.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Razor.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\DataModel.pdb
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\DataModel.dll.config
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\AutoMapper.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\MongoDB.Bson.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.Core.xml
+G:\ERP\API\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.csprojAssemblyReference.cache
+G:\ERP\API\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.csproj.CoreCompileInputs.cache
+G:\ERP\API\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.csproj.CopyComplete
+G:\ERP\API\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.dll
+G:\ERP\API\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.pdb
+E:\API\ERP(Bangalore)\API\WebApi\bin\WebApi.dll.config
+E:\API\ERP(Bangalore)\API\WebApi\bin\WebApi.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\WebApi.pdb
+E:\API\ERP(Bangalore)\API\WebApi\bin\BusinessEntities.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\BusinessServices.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\EntityFramework.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\EntityFramework.SqlServer.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\EPPlus.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.ServiceLocation.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Web.Infrastructure.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\Newtonsoft.Json.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\NLog.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\Resolver.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\Swashbuckle.Core.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Net.Http.Formatting.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Helpers.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.Tracing.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.WebHost.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Mvc.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Razor.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Deployment.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Razor.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\Unity.Mvc5.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\Unity.WebApi.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\WebActivatorEx.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\DataModel.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\AutoMapper.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\MongoDB.Bson.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.Core.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\API\ERP(Bangalore)\API\WebApi\bin\BusinessEntities.pdb
+E:\API\ERP(Bangalore)\API\WebApi\bin\BusinessEntities.dll.config
+E:\API\ERP(Bangalore)\API\WebApi\bin\BusinessServices.pdb
+E:\API\ERP(Bangalore)\API\WebApi\bin\BusinessServices.dll.config
+E:\API\ERP(Bangalore)\API\WebApi\bin\Resolver.pdb
+E:\API\ERP(Bangalore)\API\WebApi\bin\Resolver.dll.config
+E:\API\ERP(Bangalore)\API\WebApi\bin\EntityFramework.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\EntityFramework.SqlServer.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\EPPlus.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\Newtonsoft.Json.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\NLog.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Net.Http.Formatting.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Helpers.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.Tracing.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Http.WebHost.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Mvc.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Web.Razor.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Deployment.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\System.Web.WebPages.Razor.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\DataModel.pdb
+E:\API\ERP(Bangalore)\API\WebApi\bin\DataModel.dll.config
+E:\API\ERP(Bangalore)\API\WebApi\bin\AutoMapper.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\MongoDB.Bson.xml
+E:\API\ERP(Bangalore)\API\WebApi\bin\MongoDB.Driver.Core.xml
+E:\API\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.csprojAssemblyReference.cache
+E:\API\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.csproj.CoreCompileInputs.cache
+E:\API\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.csproj.CopyComplete
+E:\API\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.dll
+E:\API\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.pdb
+E:\ERP(Bangalore)\API\WebApi\bin\BusinessEntities.dll.config
+E:\ERP(Bangalore)\API\WebApi\bin\BusinessServices.dll.config
+E:\ERP(Bangalore)\API\WebApi\bin\Resolver.dll.config
+E:\ERP(Bangalore)\API\WebApi\bin\DataModel.dll.config
+E:\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.csprojAssemblyReference.cache
+E:\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.csproj.CoreCompileInputs.cache
+E:\ERP(Bangalore)\API\WebApi\obj\Debug\WebApi.csproj.CopyComplete
+E:\ERP\API\WebApi\bin\WebApi.dll.config
+E:\ERP\API\WebApi\bin\WebApi.dll
+E:\ERP\API\WebApi\bin\WebApi.pdb
+E:\ERP\API\WebApi\bin\BusinessEntities.dll
+E:\ERP\API\WebApi\bin\BusinessServices.dll
+E:\ERP\API\WebApi\bin\EntityFramework.dll
+E:\ERP\API\WebApi\bin\EntityFramework.SqlServer.dll
+E:\ERP\API\WebApi\bin\EPPlus.dll
+E:\ERP\API\WebApi\bin\Microsoft.Practices.ServiceLocation.dll
+E:\ERP\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\ERP\API\WebApi\bin\Microsoft.Practices.Unity.dll
+E:\ERP\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\ERP\API\WebApi\bin\Microsoft.Web.Infrastructure.dll
+E:\ERP\API\WebApi\bin\Newtonsoft.Json.dll
+E:\ERP\API\WebApi\bin\NLog.dll
+E:\ERP\API\WebApi\bin\Resolver.dll
+E:\ERP\API\WebApi\bin\Swashbuckle.Core.dll
+E:\ERP\API\WebApi\bin\System.Net.Http.Formatting.dll
+E:\ERP\API\WebApi\bin\System.Web.Helpers.dll
+E:\ERP\API\WebApi\bin\System.Web.Http.dll
+E:\ERP\API\WebApi\bin\System.Web.Http.Tracing.dll
+E:\ERP\API\WebApi\bin\System.Web.Http.WebHost.dll
+E:\ERP\API\WebApi\bin\System.Web.Mvc.dll
+E:\ERP\API\WebApi\bin\System.Web.Razor.dll
+E:\ERP\API\WebApi\bin\System.Web.WebPages.Deployment.dll
+E:\ERP\API\WebApi\bin\System.Web.WebPages.dll
+E:\ERP\API\WebApi\bin\System.Web.WebPages.Razor.dll
+E:\ERP\API\WebApi\bin\Unity.Mvc5.dll
+E:\ERP\API\WebApi\bin\Unity.WebApi.dll
+E:\ERP\API\WebApi\bin\WebActivatorEx.dll
+E:\ERP\API\WebApi\bin\DataModel.dll
+E:\ERP\API\WebApi\bin\AutoMapper.dll
+E:\ERP\API\WebApi\bin\MongoDB.Driver.dll
+E:\ERP\API\WebApi\bin\MongoDB.Bson.dll
+E:\ERP\API\WebApi\bin\MongoDB.Driver.Core.dll
+E:\ERP\API\WebApi\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\ERP\API\WebApi\bin\BusinessEntities.pdb
+E:\ERP\API\WebApi\bin\BusinessEntities.dll.config
+E:\ERP\API\WebApi\bin\BusinessServices.pdb
+E:\ERP\API\WebApi\bin\BusinessServices.dll.config
+E:\ERP\API\WebApi\bin\Resolver.pdb
+E:\ERP\API\WebApi\bin\Resolver.dll.config
+E:\ERP\API\WebApi\bin\EntityFramework.xml
+E:\ERP\API\WebApi\bin\EntityFramework.SqlServer.xml
+E:\ERP\API\WebApi\bin\EPPlus.xml
+E:\ERP\API\WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\ERP\API\WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+E:\ERP\API\WebApi\bin\Microsoft.Practices.Unity.xml
+E:\ERP\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+E:\ERP\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\ERP\API\WebApi\bin\Newtonsoft.Json.xml
+E:\ERP\API\WebApi\bin\NLog.xml
+E:\ERP\API\WebApi\bin\System.Net.Http.Formatting.xml
+E:\ERP\API\WebApi\bin\System.Web.Helpers.xml
+E:\ERP\API\WebApi\bin\System.Web.Http.xml
+E:\ERP\API\WebApi\bin\System.Web.Http.Tracing.xml
+E:\ERP\API\WebApi\bin\System.Web.Http.WebHost.xml
+E:\ERP\API\WebApi\bin\System.Web.Mvc.xml
+E:\ERP\API\WebApi\bin\System.Web.Razor.xml
+E:\ERP\API\WebApi\bin\System.Web.WebPages.xml
+E:\ERP\API\WebApi\bin\System.Web.WebPages.Deployment.xml
+E:\ERP\API\WebApi\bin\System.Web.WebPages.Razor.xml
+E:\ERP\API\WebApi\bin\DataModel.pdb
+E:\ERP\API\WebApi\bin\DataModel.dll.config
+E:\ERP\API\WebApi\bin\AutoMapper.xml
+E:\ERP\API\WebApi\bin\MongoDB.Driver.xml
+E:\ERP\API\WebApi\bin\MongoDB.Bson.xml
+E:\ERP\API\WebApi\bin\MongoDB.Driver.Core.xml
+E:\ERP\API\WebApi\obj\Debug\WebApi.csprojAssemblyReference.cache
+E:\ERP\API\WebApi\obj\Debug\WebApi.csproj.CoreCompileInputs.cache
+E:\ERP\API\WebApi\obj\Debug\WebApi.csproj.CopyComplete
+E:\ERP\API\WebApi\obj\Debug\WebApi.dll
+E:\ERP\API\WebApi\obj\Debug\WebApi.pdb
+E:\API-UI-db\API\WebApi\bin\WebApi.dll.config
+E:\API-UI-db\API\WebApi\bin\WebApi.dll
+E:\API-UI-db\API\WebApi\bin\WebApi.pdb
+E:\API-UI-db\API\WebApi\bin\BusinessEntities.dll
+E:\API-UI-db\API\WebApi\bin\BusinessServices.dll
+E:\API-UI-db\API\WebApi\bin\EntityFramework.dll
+E:\API-UI-db\API\WebApi\bin\EntityFramework.SqlServer.dll
+E:\API-UI-db\API\WebApi\bin\EPPlus.dll
+E:\API-UI-db\API\WebApi\bin\Microsoft.Practices.ServiceLocation.dll
+E:\API-UI-db\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\API-UI-db\API\WebApi\bin\Microsoft.Practices.Unity.dll
+E:\API-UI-db\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\API-UI-db\API\WebApi\bin\Microsoft.Web.Infrastructure.dll
+E:\API-UI-db\API\WebApi\bin\Newtonsoft.Json.dll
+E:\API-UI-db\API\WebApi\bin\NLog.dll
+E:\API-UI-db\API\WebApi\bin\Resolver.dll
+E:\API-UI-db\API\WebApi\bin\Swashbuckle.Core.dll
+E:\API-UI-db\API\WebApi\bin\System.Net.Http.Formatting.dll
+E:\API-UI-db\API\WebApi\bin\System.Web.Helpers.dll
+E:\API-UI-db\API\WebApi\bin\System.Web.Http.dll
+E:\API-UI-db\API\WebApi\bin\System.Web.Http.Tracing.dll
+E:\API-UI-db\API\WebApi\bin\System.Web.Http.WebHost.dll
+E:\API-UI-db\API\WebApi\bin\System.Web.Mvc.dll
+E:\API-UI-db\API\WebApi\bin\System.Web.Razor.dll
+E:\API-UI-db\API\WebApi\bin\System.Web.WebPages.Deployment.dll
+E:\API-UI-db\API\WebApi\bin\System.Web.WebPages.dll
+E:\API-UI-db\API\WebApi\bin\System.Web.WebPages.Razor.dll
+E:\API-UI-db\API\WebApi\bin\Unity.Mvc5.dll
+E:\API-UI-db\API\WebApi\bin\Unity.WebApi.dll
+E:\API-UI-db\API\WebApi\bin\WebActivatorEx.dll
+E:\API-UI-db\API\WebApi\bin\DataModel.dll
+E:\API-UI-db\API\WebApi\bin\AutoMapper.dll
+E:\API-UI-db\API\WebApi\bin\MongoDB.Driver.dll
+E:\API-UI-db\API\WebApi\bin\MongoDB.Bson.dll
+E:\API-UI-db\API\WebApi\bin\MongoDB.Driver.Core.dll
+E:\API-UI-db\API\WebApi\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\API-UI-db\API\WebApi\bin\BusinessEntities.pdb
+E:\API-UI-db\API\WebApi\bin\BusinessServices.pdb
+E:\API-UI-db\API\WebApi\bin\Resolver.pdb
+E:\API-UI-db\API\WebApi\bin\EntityFramework.xml
+E:\API-UI-db\API\WebApi\bin\EntityFramework.SqlServer.xml
+E:\API-UI-db\API\WebApi\bin\EPPlus.xml
+E:\API-UI-db\API\WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\API-UI-db\API\WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+E:\API-UI-db\API\WebApi\bin\Microsoft.Practices.Unity.xml
+E:\API-UI-db\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+E:\API-UI-db\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\API-UI-db\API\WebApi\bin\Newtonsoft.Json.xml
+E:\API-UI-db\API\WebApi\bin\NLog.xml
+E:\API-UI-db\API\WebApi\bin\System.Net.Http.Formatting.xml
+E:\API-UI-db\API\WebApi\bin\System.Web.Helpers.xml
+E:\API-UI-db\API\WebApi\bin\System.Web.Http.xml
+E:\API-UI-db\API\WebApi\bin\System.Web.Http.Tracing.xml
+E:\API-UI-db\API\WebApi\bin\System.Web.Http.WebHost.xml
+E:\API-UI-db\API\WebApi\bin\System.Web.Mvc.xml
+E:\API-UI-db\API\WebApi\bin\System.Web.Razor.xml
+E:\API-UI-db\API\WebApi\bin\System.Web.WebPages.xml
+E:\API-UI-db\API\WebApi\bin\System.Web.WebPages.Deployment.xml
+E:\API-UI-db\API\WebApi\bin\System.Web.WebPages.Razor.xml
+E:\API-UI-db\API\WebApi\bin\DataModel.pdb
+E:\API-UI-db\API\WebApi\bin\AutoMapper.xml
+E:\API-UI-db\API\WebApi\bin\MongoDB.Driver.xml
+E:\API-UI-db\API\WebApi\bin\MongoDB.Bson.xml
+E:\API-UI-db\API\WebApi\bin\MongoDB.Driver.Core.xml
+E:\API-UI-db\API\WebApi\obj\Debug\WebApi.csprojResolveAssemblyReference.cache
+E:\API-UI-db\API\WebApi\obj\Debug\WebApi.dll
+E:\API-UI-db\API\WebApi\obj\Debug\WebApi.pdb
+C:\KRM\ERP\API\WebApi\bin\WebApi.dll.config
+C:\KRM\ERP\API\WebApi\bin\WebApi.dll
+C:\KRM\ERP\API\WebApi\bin\WebApi.pdb
+C:\KRM\ERP\API\WebApi\bin\BusinessEntities.dll
+C:\KRM\ERP\API\WebApi\bin\BusinessServices.dll
+C:\KRM\ERP\API\WebApi\bin\EntityFramework.dll
+C:\KRM\ERP\API\WebApi\bin\EntityFramework.SqlServer.dll
+C:\KRM\ERP\API\WebApi\bin\EPPlus.dll
+C:\KRM\ERP\API\WebApi\bin\Microsoft.Practices.ServiceLocation.dll
+C:\KRM\ERP\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\KRM\ERP\API\WebApi\bin\Microsoft.Practices.Unity.dll
+C:\KRM\ERP\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\KRM\ERP\API\WebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\KRM\ERP\API\WebApi\bin\Newtonsoft.Json.dll
+C:\KRM\ERP\API\WebApi\bin\NLog.dll
+C:\KRM\ERP\API\WebApi\bin\Resolver.dll
+C:\KRM\ERP\API\WebApi\bin\Swashbuckle.Core.dll
+C:\KRM\ERP\API\WebApi\bin\System.Net.Http.Formatting.dll
+C:\KRM\ERP\API\WebApi\bin\System.Web.Helpers.dll
+C:\KRM\ERP\API\WebApi\bin\System.Web.Http.dll
+C:\KRM\ERP\API\WebApi\bin\System.Web.Http.Tracing.dll
+C:\KRM\ERP\API\WebApi\bin\System.Web.Http.WebHost.dll
+C:\KRM\ERP\API\WebApi\bin\System.Web.Mvc.dll
+C:\KRM\ERP\API\WebApi\bin\System.Web.Razor.dll
+C:\KRM\ERP\API\WebApi\bin\System.Web.WebPages.Deployment.dll
+C:\KRM\ERP\API\WebApi\bin\System.Web.WebPages.dll
+C:\KRM\ERP\API\WebApi\bin\System.Web.WebPages.Razor.dll
+C:\KRM\ERP\API\WebApi\bin\Unity.Mvc5.dll
+C:\KRM\ERP\API\WebApi\bin\Unity.WebApi.dll
+C:\KRM\ERP\API\WebApi\bin\WebActivatorEx.dll
+C:\KRM\ERP\API\WebApi\bin\DataModel.dll
+C:\KRM\ERP\API\WebApi\bin\AutoMapper.dll
+C:\KRM\ERP\API\WebApi\bin\MongoDB.Driver.dll
+C:\KRM\ERP\API\WebApi\bin\MongoDB.Bson.dll
+C:\KRM\ERP\API\WebApi\bin\MongoDB.Driver.Core.dll
+C:\KRM\ERP\API\WebApi\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\KRM\ERP\API\WebApi\bin\BusinessEntities.pdb
+C:\KRM\ERP\API\WebApi\bin\BusinessEntities.dll.config
+C:\KRM\ERP\API\WebApi\bin\BusinessServices.pdb
+C:\KRM\ERP\API\WebApi\bin\BusinessServices.dll.config
+C:\KRM\ERP\API\WebApi\bin\Resolver.pdb
+C:\KRM\ERP\API\WebApi\bin\Resolver.dll.config
+C:\KRM\ERP\API\WebApi\bin\EntityFramework.xml
+C:\KRM\ERP\API\WebApi\bin\EntityFramework.SqlServer.xml
+C:\KRM\ERP\API\WebApi\bin\EPPlus.xml
+C:\KRM\ERP\API\WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\KRM\ERP\API\WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+C:\KRM\ERP\API\WebApi\bin\Microsoft.Practices.Unity.xml
+C:\KRM\ERP\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\KRM\ERP\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\KRM\ERP\API\WebApi\bin\Newtonsoft.Json.xml
+C:\KRM\ERP\API\WebApi\bin\NLog.xml
+C:\KRM\ERP\API\WebApi\bin\System.Net.Http.Formatting.xml
+C:\KRM\ERP\API\WebApi\bin\System.Web.Helpers.xml
+C:\KRM\ERP\API\WebApi\bin\System.Web.Http.xml
+C:\KRM\ERP\API\WebApi\bin\System.Web.Http.Tracing.xml
+C:\KRM\ERP\API\WebApi\bin\System.Web.Http.WebHost.xml
+C:\KRM\ERP\API\WebApi\bin\System.Web.Mvc.xml
+C:\KRM\ERP\API\WebApi\bin\System.Web.Razor.xml
+C:\KRM\ERP\API\WebApi\bin\System.Web.WebPages.xml
+C:\KRM\ERP\API\WebApi\bin\System.Web.WebPages.Deployment.xml
+C:\KRM\ERP\API\WebApi\bin\System.Web.WebPages.Razor.xml
+C:\KRM\ERP\API\WebApi\bin\DataModel.pdb
+C:\KRM\ERP\API\WebApi\bin\DataModel.dll.config
+C:\KRM\ERP\API\WebApi\bin\AutoMapper.xml
+C:\KRM\ERP\API\WebApi\bin\MongoDB.Driver.xml
+C:\KRM\ERP\API\WebApi\bin\MongoDB.Bson.xml
+C:\KRM\ERP\API\WebApi\bin\MongoDB.Driver.Core.xml
+C:\KRM\ERP\API\WebApi\obj\Debug\WebApi.csprojAssemblyReference.cache
+C:\KRM\ERP\API\WebApi\obj\Debug\WebApi.csproj.CoreCompileInputs.cache
+C:\KRM\ERP\API\WebApi\obj\Debug\WebApi.csproj.CopyComplete
+C:\KRM\ERP\API\WebApi\obj\Debug\WebApi.dll
+C:\KRM\ERP\API\WebApi\obj\Debug\WebApi.pdb
+E:\KRM\ERP\API\WebApi\bin\WebApi.dll.config
+E:\KRM\ERP\API\WebApi\bin\WebApi.dll
+E:\KRM\ERP\API\WebApi\bin\WebApi.pdb
+E:\KRM\ERP\API\WebApi\bin\BusinessEntities.dll
+E:\KRM\ERP\API\WebApi\bin\BusinessServices.dll
+E:\KRM\ERP\API\WebApi\bin\EntityFramework.dll
+E:\KRM\ERP\API\WebApi\bin\EntityFramework.SqlServer.dll
+E:\KRM\ERP\API\WebApi\bin\EPPlus.dll
+E:\KRM\ERP\API\WebApi\bin\Microsoft.Practices.ServiceLocation.dll
+E:\KRM\ERP\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\KRM\ERP\API\WebApi\bin\Microsoft.Practices.Unity.dll
+E:\KRM\ERP\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\KRM\ERP\API\WebApi\bin\Microsoft.Web.Infrastructure.dll
+E:\KRM\ERP\API\WebApi\bin\Newtonsoft.Json.dll
+E:\KRM\ERP\API\WebApi\bin\NLog.dll
+E:\KRM\ERP\API\WebApi\bin\Resolver.dll
+E:\KRM\ERP\API\WebApi\bin\Swashbuckle.Core.dll
+E:\KRM\ERP\API\WebApi\bin\System.Net.Http.Formatting.dll
+E:\KRM\ERP\API\WebApi\bin\System.Web.Helpers.dll
+E:\KRM\ERP\API\WebApi\bin\System.Web.Http.dll
+E:\KRM\ERP\API\WebApi\bin\System.Web.Http.Tracing.dll
+E:\KRM\ERP\API\WebApi\bin\System.Web.Http.WebHost.dll
+E:\KRM\ERP\API\WebApi\bin\System.Web.Mvc.dll
+E:\KRM\ERP\API\WebApi\bin\System.Web.Razor.dll
+E:\KRM\ERP\API\WebApi\bin\System.Web.WebPages.Deployment.dll
+E:\KRM\ERP\API\WebApi\bin\System.Web.WebPages.dll
+E:\KRM\ERP\API\WebApi\bin\System.Web.WebPages.Razor.dll
+E:\KRM\ERP\API\WebApi\bin\Unity.Mvc5.dll
+E:\KRM\ERP\API\WebApi\bin\Unity.WebApi.dll
+E:\KRM\ERP\API\WebApi\bin\WebActivatorEx.dll
+E:\KRM\ERP\API\WebApi\bin\DataModel.dll
+E:\KRM\ERP\API\WebApi\bin\AutoMapper.dll
+E:\KRM\ERP\API\WebApi\bin\MongoDB.Driver.dll
+E:\KRM\ERP\API\WebApi\bin\MongoDB.Bson.dll
+E:\KRM\ERP\API\WebApi\bin\MongoDB.Driver.Core.dll
+E:\KRM\ERP\API\WebApi\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\KRM\ERP\API\WebApi\bin\BusinessEntities.pdb
+E:\KRM\ERP\API\WebApi\bin\BusinessEntities.dll.config
+E:\KRM\ERP\API\WebApi\bin\BusinessServices.pdb
+E:\KRM\ERP\API\WebApi\bin\BusinessServices.dll.config
+E:\KRM\ERP\API\WebApi\bin\Resolver.pdb
+E:\KRM\ERP\API\WebApi\bin\Resolver.dll.config
+E:\KRM\ERP\API\WebApi\bin\EntityFramework.xml
+E:\KRM\ERP\API\WebApi\bin\EntityFramework.SqlServer.xml
+E:\KRM\ERP\API\WebApi\bin\EPPlus.xml
+E:\KRM\ERP\API\WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\KRM\ERP\API\WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+E:\KRM\ERP\API\WebApi\bin\Microsoft.Practices.Unity.xml
+E:\KRM\ERP\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+E:\KRM\ERP\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\KRM\ERP\API\WebApi\bin\Newtonsoft.Json.xml
+E:\KRM\ERP\API\WebApi\bin\NLog.xml
+E:\KRM\ERP\API\WebApi\bin\System.Net.Http.Formatting.xml
+E:\KRM\ERP\API\WebApi\bin\System.Web.Helpers.xml
+E:\KRM\ERP\API\WebApi\bin\System.Web.Http.xml
+E:\KRM\ERP\API\WebApi\bin\System.Web.Http.Tracing.xml
+E:\KRM\ERP\API\WebApi\bin\System.Web.Http.WebHost.xml
+E:\KRM\ERP\API\WebApi\bin\System.Web.Mvc.xml
+E:\KRM\ERP\API\WebApi\bin\System.Web.Razor.xml
+E:\KRM\ERP\API\WebApi\bin\System.Web.WebPages.xml
+E:\KRM\ERP\API\WebApi\bin\System.Web.WebPages.Deployment.xml
+E:\KRM\ERP\API\WebApi\bin\System.Web.WebPages.Razor.xml
+E:\KRM\ERP\API\WebApi\bin\DataModel.pdb
+E:\KRM\ERP\API\WebApi\bin\DataModel.dll.config
+E:\KRM\ERP\API\WebApi\bin\AutoMapper.xml
+E:\KRM\ERP\API\WebApi\bin\MongoDB.Driver.xml
+E:\KRM\ERP\API\WebApi\bin\MongoDB.Bson.xml
+E:\KRM\ERP\API\WebApi\bin\MongoDB.Driver.Core.xml
+E:\KRM\ERP\API\WebApi\obj\Debug\WebApi.csprojAssemblyReference.cache
+E:\KRM\ERP\API\WebApi\obj\Debug\WebApi.csproj.CoreCompileInputs.cache
+E:\KRM\ERP\API\WebApi\obj\Debug\WebApi.csproj.CopyComplete
+E:\KRM\ERP\API\WebApi\obj\Debug\WebApi.dll
+E:\KRM\ERP\API\WebApi\obj\Debug\WebApi.pdb
+C:\Users\GK lingam\Downloads\API\WebApi\bin\WebApi.dll.config
+C:\Users\GK lingam\Downloads\API\WebApi\bin\WebApi.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\WebApi.pdb
+C:\Users\GK lingam\Downloads\API\WebApi\bin\BusinessEntities.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\BusinessServices.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\EntityFramework.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\EntityFramework.SqlServer.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\EPPlus.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\Microsoft.Practices.Unity.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\Newtonsoft.Json.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\NLog.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\Resolver.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\Swashbuckle.Core.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Net.Http.Formatting.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Web.Helpers.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Web.Http.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Web.Http.Tracing.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Web.Http.WebHost.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Web.Mvc.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Web.Razor.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Web.WebPages.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Web.WebPages.Razor.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\Unity.Mvc5.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\Unity.WebApi.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\WebActivatorEx.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\DataModel.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\AutoMapper.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\MongoDB.Driver.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\MongoDB.Bson.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\MongoDB.Driver.Core.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\GK lingam\Downloads\API\WebApi\bin\BusinessEntities.pdb
+C:\Users\GK lingam\Downloads\API\WebApi\bin\BusinessServices.pdb
+C:\Users\GK lingam\Downloads\API\WebApi\bin\Resolver.pdb
+C:\Users\GK lingam\Downloads\API\WebApi\bin\EntityFramework.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\EntityFramework.SqlServer.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\EPPlus.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\GK lingam\Downloads\API\WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\Microsoft.Practices.Unity.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\Newtonsoft.Json.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\NLog.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Net.Http.Formatting.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Web.Helpers.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Web.Http.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Web.Http.Tracing.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Web.Http.WebHost.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Web.Mvc.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Web.Razor.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Web.WebPages.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\System.Web.WebPages.Razor.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\DataModel.pdb
+C:\Users\GK lingam\Downloads\API\WebApi\bin\AutoMapper.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\MongoDB.Driver.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\MongoDB.Bson.xml
+C:\Users\GK lingam\Downloads\API\WebApi\bin\MongoDB.Driver.Core.xml
+C:\Users\GK lingam\Downloads\API\WebApi\obj\Debug\WebApi.csprojResolveAssemblyReference.cache
+C:\Users\GK lingam\Downloads\API\WebApi\obj\Debug\WebApi.dll
+C:\Users\GK lingam\Downloads\API\WebApi\obj\Debug\WebApi.pdb
+E:\SouthernERP Angular 7\API\API\WebApi\bin\WebApi.dll.config
+E:\SouthernERP Angular 7\API\API\WebApi\bin\WebApi.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\WebApi.pdb
+E:\SouthernERP Angular 7\API\API\WebApi\bin\BusinessEntities.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\BusinessServices.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\EntityFramework.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\EntityFramework.SqlServer.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\EPPlus.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\Microsoft.Practices.ServiceLocation.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\Microsoft.Practices.Unity.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\Microsoft.Web.Infrastructure.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\Newtonsoft.Json.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\NLog.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\Resolver.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\Swashbuckle.Core.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Net.Http.Formatting.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Web.Helpers.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Web.Http.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Web.Http.Tracing.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Web.Http.WebHost.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Web.Mvc.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Web.Razor.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Web.WebPages.Deployment.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Web.WebPages.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Web.WebPages.Razor.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\Unity.Mvc5.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\Unity.WebApi.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\WebActivatorEx.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\DataModel.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\AutoMapper.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\MongoDB.Driver.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\MongoDB.Bson.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\MongoDB.Driver.Core.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\SouthernERP Angular 7\API\API\WebApi\bin\BusinessEntities.pdb
+E:\SouthernERP Angular 7\API\API\WebApi\bin\BusinessEntities.dll.config
+E:\SouthernERP Angular 7\API\API\WebApi\bin\BusinessServices.pdb
+E:\SouthernERP Angular 7\API\API\WebApi\bin\BusinessServices.dll.config
+E:\SouthernERP Angular 7\API\API\WebApi\bin\Resolver.pdb
+E:\SouthernERP Angular 7\API\API\WebApi\bin\Resolver.dll.config
+E:\SouthernERP Angular 7\API\API\WebApi\bin\EntityFramework.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\EntityFramework.SqlServer.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\EPPlus.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\SouthernERP Angular 7\API\API\WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\Microsoft.Practices.Unity.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\Newtonsoft.Json.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\NLog.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Net.Http.Formatting.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Web.Helpers.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Web.Http.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Web.Http.Tracing.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Web.Http.WebHost.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Web.Mvc.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Web.Razor.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Web.WebPages.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Web.WebPages.Deployment.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\System.Web.WebPages.Razor.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\DataModel.pdb
+E:\SouthernERP Angular 7\API\API\WebApi\bin\DataModel.dll.config
+E:\SouthernERP Angular 7\API\API\WebApi\bin\AutoMapper.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\MongoDB.Driver.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\MongoDB.Bson.xml
+E:\SouthernERP Angular 7\API\API\WebApi\bin\MongoDB.Driver.Core.xml
+E:\SouthernERP Angular 7\API\API\WebApi\obj\Debug\WebApi.csprojAssemblyReference.cache
+E:\SouthernERP Angular 7\API\API\WebApi\obj\Debug\WebApi.csproj.CoreCompileInputs.cache
+E:\SouthernERP Angular 7\API\API\WebApi\obj\Debug\WebApi.csproj.CopyComplete
+E:\SouthernERP Angular 7\API\API\WebApi\obj\Debug\WebApi.dll
+E:\SouthernERP Angular 7\API\API\WebApi\obj\Debug\WebApi.pdb
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\WebApi.dll.config
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\WebApi.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\WebApi.pdb
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\BusinessEntities.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\BusinessServices.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\EntityFramework.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\EntityFramework.SqlServer.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\EPPlus.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\Microsoft.Practices.ServiceLocation.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\Microsoft.Practices.Unity.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\Microsoft.Web.Infrastructure.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\Newtonsoft.Json.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\NLog.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\Resolver.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\Swashbuckle.Core.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Net.Http.Formatting.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Web.Helpers.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Web.Http.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Web.Http.Tracing.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Web.Http.WebHost.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Web.Mvc.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Web.Razor.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Web.WebPages.Deployment.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Web.WebPages.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Web.WebPages.Razor.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\Unity.Mvc5.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\Unity.WebApi.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\WebActivatorEx.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\DataModel.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\AutoMapper.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\MongoDB.Driver.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\MongoDB.Bson.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\MongoDB.Driver.Core.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\BusinessEntities.pdb
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\BusinessEntities.dll.config
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\BusinessServices.pdb
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\BusinessServices.dll.config
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\Resolver.pdb
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\Resolver.dll.config
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\EntityFramework.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\EntityFramework.SqlServer.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\EPPlus.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\Microsoft.Practices.Unity.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\Newtonsoft.Json.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\NLog.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Net.Http.Formatting.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Web.Helpers.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Web.Http.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Web.Http.Tracing.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Web.Http.WebHost.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Web.Mvc.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Web.Razor.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Web.WebPages.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Web.WebPages.Deployment.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\System.Web.WebPages.Razor.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\DataModel.pdb
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\DataModel.dll.config
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\AutoMapper.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\MongoDB.Driver.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\MongoDB.Bson.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\bin\MongoDB.Driver.Core.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\obj\Debug\WebApi.csprojAssemblyReference.cache
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\obj\Debug\WebApi.csproj.CoreCompileInputs.cache
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\obj\Debug\WebApi.csproj.CopyComplete
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\obj\Debug\WebApi.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\WebApi\obj\Debug\WebApi.pdb

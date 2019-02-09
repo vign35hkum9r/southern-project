@@ -1,0 +1,32 @@
+/* table {
+    width: 100%;
+  }
+  
+  tr.mat-footer-row {
+    font-weight: bold;
+  } */
+
+
+    /* Structure */
+    table {
+        width: 100%;
+      }
+    th.mat-header-cell {
+      color: #000;
+      font-size:12px; 
+      background-color: bisque;
+      font-weight: bold;
+      padding: 10px;
+    }
+    
+    th.mat-header-cell[_ngcontent-c5] {
+      color: #000;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    td.mat-cell, td.mat-footer-cell{
+        color: #000;
+        font-size:12px; 
+        font-weight: bold;
+        padding: 10px;  
+    }

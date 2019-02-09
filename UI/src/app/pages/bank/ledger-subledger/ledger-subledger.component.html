@@ -1,0 +1,293 @@
+<mat-card>
+  <div *ngIf="!isFormOpen">
+    <button mat-raised-button color="primary" (click)="create()">ADD</button>
+    <div style="margin-top: 20px">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <h5> LIST OF LEDGER</h5>
+            </mat-panel-title>
+            <mat-panel-description>
+              <!-- <h5> LIST OF LEDGER   </h5> -->
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+
+          <div class="mat-elevation-z8">
+            <table id="tablePreview" class="table table-sm table-hover">
+              <!--Table head-->
+              <thead>
+                <tr>
+                  <th>S.No</th>
+                  <th>Name of the Ledger</th>
+                  <th>Name of the Account Code</th>
+                  <th>Ledger Code</th>
+                  <th>Name of the Group/Subgroup</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <!--Table head-->
+              <!--Table body-->
+              <tbody>
+                <tr *ngFor="let row of LedgerList;let i=index">
+                  <td>{{i+1}}</td>
+                  <td>{{row.LedgerName}}</td>
+                  <td>{{row.Cls_of_Account}}</td>
+                  <td>{{row.LedgerCode}}</td>
+                  <td>{{row.Descrip_Group}}</td>
+                  <td>
+                    <mat-icon color="primary">edit</mat-icon>
+                    <mat-icon color="warn">delete</mat-icon>
+                  </td>
+                </tr>
+              </tbody>
+              <!--Table body-->
+            </table>
+
+            <!--Table-->
+          </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <h5>LIST OF SUBLEDGER</h5>
+            </mat-panel-title>
+            <mat-panel-description>
+              <!-- <h5> LIST OF SUBLEDGER </h5> -->
+              <!-- Currently I am    {{panelOpenState ? 'open' : 'closed'}}-->
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+
+
+
+          <div class="mat-elevation-z8">
+            <table id="tablePreview" class="table table-sm table-hover">
+              <!--Table head-->
+              <thead>
+                <tr>
+                  <th>S.No</th>
+                  <th>Name of the Subledger</th>
+                  <th>Created By</th>
+                  <th>Created By</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <!--Table head-->
+              <!--Table body-->
+              <tbody>
+                <tr>
+                  <td scope="row">1</td>
+
+                  <td>Somany Tiles Pvt Ltd</td>
+                  <td>jayakrishna</td>
+                  <td>14 july 2018</td>
+
+
+                  <td>
+                    <mat-icon color="primary">edit</mat-icon>
+                    <mat-icon color="warn">delete</mat-icon>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">2</td>
+                  <td>Indian Cement Ltd</td>
+                  <td>jayakrishna</td>
+                  <td>14 july 2018</td>
+
+                  <td>
+                    <mat-icon color="primary">edit</mat-icon>
+                    <mat-icon color="warn">delete</mat-icon>
+                  </td>
+                </tr>
+
+              </tbody>
+              <!--Table body-->
+            </table>
+
+            <!--Table-->
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+
+
+
+  </div>
+
+  <form class="w-p-50" *ngIf="isFormOpen">
+
+    <mat-horizontal-stepper [linear]="isLinear" #stepper>
+      <mat-step [stepControl]="firstFormGroup">
+        <ng-template matStepLabel>Ledger</ng-template>
+        <form class="w-p-50" *ngIf="isFormOpen">
+
+          <div fxFlex="100%" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+
+            <div class="w-p-50">
+              <mat-card-title class="Employee-title">
+                <h5 class="a">Ledger</h5>
+              </mat-card-title>
+
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+                <mat-form-field class="w-p-50">
+                  <input matInput name="Name_of_the_Ledger" [(ngModel)]="model.LedgerName" required autocomplete="off">
+                  <mat-placeholder class="placeholder">Name of the Ledger</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+                  <input matInput name="Print_name_of_the_Ledger" [(ngModel)]="model.PrintLedgerName" required
+                    autocomplete="off">
+                  <mat-placeholder class="placeholder">Print Name of the Ledger</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+                  <mat-select name=" Cls_of_Account" [(ngModel)]="model.SelectedAccount" (selectionChange)="getCode(model.SelectedAccount)">
+                    <mat-option *ngFor="let L of this.AccountCodeList" [value]="L">
+                      {{L.Cls_of_Account}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Classification of Account</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+
+                  <input matInput name="StartingCode" [(ngModel)]="model.StartingCode" required="" autocomplete="off"
+                    disabled>
+                  <mat-placeholder class="placeholder">Starting code</mat-placeholder>
+                </mat-form-field>
+              </div>
+
+
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+                <mat-form-field class="w-p-50">
+                  <input matInput name="Endingcode" [(ngModel)]="model.EndingCode" required="" autocomplete="off"
+                    disabled>
+                  <mat-placeholder class="placeholder">Ending code</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+                  <input matInput name="LedgerCode" [(ngModel)]="model.LedgerCode" required="" autocomplete="off"
+                    disabled>
+                  <mat-placeholder class="placeholder">Ledger code</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+                  <mat-select name="Descrip_Group" [(ngModel)]="model.SelectedGroup">
+                    <mat-option *ngFor="let L of GroupList" [value]="L">
+                      {{L.Descrip_Group}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Select Group / Subgroup</mat-placeholder>
+                </mat-form-field>
+                <span class="w-p-50">
+                </span>
+
+              </div>
+
+
+              <div fxLayout="row" fxLayoutAlign="flex-end start" class="w-p-50" fxLayoutGap="5px">
+                <button mat-raised-button [disabled]="model.SelectedGroup == undefined || model.LedgerCode == undefined"
+                  class="" (click)="save(model)" color="primary" *ngIf="!editing">Save</button>
+                <button mat-raised-button color="warn" (click)="update()" *ngIf="editing">Update</button>
+                <button mat-raised-button color="warn" (click)="clear()">Cancel</button>
+              </div>
+
+            </div>
+          </div>
+        </form>
+
+      </mat-step>
+      <mat-step [stepControl]="secondFormGroup">
+        <ng-template matStepLabel>SubLedger</ng-template>
+        <form class="w-p-50">
+          <div fxFlex="100%" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+            <div class="w-p-50">
+              <mat-card-title class="Employee-title">
+                <h5 class="accordion">SubLedger</h5>
+              </mat-card-title>
+
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+                <mat-form-field class="w-p-50">
+                  <mat-select name=" Select_the_Type_of_Creditors" (selectionChange)="getName(model1.Select_the_Type_of_Creditors)"
+                    [(ngModel)]="model1.Select_the_Type_of_Creditors">
+                    <mat-option *ngFor="let F of CreditorList" [value]="F">
+                      {{F.TypeOfCreditor}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Select the Type of Creditor/Debitor</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+                  <mat-select name=" SubLedgerName" [(ngModel)]="model1.SelectedType">
+                    <mat-option *ngFor="let F of NameList" [value]="F">
+                      {{F.Name}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Name of the SubLedger</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+                  <input matInput name="PrintSubLedgerName" [(ngModel)]="model1.PrintSubLedgerName" required=""
+                    autocomplete="off">
+                  <mat-placeholder class="placeholder">Print Name of the SubLedger</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+                  <input matInput name="SubLedgerCode" [(ngModel)]="model1.SubLedgerCode" required="" autocomplete="off">
+                  <mat-placeholder class="placeholder">SubLedger Code</mat-placeholder>
+                </mat-form-field>
+              </div>
+
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+
+
+                <mat-form-field class="w-p-50">
+                  <input matInput name="OpeningBalance" [(ngModel)]="model1.OpeningBalance" required="" autocomplete="off">
+                  <mat-placeholder class="placeholder">Opening Balance</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+                  <input matInput name="PreYearOpeningBalance" [(ngModel)]="model1.PreYearOpeningBalance" required=""
+                    autocomplete="off">
+                  <mat-placeholder class="placeholder">previous year Opening Balance</mat-placeholder>
+                </mat-form-field>
+                <span class="w-p-50">
+                </span>
+                <span class="w-p-50">
+                </span>
+              </div>
+              <!-- <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+                <mat-form-field class="w-p-50">
+                  <input matInput name="Opening_Balance" [(ngModel)]="model1.Opening_Balance" required="" autocomplete="off">
+                  <mat-placeholder class="placeholder">Opening Balance</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+                  <input matInput>
+                  <mat-placeholder class="placeholder">previous year Opening Balance</mat-placeholder>
+                </mat-form-field>
+                <span class="w-p-50">
+                </span>
+                <span class="w-p-50">
+                </span>
+              </div> -->
+              <div fxLayout="row" fxLayoutAlign="flex-end start" class="w-p-50" fxLayoutGap="5px">
+                <button mat-raised-button class="" (click)="saveSubLedger(model1)" color="primary">Save SubLedger</button>
+                <button mat-raised-button color="warn" (click)="clear()">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+
+
+
+    </mat-horizontal-stepper>
+  </form>
+
+</mat-card>

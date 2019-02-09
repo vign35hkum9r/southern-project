@@ -1,0 +1,302 @@
+<mat-card>
+
+  <div fxLayout="column" fxLayoutAlign="start start">
+
+    <div *ngIf="!isFormOpen">
+      <button mat-raised-button color="primary" (click)="create()">ADD</button>
+      <h5>Raise draft indent</h5>
+    </div>
+
+    <form class="w-p-50" *ngIf="isFormOpen">
+      <!-- <button mat-raised-button (click)="isOptional = !isOptional">
+            {{!isOptional ? 'Enable optional steps' : 'Disable optional steps'}}
+          </button> -->
+      <mat-horizontal-stepper linear #stepper>
+        <mat-step [stepControl]="firstFormGroup">
+          <ng-template matStepLabel>
+            <h5>Raise-Draft-Indent</h5>
+          </ng-template>
+          <form class="w-p-50" [formGroup]="firstFormGroup">
+            <div fxFlex="100%" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+              <h6>Raise-Draft-Indent</h6>
+
+              <div fxFlex="50%" fxLayout="row" fxLayout.xs="column" fxFlex.gt-sm="100%" fxFlex.gt-xs="100%" fxLayoutGap="10px" fxLayoutAlign="start center"
+                class=" form">
+                <mat-form-field class="w-p-50">
+                  <mat-select required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Indent for</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+                  <mat-select required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Indent from</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+                  <mat-select required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Indent No</mat-placeholder>
+                </mat-form-field>
+
+
+                <mat-form-field class="w-p-50">
+                  <mat-select required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Indent Period</mat-placeholder>
+                </mat-form-field>
+
+              </div>
+
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+
+                <mat-form-field class="w-p-50">
+
+                  <input matInput [matDatepicker]="picker" placeholder="Classification of Accounts">
+                  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                  <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+                  <mat-select required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Indent On</mat-placeholder>
+                </mat-form-field>
+
+                <span class="w-p-50">
+                </span>
+
+                <span class="w-p-50">
+                </span>
+                <div fxLayoutAlign="flax-end" fxLayoutGap="10px">
+                  <!-- <button mat-raised-button color="primary" matStepperNext [disabled]="!firstFormGroup.valid">Next</button> -->
+                  <button mat-raised-button color="warn" (click)="clear()">Cancel</button>
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup" [optional]="isOptional">
+          <form [formGroup]="secondFormGroup">
+            <div fxFlex="100%" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+              <h6>Select item of Construction Activity</h6>
+              <div class="w-p-50">
+                <mat-card-title class="Employee-title">
+                  <ng-template matStepLabel>
+                    <h5>Select item of Construction Activity</h5>
+                  </ng-template>
+                </mat-card-title>
+
+                <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+                  <mat-form-field class="w-p-50">
+                    <mat-select required>
+                      <mat-option *ngFor="let food of Food" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-placeholder class="placeholder">Category of CA</mat-placeholder>
+                  </mat-form-field>
+
+
+
+                  <mat-form-field class="w-p-50">
+                    <mat-select required>
+                      <mat-option *ngFor="let food of Food" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-placeholder class="placeholder">Subcategory of CA</mat-placeholder>
+                  </mat-form-field>
+
+                  <mat-form-field class="w-p-50">
+                    <mat-select required>
+                      <mat-option *ngFor="let food of Food" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-placeholder class="placeholder">Type of CA</mat-placeholder>
+                  </mat-form-field>
+
+                  <mat-form-field class="w-p-50">
+                    <mat-select required>
+                      <mat-option *ngFor="let food of Food" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-placeholder class="placeholder">IOCA Short Description</mat-placeholder>
+                  </mat-form-field>
+                </div>
+
+                <div fxLayoutAlign="flex-end" fxLayoutGap="10px">
+                  <!-- <button mat-raised-button color="primary" matStepperNext [disabled]="!secondFormGroup.valid">Next</button> -->
+                  <button mat-raised-button color="warn" (click)="clear()">Cancel</button>
+                </div>
+              </div>
+
+            </div>
+
+          </form>
+        </mat-step>
+
+        <mat-step [stepControl]="ThirdFormGroup" [optional]="isOptional">
+          <form [formGroup]="ThirdFormGroup">
+
+            <div fxFlex="100%" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+              <h6>Select Location Tiers</h6>
+              <div class="w-p-50">
+                <mat-card-title class="Employee-title">
+                  <ng-template matStepLabel>
+                    <h5>Select Location Tiers</h5>
+                  </ng-template>
+                </mat-card-title>
+
+                <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+                  <mat-form-field class="w-p-50">
+                    <mat-select required>
+                      <mat-option *ngFor="let food of Food" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-placeholder class="placeholder">Type of Location</mat-placeholder>
+                  </mat-form-field>
+
+
+                  <mat-form-field class="w-p-50">
+                    <mat-select required>
+                      <mat-option *ngFor="let food of Food" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-placeholder class="placeholder">Block</mat-placeholder>
+                  </mat-form-field>
+
+                  <mat-form-field class="w-p-50">
+                    <mat-select required>
+                      <mat-option *ngFor="let food of Food" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-placeholder class="placeholder">Floor</mat-placeholder>
+                  </mat-form-field>
+
+
+                  <mat-form-field class="w-p-50">
+                    <mat-select required>
+                      <mat-option *ngFor="let food of Food" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-placeholder class="placeholder">Flat</mat-placeholder>
+                  </mat-form-field>
+                </div>
+
+                <div fxLayoutAlign="flex-end" fxLayoutGap="10px">
+                  <!-- <button mat-raised-button color="primary" matStepperNext [disabled]="!ThirdFormGroup.valid">Next</button> -->
+                  <button mat-raised-button color="warn" (click)="clear()">Cancel</button>
+
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </mat-step>
+
+        <mat-step [stepControl]="FourFormGroup" [optional]="isOptional">
+          <form [formGroup]="FourFormGroup">
+            <div fxFlex="100%" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+              <h6>Select Materials</h6>
+              <div class="w-p-50">
+                <mat-card-title class="Employee-title">
+                  <ng-template matStepLabel>
+                    <h5>Select Materials</h5>
+                  </ng-template>
+                </mat-card-title>
+
+                <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+                  <mat-form-field class="w-p-50">
+                    <mat-select required>
+                      <mat-option *ngFor="let food of Food" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-placeholder class="placeholder">Category of Material</mat-placeholder>
+                  </mat-form-field>
+
+
+                  <mat-form-field class="w-p-50">
+                    <mat-select required>
+                      <mat-option *ngFor="let food of Food" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-placeholder class="placeholder">Subcategory of Material</mat-placeholder>
+                  </mat-form-field> -->
+
+
+                  <mat-form-field class="w-p-50">
+                    <mat-select required>
+                      <mat-option *ngFor="let food of Food" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-placeholder class="placeholder">Type of Material</mat-placeholder>
+                  </mat-form-field>
+
+                  <span class="w-p-50">
+                  </span>
+
+                </div>
+
+                <div fxLayout="row" fxLayoutAlign="flex-end" class="w-p-50" fxLayoutGap="5px">
+                  <!-- <button mat-raised-button color="primary" matStepperNext [disabled]="!FourFormGroup.valid">Next</button> -->
+                  <button mat-raised-button color="warn" (click)="clear()">Cancel</button>
+                </div>
+
+              </div>
+            </div>
+          </form>
+        </mat-step>
+
+        <mat-step>
+
+          <div fxFlex="100%" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+            <div class="w-p-50">
+              <mat-card-title class="Employee-title">
+                <ng-template matStepLabel>
+                  <h5>Done</h5>
+                </ng-template>
+              </mat-card-title>
+              <div fxLayout="row" fxLayoutAlign="flex-center center" class="w-p-50" fxLayoutGap="5px">
+                <button mat-raised-button class="success" (click)="save1()" *ngIf="!editing1">Save</button>
+                <!-- <button mat-raised-button color="warn" (click)="update1()" *ngIf="editing1">Update</button> -->
+                <button mat-raised-button color="warn" (click)="clear()">Cancel</button>
+              </div>
+
+            </div>
+          </div>
+        </mat-step>
+      </mat-horizontal-stepper>
+    </form>
+  </div>
+</mat-card>

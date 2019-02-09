@@ -1,0 +1,78 @@
+<app-card>
+  <form *ngIf="!isFormOpen">
+    <div>
+      <button mat-raised-button color="primary" (click)="create()">ADD</button>
+      <h5>Ledgerlibrary</h5>
+    </div>
+  </form>
+  <form class="form-material" action="javascript:" *ngIf="isFormOpen">
+    <div fxFlex="100%" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+      <h6 class="">Ledger Library</h6>
+      <div fxFlex="50%" fxLayout="row" fxLayout.xs="column" fxFlex.gt-sm="100%" fxFlex.gt-xs="100%" fxLayoutGap="10px" fxLayoutAlign="start center"
+        class=" form">
+        <mat-form-field class="w-p-50">
+
+          <mat-select>
+            <mat-option *ngFor="let food of Food" [value]="food.value">
+              {{food.viewValue}}
+            </mat-option>
+          </mat-select>
+          <mat-placeholder class="placeholder">Name of the Company</mat-placeholder>
+        </mat-form-field>
+
+        <mat-form-field class="w-p-50">
+
+          <mat-select>
+            <mat-option *ngFor="let food of Food" [value]="food.value">
+              {{food.viewValue}}
+            </mat-option>
+          </mat-select>
+          <mat-placeholder class="placeholder">Select the Ledger</mat-placeholder>
+        </mat-form-field>
+
+        <mat-form-field class="w-p-50">
+
+          <input matInput>
+          <mat-placeholder class="placeholder">A/c Code</mat-placeholder>
+        </mat-form-field>
+        <mat-form-field class="w-p-50">
+          <mat-select>
+            <mat-option *ngFor="let food of Food" [value]="food.value">
+              {{food.viewValue}}
+            </mat-option>
+          </mat-select>
+          <mat-placeholder class="placeholder">Select the Type of Creditors/Debitors</mat-placeholder>
+        </mat-form-field>
+      </div>
+      <div fxFlex="50%" fxLayout="row" fxLayout.xs="column" fxFlex.gt-sm="100%" fxFlex.gt-xs="100%" fxLayoutGap="10px" fxLayoutAlign="start start"
+        class=" form">
+        <mat-form-field class="w-p-50">
+          <mat-select>
+            <mat-option *ngFor="let food of Food" [value]="food.value">
+              {{food.viewValue}}
+            </mat-option>
+          </mat-select>
+          <mat-placeholder class="placeholder">Select the Supplier</mat-placeholder>
+        </mat-form-field>
+        <span class="w-p-50">
+        </span>
+        <span class="w-p-50">
+        </span>
+        <div fxLayout="row" fxLayoutAlign="flex-end start" class="w-p-50" fxLayoutGap="5px">
+          <button mat-raised-button class="" color="primary">Save</button>
+
+          <button mat-raised-button color="warn" (click)="clear()">Cancel</button>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </form>
+
+
+
+
+</app-card>

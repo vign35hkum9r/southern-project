@@ -1,0 +1,364 @@
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\Resolver.dll.config
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\Resolver.dll
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\Resolver.pdb
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\Microsoft.Practices.Unity.dll
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\System.Web.Helpers.dll
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\System.Web.Mvc.dll
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\System.Web.Razor.dll
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\System.Web.WebPages.dll
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\System.Web.WebPages.Razor.dll
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\Unity.Mvc5.dll
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\Microsoft.Practices.Unity.xml
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\System.Web.Helpers.xml
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\System.Web.Mvc.xml
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\System.Web.Razor.xml
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\System.Web.WebPages.xml
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\CMS_New\KPMES\API\Resolver\bin\Debug\System.Web.WebPages.Razor.xml
+E:\CMS_New\KPMES\API\Resolver\obj\Debug\Resolver.dll
+E:\CMS_New\KPMES\API\Resolver\obj\Debug\Resolver.pdb
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\Resolver.dll.config
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\Resolver.dll
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\Resolver.pdb
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.dll
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Helpers.dll
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Mvc.dll
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Razor.dll
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.dll
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Razor.dll
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\Unity.Mvc5.dll
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.xml
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Helpers.xml
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Mvc.xml
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Razor.xml
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.xml
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\projects\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Razor.xml
+F:\projects\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.dll
+F:\projects\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.pdb
+F:\projects\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.csprojResolveAssemblyReference.cache
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\Resolver.dll.config
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\Resolver.dll
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\Resolver.pdb
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.dll
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Helpers.dll
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Mvc.dll
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Razor.dll
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.dll
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Razor.dll
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\Unity.Mvc5.dll
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.xml
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Helpers.xml
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Mvc.xml
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Razor.xml
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.xml
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Razor.xml
+E:\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.dll
+E:\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.pdb
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\Resolver.dll.config
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\Resolver.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\Resolver.pdb
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Helpers.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Mvc.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Razor.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\Unity.Mvc5.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Helpers.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Mvc.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Razor.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.csprojAssemblyReference.cache
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.csproj.CoreCompileInputs.cache
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.csproj.CopyComplete
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.pdb
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\Resolver.dll.config
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\Resolver.dll
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\Resolver.pdb
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.dll
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Web.Infrastructure.dll
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Helpers.dll
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Mvc.dll
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Razor.dll
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.dll
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.dll
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Razor.dll
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\Unity.Mvc5.dll
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.xml
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Helpers.xml
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Mvc.xml
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Razor.xml
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.xml
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.xml
+G:\ERP\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Razor.xml
+G:\ERP\API\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.csprojAssemblyReference.cache
+G:\ERP\API\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.csproj.CoreCompileInputs.cache
+G:\ERP\API\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.csproj.CopyComplete
+G:\ERP\API\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.dll
+G:\ERP\API\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.pdb
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\Resolver.dll.config
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\Resolver.dll
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\Resolver.pdb
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.dll
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Helpers.dll
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Mvc.dll
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Razor.dll
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.dll
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Razor.dll
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\Unity.Mvc5.dll
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.xml
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Helpers.xml
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Mvc.xml
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.Razor.xml
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.xml
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\API\ERP(Bangalore)\API\Resolver\bin\Debug\System.Web.WebPages.Razor.xml
+E:\API\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.csprojAssemblyReference.cache
+E:\API\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.csproj.CoreCompileInputs.cache
+E:\API\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.csproj.CopyComplete
+E:\API\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.dll
+E:\API\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.pdb
+E:\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.csprojAssemblyReference.cache
+E:\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.csproj.CoreCompileInputs.cache
+E:\ERP(Bangalore)\API\Resolver\obj\Debug\Resolver.csproj.CopyComplete
+E:\ERP\API\Resolver\bin\Debug\Resolver.dll.config
+E:\ERP\API\Resolver\bin\Debug\Resolver.dll
+E:\ERP\API\Resolver\bin\Debug\Resolver.pdb
+E:\ERP\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\ERP\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+E:\ERP\API\Resolver\bin\Debug\Microsoft.Practices.Unity.dll
+E:\ERP\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\ERP\API\Resolver\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\ERP\API\Resolver\bin\Debug\System.Web.Helpers.dll
+E:\ERP\API\Resolver\bin\Debug\System.Web.Mvc.dll
+E:\ERP\API\Resolver\bin\Debug\System.Web.Razor.dll
+E:\ERP\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\ERP\API\Resolver\bin\Debug\System.Web.WebPages.dll
+E:\ERP\API\Resolver\bin\Debug\System.Web.WebPages.Razor.dll
+E:\ERP\API\Resolver\bin\Debug\Unity.Mvc5.dll
+E:\ERP\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\ERP\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\ERP\API\Resolver\bin\Debug\Microsoft.Practices.Unity.xml
+E:\ERP\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+E:\ERP\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\ERP\API\Resolver\bin\Debug\System.Web.Helpers.xml
+E:\ERP\API\Resolver\bin\Debug\System.Web.Mvc.xml
+E:\ERP\API\Resolver\bin\Debug\System.Web.Razor.xml
+E:\ERP\API\Resolver\bin\Debug\System.Web.WebPages.xml
+E:\ERP\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\ERP\API\Resolver\bin\Debug\System.Web.WebPages.Razor.xml
+E:\ERP\API\Resolver\obj\Debug\Resolver.csprojAssemblyReference.cache
+E:\ERP\API\Resolver\obj\Debug\Resolver.csproj.CoreCompileInputs.cache
+E:\ERP\API\Resolver\obj\Debug\Resolver.csproj.CopyComplete
+E:\ERP\API\Resolver\obj\Debug\Resolver.dll
+E:\ERP\API\Resolver\obj\Debug\Resolver.pdb
+C:\KRM\ERP\API\Resolver\bin\Debug\Resolver.dll.config
+C:\KRM\ERP\API\Resolver\bin\Debug\Resolver.dll
+C:\KRM\ERP\API\Resolver\bin\Debug\Resolver.pdb
+C:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Practices.Unity.dll
+C:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\KRM\ERP\API\Resolver\bin\Debug\System.Web.Helpers.dll
+C:\KRM\ERP\API\Resolver\bin\Debug\System.Web.Mvc.dll
+C:\KRM\ERP\API\Resolver\bin\Debug\System.Web.Razor.dll
+C:\KRM\ERP\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\KRM\ERP\API\Resolver\bin\Debug\System.Web.WebPages.dll
+C:\KRM\ERP\API\Resolver\bin\Debug\System.Web.WebPages.Razor.dll
+C:\KRM\ERP\API\Resolver\bin\Debug\Unity.Mvc5.dll
+C:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Practices.Unity.xml
+C:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\KRM\ERP\API\Resolver\bin\Debug\System.Web.Helpers.xml
+C:\KRM\ERP\API\Resolver\bin\Debug\System.Web.Mvc.xml
+C:\KRM\ERP\API\Resolver\bin\Debug\System.Web.Razor.xml
+C:\KRM\ERP\API\Resolver\bin\Debug\System.Web.WebPages.xml
+C:\KRM\ERP\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\KRM\ERP\API\Resolver\bin\Debug\System.Web.WebPages.Razor.xml
+C:\KRM\ERP\API\Resolver\obj\Debug\Resolver.csprojAssemblyReference.cache
+C:\KRM\ERP\API\Resolver\obj\Debug\Resolver.csproj.CoreCompileInputs.cache
+C:\KRM\ERP\API\Resolver\obj\Debug\Resolver.csproj.CopyComplete
+C:\KRM\ERP\API\Resolver\obj\Debug\Resolver.dll
+C:\KRM\ERP\API\Resolver\obj\Debug\Resolver.pdb
+E:\KRM\ERP\API\Resolver\bin\Debug\Resolver.dll.config
+E:\KRM\ERP\API\Resolver\bin\Debug\Resolver.dll
+E:\KRM\ERP\API\Resolver\bin\Debug\Resolver.pdb
+E:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+E:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Practices.Unity.dll
+E:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\KRM\ERP\API\Resolver\bin\Debug\System.Web.Helpers.dll
+E:\KRM\ERP\API\Resolver\bin\Debug\System.Web.Mvc.dll
+E:\KRM\ERP\API\Resolver\bin\Debug\System.Web.Razor.dll
+E:\KRM\ERP\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\KRM\ERP\API\Resolver\bin\Debug\System.Web.WebPages.dll
+E:\KRM\ERP\API\Resolver\bin\Debug\System.Web.WebPages.Razor.dll
+E:\KRM\ERP\API\Resolver\bin\Debug\Unity.Mvc5.dll
+E:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Practices.Unity.xml
+E:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+E:\KRM\ERP\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\KRM\ERP\API\Resolver\bin\Debug\System.Web.Helpers.xml
+E:\KRM\ERP\API\Resolver\bin\Debug\System.Web.Mvc.xml
+E:\KRM\ERP\API\Resolver\bin\Debug\System.Web.Razor.xml
+E:\KRM\ERP\API\Resolver\bin\Debug\System.Web.WebPages.xml
+E:\KRM\ERP\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\KRM\ERP\API\Resolver\bin\Debug\System.Web.WebPages.Razor.xml
+E:\KRM\ERP\API\Resolver\obj\Debug\Resolver.csprojAssemblyReference.cache
+E:\KRM\ERP\API\Resolver\obj\Debug\Resolver.csproj.CoreCompileInputs.cache
+E:\KRM\ERP\API\Resolver\obj\Debug\Resolver.csproj.CopyComplete
+E:\KRM\ERP\API\Resolver\obj\Debug\Resolver.dll
+E:\KRM\ERP\API\Resolver\obj\Debug\Resolver.pdb
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\Resolver.dll.config
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\Resolver.dll
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\Resolver.pdb
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\System.Web.Helpers.dll
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\System.Web.Mvc.dll
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\System.Web.Razor.dll
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\System.Web.WebPages.dll
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\Unity.Mvc5.dll
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\System.Web.Helpers.xml
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\System.Web.Mvc.xml
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\System.Web.Razor.xml
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\System.Web.WebPages.xml
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\GK lingam\Downloads\API\Resolver\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\GK lingam\Downloads\API\Resolver\obj\Debug\Resolver.dll
+C:\Users\GK lingam\Downloads\API\Resolver\obj\Debug\Resolver.pdb
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\Resolver.dll.config
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\Resolver.dll
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\Resolver.pdb
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\Microsoft.Practices.Unity.dll
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\System.Web.Helpers.dll
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\System.Web.Mvc.dll
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\System.Web.Razor.dll
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\System.Web.WebPages.dll
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\System.Web.WebPages.Razor.dll
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\Unity.Mvc5.dll
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\Microsoft.Practices.Unity.xml
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\System.Web.Helpers.xml
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\System.Web.Mvc.xml
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\System.Web.Razor.xml
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\System.Web.WebPages.xml
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\SouthernERP Angular 7\API\API\Resolver\bin\Debug\System.Web.WebPages.Razor.xml
+E:\SouthernERP Angular 7\API\API\Resolver\obj\Debug\Resolver.csproj.CoreCompileInputs.cache
+E:\SouthernERP Angular 7\API\API\Resolver\obj\Debug\Resolver.csproj.CopyComplete
+E:\SouthernERP Angular 7\API\API\Resolver\obj\Debug\Resolver.dll
+E:\SouthernERP Angular 7\API\API\Resolver\obj\Debug\Resolver.pdb
+E:\SouthernERP Angular 7\API\API\Resolver\obj\Debug\Resolver.csprojAssemblyReference.cache
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\Resolver.dll.config
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\Resolver.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\Resolver.pdb
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\Microsoft.Practices.Unity.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\System.Web.Helpers.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\System.Web.Mvc.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\System.Web.Razor.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\System.Web.WebPages.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\System.Web.WebPages.Razor.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\Unity.Mvc5.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\Microsoft.Practices.Unity.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\System.Web.Helpers.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\System.Web.Mvc.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\System.Web.Razor.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\System.Web.WebPages.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\bin\Debug\System.Web.WebPages.Razor.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\obj\Debug\Resolver.csprojAssemblyReference.cache
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\obj\Debug\Resolver.csproj.CoreCompileInputs.cache
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\obj\Debug\Resolver.csproj.CopyComplete
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\obj\Debug\Resolver.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\Resolver\obj\Debug\Resolver.pdb

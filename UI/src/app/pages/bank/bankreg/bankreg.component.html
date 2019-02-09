@@ -1,0 +1,406 @@
+<mat-card>
+
+  <div fxLayout="column" fxLayoutAlign="start start">
+      <h6>Bank Registration</h6>
+    <div *ngIf="!isFormOpen">
+
+      <button mat-raised-button color="primary" (click)="create()">ADD</button>
+    </div>
+
+    <div class="w-p-50" *ngIf="isFormOpen">  
+      <!-- <button mat-raised-button (click)="isOptional = !isOptional">
+        {{!isOptional ? 'Enable optional steps' : 'Disable optional steps'}}
+      </button> -->
+      <mat-horizontal-stepper linear #stepper>
+        <mat-step [stepControl]="firstFormGroup" >
+          <ng-template matStepLabel><h5>Bank Registration</h5></ng-template>
+          <form class="w-p-50" [formGroup]="firstFormGroup">
+            <div fxFlex="100%" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+              <h6>Bank Registration</h6>
+              <div fxFlex="50%" fxLayout="row" fxLayout.xs="column" fxFlex.gt-sm="100%" fxFlex.gt-xs="100%" fxLayoutGap="10px" fxLayoutAlign="start center"
+                class=" form">
+                <div fxLayout="row" fxLayoutAlign="start start" *ngIf="accounts" class="w-p-50">
+                  <mat-form-field class="w-p-50">
+                    <mat-select name="Type_of_AccountCtrl" formControlName="Type_of_AccountCtrl" [(ngModel)]="model.foods" (selectionChange)="getProject()"
+                      required>
+                      <mat-option *ngFor="let f of Food" [value]="f.value">
+                        {{f.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-placeholder class="placeholder">Type of Account</mat-placeholder>
+                  </mat-form-field>
+
+
+                  <div class="button-row ">
+                    <button mat-icon-button color="primary" (click)="Account()">
+                      <mat-icon>add</mat-icon>
+                    </button>
+                  </div>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="start start" *ngIf="account" class="w-p-50">
+
+
+                  <mat-form-field class="w-p-50">
+                    <input matInput name="Type_of_AccountCtrl" formControlName="Type_of_AccountCtrl" required>
+                    <mat-placeholder class="placeholder">Type of Account</mat-placeholder>
+                  </mat-form-field>
+
+                  <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="">
+                    <button mat-icon-button color="accent">
+                      <mat-icon>save</mat-icon>
+                    </button>
+                    <button mat-icon-button color="warn" (click)="Cancel()">
+                      <mat-icon>cancel</mat-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div fxLayout="row" fxLayoutAlign="start start" *ngIf="bank" class="w-p-50">
+                  <mat-form-field class="w-p-50">
+                    <mat-select formControlName="Name_of_the_BankCtrl" required>
+                      <mat-option *ngFor="let food of Food" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-placeholder class="placeholder">Name of the Bank</mat-placeholder>
+                  </mat-form-field>
+                  <button mat-icon-button color="primary" (click)="Bank()">
+                    <mat-icon>add</mat-icon>
+                  </button>
+                </div>
+
+
+                <div fxLayout="row" fxLayoutAlign="start start" *ngIf="banks" class="w-p-50">
+                  <mat-form-field class="w-p-50">
+                    <input matInput name="Name_of_the_BankCtrl" formControlName="Name_of_the_BankCtrl" required>
+                    <mat-placeholder class="placeholder">Name of the Bank</mat-placeholder>
+                  </mat-form-field>
+                  <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="">
+                    <button mat-icon-button class="" color="accent">
+                      <mat-icon>save</mat-icon>
+                    </button>
+                    <button mat-icon-button color="warn" (click)="cancel()">
+                      <mat-icon>cancel</mat-icon>
+                    </button>
+                  </div>
+                </div>
+                <mat-form-field class="w-p-50">
+                  <mat-select name="value" [(ngModel)]="model.value" formControlName="Name_of_the_ProjectCtrl" required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Name of the Project</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+                  <input matInput type="number" name="Account_No" formControlName="Account_No" required />
+                  <mat-placeholder class="placeholder">Account No</mat-placeholder>
+                </mat-form-field>
+              </div>
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+                <mat-form-field class="w-p-50">
+                  <input matInput name="Openning_Balance" formControlName="Openning_Balance" required />
+                  <mat-placeholder class="placeholder">Openning Balance</mat-placeholder>
+                </mat-form-field>
+                <mat-form-field class="w-p-50">
+                  <input matInput name="Previous_Year_Openning_Balance" formControlName="Previous_Year_Openning_Balance" required>
+                  <mat-placeholder class="placeholder">Previous Year Openning Balance</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+                    <mat-select name="Currency" formControlName="Currency" required>
+                      <mat-option *ngFor="let food of Food" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-placeholder class="placeholder">Currency</mat-placeholder>
+                  </mat-form-field>
+               
+                <span class="w-p-50">
+                </span>
+                <div fxLayoutAlign="flax-end"fxLayoutGap="10px">
+                    <button mat-raised-button color="primary" matStepperNext [disabled]="!firstFormGroup.valid">Next</button>
+                    <button mat-raised-button color="warn" (click)="clear()">Cancel</button>
+                  </div> 
+              </div> 
+                       
+            </div>            
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup" [optional]="isOptional"> 
+          <form [formGroup]="secondFormGroup">
+            <div fxFlex="100%" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+              <h6>Branch Details</h6>
+              <div class="w-p-50">
+                <mat-card-title class="Employee-title">
+                  <ng-template matStepLabel><h5>Branch Details</h5></ng-template>
+                </mat-card-title>
+
+                <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+                  <mat-form-field class="w-p-50">
+
+                    <input matInput name="Address1" formControlName="Address1" required >
+                    <mat-placeholder class="placeholder">Address1</mat-placeholder>
+                  </mat-form-field>
+
+
+                  <mat-form-field class="w-p-50">
+
+                    <input matInput name="Address2" formControlName="Address2" required>
+                    <mat-placeholder class="placeholder">Address2</mat-placeholder>
+                  </mat-form-field>
+
+
+                  <mat-form-field class="w-p-50">
+                    <mat-select name="Country" formControlName="Country" required>
+                      <mat-option *ngFor="let food of Food" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-placeholder class="placeholder">Country</mat-placeholder>
+                  </mat-form-field>
+
+                  <mat-form-field class="w-p-50">
+                    <input matInput name="State" formControlName="State" required>
+                    <mat-placeholder class="placeholder">State</mat-placeholder>
+                  </mat-form-field>                              
+                </div>
+
+
+                <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+                  <mat-form-field class="w-p-50">
+                    <input matInput name="City_District" formControlName="CityDistrict" required>
+                    <mat-placeholder class="placeholder">City/District</mat-placeholder>
+                  </mat-form-field>
+
+                    <mat-form-field class="w-p-50">
+                    <input matInput  name="Area" formControlName="Area" required>
+                    <mat-placeholder class="placeholder">Area</mat-placeholder>
+                  </mat-form-field>   
+
+                  <mat-form-field class="w-p-50">
+                    <input type="number"matInput name="Pincode" formControlName="Pincode" required>
+                    <mat-placeholder class="placeholder">Pincode</mat-placeholder>
+                  </mat-form-field>
+
+
+                  <mat-form-field class="w-p-50">
+                    <input matInput name="Email_Id" formControlName="Email_Id" required>
+                    <mat-placeholder class="placeholder">Email Id</mat-placeholder>
+                  </mat-form-field>
+                </div>
+
+
+
+                <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+                  <mat-form-field class="w-p-50">
+                    <input matInput name="Land_Line_Number" formControlName="Land_Line_Number" required>
+                    <mat-placeholder class="placeholder">Land Line Number</mat-placeholder>
+                  </mat-form-field>
+
+
+
+                  <mat-form-field class="w-p-50">
+                    <input matInput  name="Branch_Code" formControlName="Branch_Code" required>
+                    <mat-placeholder class="placeholder">Branch Code</mat-placeholder>
+                  </mat-form-field>
+
+
+                  <mat-form-field class="w-p-50">
+                    <input matInput  name="IFSC_Code" formControlName="IFSC_Code" required>
+                    <mat-placeholder class="placeholder">IFSC Code</mat-placeholder>
+                  </mat-form-field>
+
+
+                  <mat-form-field class="w-p-50">
+                    <input matInput name="MIRC_Code" formControlName="MIRC_Code" required>
+                    <mat-placeholder class="placeholder">MIRC Code</mat-placeholder>
+                  </mat-form-field>                
+                </div> 
+                <div fxLayoutAlign="flex-end"fxLayoutGap="10px">
+                  <button mat-raised-button  color="primary" matStepperNext [disabled]="!secondFormGroup.valid">Next</button>
+                  <button mat-raised-button color="warn" (click)="clear()">Cancel</button>
+                </div>               
+              </div>
+             
+            </div>
+            
+          </form>
+        </mat-step>
+
+        <mat-step [stepControl]="ThirdFormGroup" [optional]="isOptional"> 
+          <form [formGroup]="ThirdFormGroup">
+
+          <div fxFlex="100%" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+            <h6>Contact Details</h6>
+            <div class="w-p-50">
+              <mat-card-title class="Employee-title">
+                <ng-template matStepLabel><h5>Contact Details</h5></ng-template>
+              </mat-card-title>
+
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+                <mat-form-field class="w-p-50">
+                  <input matInput name="Name_of_the_Person1"formControlName="Name_of_the_Person1" required>
+                  <mat-placeholder class="placeholder">Name of the Person1</mat-placeholder>
+                </mat-form-field>
+
+
+                <mat-form-field class="w-p-50">
+                  <input matInput name="Designation"formControlName="Designation" required>
+                  <mat-placeholder class="placeholder">Designation</mat-placeholder>
+                </mat-form-field>  
+                
+                <mat-form-field class="w-p-50">
+                  <span matPrefix class="placeholder">+91 &nbsp; </span>
+                  <input type="number" matInput class="placeholder example-right-align"name="cellno"formControlName="cellno" required>
+                  <mat-placeholder class="placeholder">CellNo</mat-placeholder>
+                  <mat-icon matSuffix>mode_edit</mat-icon>
+                </mat-form-field>              
+               
+
+                <mat-form-field class="w-p-50">
+                  <input matInput name="Email_Id" formControlName="Email_Id" required>
+                  <mat-placeholder class="placeholder">Email Id</mat-placeholder>
+                </mat-form-field>
+              </div>
+
+
+
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+                <mat-form-field class="w-p-50">
+                  <input matInput name="Name_of_the_Person2" formControlName="Name_of_the_Person2" required>
+                  <mat-placeholder class="placeholder">Name of the Person2</mat-placeholder>
+                </mat-form-field>
+
+
+                <mat-form-field class="w-p-50">
+                  <input matInput name="designation" formControlName="designation" required>
+                  <mat-placeholder class="placeholder">Designation</mat-placeholder>
+                </mat-form-field>
+
+               
+
+                <mat-form-field class="w-p-50">
+                  <span matPrefix class="placeholder">+91 &nbsp; </span>
+                  <input type="number" matInput class="placeholder"name="CellNo" formControlName="CellNo" required>
+                  <mat-placeholder class="placeholder">CellNo</mat-placeholder>
+                  <mat-icon matSuffix>mode_edit</mat-icon>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+                  <input matInput name="emailId" formControlName="emailId" required>
+                  <mat-placeholder class="placeholder">Email Id</mat-placeholder>
+                </mat-form-field>
+                
+              </div>
+              <div fxLayoutAlign="flex-end"fxLayoutGap="10px">
+                <button mat-raised-button color="primary"  matStepperNext [disabled]="!ThirdFormGroup.valid">Next</button>
+                <button mat-raised-button color="warn" (click)="clear()">Cancel</button>
+               
+              </div>
+            </div>
+          </div>
+        
+          </form>
+        </mat-step>
+
+        <mat-step [stepControl]="FourFormGroup" [optional]="isOptional"> 
+          <form [formGroup]="FourFormGroup">
+          <div fxFlex="100%" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+            <h6>Accounting Group</h6>
+            <div class="w-p-50">
+              <mat-card-title class="Employee-title">
+                <ng-template matStepLabel><h5>Accounting Group</h5></ng-template>
+              </mat-card-title>
+
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+                <mat-form-field class="w-p-50">
+
+                  <input matInput name="Enter_the_Name_of_the_Ledger" formControlName="Enter_the_Name_of_the_Ledger" required>
+                  <mat-placeholder class="placeholder">Enter the Name of the Ledger</mat-placeholder>
+                </mat-form-field>
+                
+                <mat-form-field class="w-p-50">
+                  <mat-select name="Classification_of_Account" formControlName="Classification_of_Account"required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Classification of Account</mat-placeholder>
+                </mat-form-field>
+
+
+                <mat-form-field class="w-p-50">
+
+                  <input matInput name="Starting_Code" formControlName="Starting_Code"required>
+                  <mat-placeholder class="placeholder">Starting Code</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+
+                  <input matInput name="Ending_Code" formControlName="Ending_Code"required>
+                  <mat-placeholder class="placeholder">Ending Code</mat-placeholder>
+                </mat-form-field>
+              </div>
+
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+                <mat-form-field class="w-p-50">
+                  <input matInput name="Enter_the_Accounting_Code" formControlName="Enter_the_Accounting_Code"required>
+                  <mat-placeholder class="placeholder">Enter the Accounting Code</mat-placeholder>
+                </mat-form-field>
+
+
+                <mat-form-field class="w-p-50">
+                  <mat-select name="Group_Subgroup" formControlName="Group_Subgroup"required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Select Group/Subgroup</mat-placeholder>
+                </mat-form-field>
+
+                <span class="w-p-50">
+                </span>
+
+                <span class="w-p-50">
+                </span>
+                
+              </div>
+              
+              <div fxLayout="row" fxLayoutAlign="flex-end" class="w-p-50" fxLayoutGap="5px">
+                <button mat-raised-button color="primary" matStepperNext [disabled]="!FourFormGroup.valid">Next</button>              
+                <button mat-raised-button color="warn" (click)="clear()">Cancel</button>
+              </div> 
+
+            </div>
+          </div>         
+     </form>
+        </mat-step>
+
+        <mat-step>
+
+          <div fxFlex="100%" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+            <div class="w-p-50">
+              <mat-card-title class="Employee-title">
+                <ng-template matStepLabel><h5>Done</h5></ng-template>
+              </mat-card-title>
+              <div fxLayout="row" fxLayoutAlign="flex-center center" class="w-p-50" fxLayoutGap="5px">
+                <button mat-raised-button class="success" (click)="save1()"   *ngIf="!editing1">Save</button>
+                <!-- <button mat-raised-button color="warn" (click)="update1()" *ngIf="editing1">Update</button> -->
+                <button mat-raised-button color="warn" (click)="clear()">Cancel</button>
+              </div>
+
+            </div>
+          </div>
+        </mat-step>
+
+      </mat-horizontal-stepper>
+    </div>
+  </div>
+</mat-card>

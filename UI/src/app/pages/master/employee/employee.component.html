@@ -1,0 +1,330 @@
+<app-card [title]="'Employee'">
+  <div *ngIf='!viewFlag' class="new">
+    <div class="row" *ngIf="isEditing">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <mat-slide-toggle [(ngModel)]="employeeDetail.Active">Active</mat-slide-toggle>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+    <div class="row" style="margin-top:2%">
+      <div class="col-sm-3">
+        <mat-form-field class="example-full-width">
+          <input [(ngModel)]="employeeDetail.FirstName" matInput placeholder="First Name">
+        </mat-form-field>
+      </div>
+      <div class="col-sm-3">
+        <mat-form-field class="example-full-width">
+          <input [(ngModel)]="employeeDetail.SecondName" matInput placeholder="Last Name">
+        </mat-form-field>
+      </div>
+      <div class="col-sm-3">
+        <mat-form-field class="example-full-width">
+          <input [(ngModel)]="employeeDetail.FatherName" matInput placeholder="Father Name">
+        </mat-form-field>
+      </div>
+      <div class="col-sm-3" style="text-align: right;padding-top:10px;">
+        <mat-radio-group [(ngModel)]="employeeDetail.Gender" style="font-size: 12px;">
+          <mat-radio-button [checked]="employeeDetail.Gender == Male" [value]='Male'>Male</mat-radio-button>&nbsp;
+          <mat-radio-button [checked]="employeeDetail.Gender == Female" [value]='Female'>Female</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </div>
+    <div class="row" style="margin-top:2%">
+      <div class="col-sm-3">
+        <mat-form-field>
+          <input matInput [(ngModel)]="employeeDetail.DateOfBirth" [matDatepicker]="picker" placeholder="DOB">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div class="col-sm-3">
+        <mat-form-field class="example-full-width">
+          <input matInput [(ngModel)]="employeeDetail.ContactNo" placeholder="Contact No">
+        </mat-form-field>
+      </div>
+      <div class="col-sm-3">
+        <mat-form-field class="example-full-width">
+          <input matInput [(ngModel)]="employeeDetail.Email" placeholder="Email">
+        </mat-form-field>
+      </div>
+      <div class="col-sm-3" style="text-align: right;padding-top:10px;">
+        <div>
+          <mat-slide-toggle [(ngModel)]="employeeDetail.MedicalExam" style="font-size: 12px;">Medical Exam</mat-slide-toggle>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top:2%">
+      <div class="col-sm-3">
+        <mat-form-field>
+          <mat-select [(ngModel)]="employeeDetail.Company" placeholder="Select Company" name="Company">
+            <mat-option *ngFor="let company of companyData" [value]="company.Id">
+              {{company.Name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-sm-3">
+        <mat-form-field>
+          <mat-select [(ngModel)]="employeeDetail.DesignationId" placeholder="Select Designation" name="Designation">
+            <mat-option *ngFor="let designation of designationData" [value]="designation.Id">
+              {{designation.Name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-sm-3">
+        <mat-form-field>
+          <mat-select [(ngModel)]="employeeDetail.ReportTo" placeholder="Select Report To">
+            <mat-option *ngFor="let report of reportData" [value]="report.Id">
+              {{report.Name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-sm-3">
+        <mat-form-field class="example-full-width">
+          <input matInput [(ngModel)]="employeeDetail.NativePlace" placeholder="Native Place">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <mat-form-field>
+          <textarea [(ngModel)]="employeeDetail.CurrentAddress" style="height:70px" matInput placeholder="Current Address"></textarea>
+        </mat-form-field>
+      </div>
+      <div class="col-sm-6" style="text-align: center;padding-top:50px;">
+        <mat-checkbox style="text-align: center;font-size:12px;">Select if Permanant address is same as Current address</mat-checkbox>
+      </div>
+      <div class="col-sm-3">
+        <mat-form-field>
+          <textarea [(ngModel)]="employeeDetail.PermanentAddress" style="height:70px" matInput placeholder="Permanant Address"></textarea>
+        </mat-form-field>
+      </div>
+
+    </div>
+    <div class="row" style="margin-top:2%">
+      <div class="col-sm-3">
+        <mat-form-field>
+          <mat-select [(ngModel)]="employeeDetail.State" (ngModelChange)="getCity()" placeholder="Select State" name="State">
+            <mat-option *ngFor="let state of stateData" [value]="state.Id">
+              {{state.Name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-sm-3">
+        <mat-form-field>
+          <mat-select [(ngModel)]="employeeDetail.City" placeholder="Select a City" name="City">
+            <mat-option *ngFor="let city of cityData" [value]="city.Id">
+              {{city.Name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-sm-3">
+        <mat-form-field>
+          <mat-select [(ngModel)]="employeeDetail.BloodGroup" placeholder="Select Blood Group" name="BloodGroup">
+            <mat-option *ngFor="let bloodGroup of bloodgroupData" [value]="bloodGroup.Name">
+              {{bloodGroup.Name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-sm-3" style="padding-top:10px">
+        <mat-checkbox #bd (change)='employeeDetail.PF = bd.checked === true? 1 : 0' style="text-align: justify;font-size:12px;">Select if you add Bank Details</mat-checkbox>
+      </div>
+
+    </div>
+    <div class="row" style="margin-top:2%">
+      <div class="col-sm-12" style="text-align:right">
+        <button mat-raised-button (click)="addEmployeeDetails()" color="primary">Save</button>&nbsp;
+        <button mat-raised-button (click)="resetScreen()" color="accent">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf='viewFlag' class="list">
+    <div class="row" style="margin-top:2%">
+      <div class="col-sm-12" style="text-align:left">
+        <button (click)="onNewClick()" mat-raised-button color="warn">
+          <i class="material-icons" style="font-size:20px">add</i> New</button>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-2">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Search by Employee ID">
+        </mat-form-field>
+      </div>
+      <div class="col-sm-2">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Search by Name">
+        </mat-form-field>
+      </div>
+      <div class="col-sm-2">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Search by Email">
+        </mat-form-field>
+      </div>
+      <div class="col-sm-2">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Search by Designation">
+        </mat-form-field>
+      </div>
+      <div class="col-sm-2">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Search by Company">
+        </mat-form-field>
+      </div>
+      <div class="col-sm-2">
+        <mat-form-field>
+          <mat-select placeholder="Select All">
+            <mat-option *ngFor="let company of company" [value]="company.value">
+              {{company.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row" style="margin-top:2%">
+      <div class="col-sm-12">
+        <div class="mat-elevation-z8">
+          <table mat-table [dataSource]="dataSource">
+
+            <ng-container matColumnDef="EmployeeId">
+              <th mat-header-cell *matHeaderCellDef> Employee ID </th>
+              <td mat-cell *matCellDef="let element"> {{element.EmployeeId}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="Name">
+              <th mat-header-cell *matHeaderCellDef> Name </th>
+              <td mat-cell *matCellDef="let element"> {{element.Name}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="Contact">
+              <th mat-header-cell *matHeaderCellDef> Contact </th>
+              <td mat-cell *matCellDef="let element"> {{element.Contact}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="Designation">
+              <th mat-header-cell *matHeaderCellDef> Designation </th>
+              <td mat-cell *matCellDef="let element"> {{element.Designation}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="Company">
+              <th mat-header-cell *matHeaderCellDef> Company </th>
+              <td mat-cell *matCellDef="let element"> {{element.Company}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="ReportTo">
+              <th mat-header-cell *matHeaderCellDef> Report To </th>
+              <td mat-cell *matCellDef="let element"> {{element.ReportTo}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="Active">
+              <th mat-header-cell *matHeaderCellDef> Status </th>
+              <td mat-cell *matCellDef="let element">
+                  <mat-chip color="primary" *ngIf='element.Active'>Active</mat-chip>
+                  <mat-chip color="accent" *ngIf='!element.Active'>In Active</mat-chip>
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="Action">
+              <th mat-header-cell *matHeaderCellDef> Action </th>
+              <td mat-cell *matCellDef="let element">
+                <div class="row" style="text-align: center">
+                  <i color="primary" style="color:blue" (click)="editEmployeeDetails(element)" class="material-icons">edit</i>&nbsp;
+                  <i color="warn" style="color:red" (click)="removeEmployeeDetail(element)" class="material-icons">delete_forever</i>
+                </div>
+              </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+
+          <mat-paginator [pageSizeOptions]="[5]" showFirstLastButtons></mat-paginator>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="bank">
+    <br>
+    <div class="row">
+      <div class="col-sm-3">
+        <mat-form-field class="example-full-width">
+          <input [(ngModel)]="employeeDetail.AccountNo" matInput placeholder="Account No">
+        </mat-form-field>
+      </div>
+      <div class="col-sm-3">
+        <mat-form-field class="example-full-width">
+          <input [(ngModel)]="employeeDetail.BankName" matInput placeholder="Bank Name">
+        </mat-form-field>
+      </div>
+      <div class="col-sm-3">
+        <mat-form-field class="example-full-width">
+          <input [(ngModel)]="employeeDetail.IFSC" matInput placeholder="IFSC Code">
+        </mat-form-field>
+      </div>
+      <div class="col-sm-3">
+        <mat-form-field class="example-full-width">
+          <input [(ngModel)]="employeeDetail.MICR" matInput placeholder="MICR Code">
+        </mat-form-field>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-3">
+        <mat-form-field class="example-full-width">
+          <input [(ngModel)]="employeeDetail.Branch" matInput placeholder="Branch Name">
+        </mat-form-field>
+      </div>
+      <div class="col-sm-3" style="text-align: right;padding-top:20px;">
+        <div>
+          <mat-slide-toggle [(ngModel)]="employeeDetail.isPrimary" style="font-size: 12px;">Primary Account</mat-slide-toggle>
+        </div>
+      </div>
+      <div class="col-sm-3">
+
+      </div>
+      <div class="col-sm-3">
+        <button mat-raised-button color="primary">Add To List</button>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Account No</th>
+              <th scope="col">IFSC Code</th>
+              <th scope="col">Bank Name</th>
+              <th scope="col">Branch Name</th>
+              <th scope="col">Action</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor='let bank of BankData;let i = index'>
+              <td>{{bank.AccountNo}}</td>
+              <td>{{bank.IFSC}}</td>
+              <td>{{bank.BankName}}</td>
+              <td>{{bank.Branch}}</td>
+              <td>
+                <div class="row" style="text-align: center">
+                  <i color="primary" style="color:blue" (click)="editBankDetails(element)" class="material-icons">edit</i>&nbsp;
+                  <i color="warn" style="color:red" (click)="removeBankDetail(element)" class="material-icons">delete_forever</i>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</app-card>

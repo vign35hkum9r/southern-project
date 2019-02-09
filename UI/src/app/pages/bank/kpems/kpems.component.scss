@@ -1,0 +1,60 @@
+#seo-ecommerce-barchart svg image {
+	display: none;
+  }
+
+
+
+.text{
+ 
+	color: black;
+}
+
+.boxe{
+	height: 170px;
+	border-radius: 15px;
+}
+.num{
+	text-align: center;
+}
+.wit{
+	color:snow;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+
+ }
+
+
+    
+ .shake:before {
+	content:'';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	height: 170px;
+	background: rgba(58, 55, 55, 0.3);
+	border-radius: 5px;
+	transition: all 2s ease;
+} 
+
+
+
+.shake:hover:before {
+	width: 100%;
+}
+  
+ 
+
+
+
+
+
+
+
+
+ .col-xl-9, .col-xl-3, .col-xl-4{
+    float: left;
+  }
+
+ 
+ 

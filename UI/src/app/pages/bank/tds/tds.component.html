@@ -1,0 +1,168 @@
+   
+    <mat-card>
+      <div fxLayout="column" fxLayoutAlign="start start">
+        <mat-card-title class="Employee-title">
+          <h6 class="a">TDS SETUP</h6>
+        </mat-card-title>
+        <form  *ngIf ="!isFormOpen">     
+            <div> <button mat-raised-button color="primary"(click)="create()">ADD</button></div>
+            </form>
+    
+        <form class="w-p-50" *ngIf ="isFormOpen">
+          <div fxFlex="100%" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+    
+            <div fxFlex="50%" fxLayout="row" fxLayout.xs="column" fxFlex.gt-sm="100%" fxFlex.gt-xs="100%" fxLayoutGap="10px" fxLayoutAlign="start center"
+              class=" form">
+    
+             
+              <div fxLayout="column" fxFlex="50%" fxLayout.xs="column" fxFlex.gt-sm="100%" fxFlex.gt-xs="100%" fxLayoutGap="10px" fxLayoutAlign="start start"
+              class="form">
+    
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start start" class="form">
+                <mat-form-field class="w-p-50">
+    
+                  <input matInput required>
+                  <mat-placeholder class="placeholder">TDS Section</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">    
+                  <input matInput>
+                  <mat-placeholder class="placeholder">Nature of Payment</mat-placeholder>
+                </mat-form-field>
+                <!-- <span class="w-p-50">
+  
+                </span> -->
+                <span class="w-p-50">  
+                </span>                
+              </div>     
+            </div>             
+            </div>
+            <mat-card-title class="Employee-title">
+              <h6 class="c">FOR INDIVIDUAL OR HUF</h6>
+            </mat-card-title>
+           
+            <div fxLayout="column" fxFlex="50%" fxLayout.xs="column" fxFlex.gt-sm="100%" fxFlex.gt-xs="100%" fxLayoutGap="10px" fxLayoutAlign="start start"
+              class="form">
+    
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start start" class="form">
+                <mat-form-field class="w-p-50">
+    
+                  <input matInput required>
+                  <mat-placeholder class="placeholder">TDS Rate for PAN Card Holders(in %)</mat-placeholder>
+                </mat-form-field>
+                <mat-form-field class="w-p-50">
+    
+                  <input matInput>
+                  <mat-placeholder class="placeholder">TDS Rate for Non PAN Card Holders(in %)</mat-placeholder>
+                </mat-form-field>
+    
+               
+                <mat-form-field class="w-p-50">
+    
+                  <input matInput required>
+                  <mat-placeholder class="placeholder">Threshold Limit for Single Transaction in RS:</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+    
+                  <input matInput required>
+                  <mat-placeholder class="placeholder">Threshold Limit for One Year in RS:</mat-placeholder>
+                </mat-form-field>
+                  </div>    
+            </div>         
+           
+            
+            <h6 class="c">FOR DOMESTIC COMPANY / FIRM</h6>
+            <div fxLayout="column" fxFlex="50%" fxLayout.xs="column" fxFlex.gt-sm="100%" fxFlex.gt-xs="100%" fxLayoutGap="10px" fxLayoutAlign="start start"
+              class="form">
+    
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start start" class="form">
+                <mat-form-field class="w-p-50">
+    
+                  <input matInput>
+                  <mat-placeholder class="placeholder">TDS Rate for PAN Card Holders(in %)</mat-placeholder>
+                </mat-form-field>
+                <mat-form-field class="w-p-50">
+    
+                  <input matInput>
+                  <mat-placeholder class="placeholder">Threshold Limit for Single Transaction in RS:</mat-placeholder>
+                </mat-form-field>
+    
+                <mat-form-field class="w-p-50">
+    
+                  <input matInput>
+                  <mat-placeholder class="placeholder">Threshold Limit for One Year in RS:</mat-placeholder>
+                </mat-form-field>
+    
+                <span class="w-p-50">
+  
+                </span>
+              </div>
+            </div>
+    
+            <h6 class="d">ADD ON TAX</h6>
+            <div fxLayout="column" fxFlex="50%" fxLayout.xs="column" fxFlex.gt-sm="100%" fxFlex.gt-xs="100%" fxLayoutGap="10px" fxLayoutAlign="start start"
+              class="form">
+              <div fxLayout="row" fxLayoutAlign="start start" class="w-p-50" fxLayoutGap="0px">
+                  <mat-checkbox  [checked]="isChecked" (change)="tax($event)" [(ngModel)] ="model.checkTax" type="checkbox" id="checkbox">Do You add "ADD ON TAX" </mat-checkbox>
+                </div>
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start start" class="form">
+                <mat-form-field class="w-p-50" *ngIf="isChecked">
+                  <input matInput>
+                  <mat-placeholder class="placeholder">Description of ADD ON TAX</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50" *ngIf="isChecked">
+                  <input matInput>
+                  <mat-placeholder class="placeholder">TDS Section</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">             
+                
+                    <input matInput [matDatepicker]="picker" placeholder="With Effect From Date">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>         
+               
+                <mat-form-field class="w-p-50">
+                  <mat-select required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Classification of Account</mat-placeholder>
+                </mat-form-field>  
+
+                <mat-form-field class="w-p-50">
+    
+                  <mat-select required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Select Group/Subgroup</mat-placeholder>
+                </mat-form-field>
+              </div>
+    
+            </div>
+          
+            <div fxLayout="row" fxLayoutAlign="flex-end start" class="w-p-50" fxLayoutGap="5px">
+              <button mat-raised-button class="" color="primary">Save</button>
+    
+              <button mat-raised-button color="warn" (click)="clear()">Cancel</button>
+            </div>
+    
+    
+          </div>
+    
+       
+        </form>
+      
+    
+      </div>
+   
+    </mat-card>
+    
+    
+    
+    

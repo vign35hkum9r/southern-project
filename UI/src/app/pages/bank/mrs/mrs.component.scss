@@ -1,0 +1,33 @@
+
+
+      .font{
+        font-family:Arial, Helvetica, sans-serif;       
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;        
+        color:#093a89;
+        /* background-color:#ccdef9;*/
+          }
+
+
+          th{
+
+            color: #000;
+            background-color: blanchedalmond;
+            font: bold ; 
+           
+          }
+          td{
+    
+            color: #000;
+            font-size: 14px;
+            font: bold ;   
+          }
+    
+          .table > thead > tr > th {
+    
+            border-bottom-color: #000;  
+          }
+    
+    
+         

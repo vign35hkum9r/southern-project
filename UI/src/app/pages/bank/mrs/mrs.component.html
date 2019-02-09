@@ -1,0 +1,247 @@
+<mat-card>
+
+  <div fxLayout="column" fxLayoutAlign="start start">
+
+    <div *ngIf="!isFormOpen">
+
+      <button mat-raised-button color="primary" (click)="create()">Prepare MRS</button>
+    </div>
+
+    <div class="w-p-50" *ngIf="isFormOpen">
+
+      <mat-horizontal-stepper linear #stepper>
+        <mat-step>
+          <ng-template matStepLabel>
+            <h5>Material Requisition Slip(MRS)</h5>
+          </ng-template>
+
+
+          <form class="w-p-50">
+
+            <div class="w-p-50 formsss" fxFlex="100%" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+              <mat-card-title class="Employee-title">
+                <ng-template matStepLabel>
+                  <h5>Material Receipt Note</h5>
+                </ng-template>
+              </mat-card-title>
+
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+                <mat-form-field class="w-p-50">
+                  <mat-select name="Country" required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Request for</mat-placeholder>
+
+                </mat-form-field>
+
+
+                <mat-form-field class="w-p-50">
+
+                  <mat-select name="Country" required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Request Type</mat-placeholder>
+                </mat-form-field>
+
+
+                <mat-form-field class="w-p-50">
+
+                  <mat-select name="Country" required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Requested Based On</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+                  <mat-select name="Country" required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Line of Business</mat-placeholder>
+                </mat-form-field>
+
+
+              </div>
+              <div class="font">Store Details</div>
+
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+                <mat-form-field class="w-p-50">
+                  <mat-select name="Country" required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Type of Store</mat-placeholder>
+
+                </mat-form-field>
+
+
+                <mat-form-field class="w-p-50">
+
+                  <mat-select name="Country" required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Store No</mat-placeholder>
+                </mat-form-field>
+
+
+                <span class="w-p-50">
+                </span>
+                <span class="w-p-50">
+                </span>
+              </div>
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="18%" fxLayoutAlign="start center" class=" form">
+                <div class="font">Select IOCA</div>
+                <div class="font">Select Location</div>
+                <div class="font">Select Item Of Material</div>
+              </div>
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+                <mat-form-field class="w-p-50">
+                  <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
+                  <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                      {{option}}
+                    </mat-option>
+                  </mat-autocomplete>
+                  <mat-placeholder class="placeholder">IOCA Short Description</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+                  <input type="text" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+                  <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                      {{option}}
+                    </mat-option>
+                  </mat-autocomplete>
+                  <mat-placeholder class="placeholder">Location</mat-placeholder>
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+                  <mat-select name="Country" required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Item Of Material Description</mat-placeholder>
+
+                </mat-form-field>
+                <span class="w-p-50">
+
+                  <button mat-stroked-button color="primary" (click)="addlist()" >Add to List</button>
+
+                </span>
+              </div>
+            </div>
+
+          </form>
+          <form *ngIf="isdivOpen">
+          <div fxLayout="row" fxLayoutAlign="flex-end start" class="w-p-50" fxLayoutGap="5px">
+            <span class="w-p-50">
+            </span>
+            <span class="w-p-50">
+            </span>
+            <span class="w-p-50">
+            </span>
+            <mat-form-field class="w-p-50">
+              <input matInput name="Land_Line_Number" required>
+              <mat-placeholder class="placeholder">MRS No</mat-placeholder>
+            </mat-form-field>
+
+          </div>
+
+          <div>
+          <div class="mat-elevation-z8" style="overflow-x:scroll">
+            <table id="tablePreview" class="table table-sm table-hover">
+              <!--Table head-->
+              <thead>
+                <tr>
+                  <th>S.No</th>
+                  <th>Zucone</th>
+                  <th>Picture</th>
+                  <th>Item of Material Description</th>
+                  <th>UOM</th>
+                  <th>Qty</th>
+                  <th>Specification Sheet</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <!--Table head-->
+              <!--Table body-->
+              <tbody>
+                <tr>
+                  <td scope="row">1</td>
+
+                  <td>Somany Tiles Pvt Ltd</td>
+                  <td>
+                    <i class="material-icons">panorama</i>
+                  </td>
+
+                  <td>14 july 2018</td>
+
+                  <td>Somany Tiles Pvt Ltd</td>
+                  <td>jayakrishna</td>
+                  <td>
+                    <i class="material-icons">file_copy</i>
+                  </td>
+                  <td>
+                    <mat-icon color="primary" (click)="openBottomSheet()">edit</mat-icon>
+                    <mat-icon color="warn">delete</mat-icon>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">2</td>
+                  <td>Indian Cement Ltd</td>
+                  <td>
+                    <i class="material-icons">panorama</i>
+                  </td>
+                  <td>14 july 2018</td>
+
+                  <td>Indian Cement Ltd</td>
+                  <td>jayakrishna</td>
+                  <td>
+                    <i class="material-icons">file_copy</i>
+                  </td>
+
+                  <td>
+
+                    <mat-icon color="primary" (click)="openBottomSheet()">edit</mat-icon>
+                    <mat-icon color="warn">delete</mat-icon>
+                  </td>
+                </tr>
+
+              </tbody>
+              <!--Table body-->
+            </table>
+
+            <!--Table-->
+          </div>
+
+
+          <div fxLayout="row" fxLayoutAlign="flex-end start" class="w-p-50" fxLayoutGap="5px" style="margin-top: 15px;">
+
+
+              <button mat-raised-button color="primary" >Confirm</button>
+              <button mat-raised-button color="warn"  (click)="clear()">Cancel</button>
+      
+            </div>
+          </div>
+        </form>
+        </mat-step>
+        
+      </mat-horizontal-stepper>
+      
+    </div>
+  </div>
+</mat-card>

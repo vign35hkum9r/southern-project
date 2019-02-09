@@ -1,0 +1,1651 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KPMES_DevModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Action">
+    <Key>
+      <PropertyRef Name="ActionId" />
+    </Key>
+    <Property Name="ActionId" Type="Int32" Nullable="false" />
+    <Property Name="MenuId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Menu" Relationship="Self.FK_Action_Menu_MenuId" FromRole="Action" ToRole="Menu" />
+  </EntityType>
+  <EntityType Name="Area">
+    <Key>
+      <PropertyRef Name="AreaId" />
+    </Key>
+    <Property Name="AreaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StateId" Type="Int32" Nullable="false" />
+    <Property Name="CountryId" Type="Int32" Nullable="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <Property Name="AreaName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Pincode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="City" Relationship="Self.FK_Area_City_CityId" FromRole="Area" ToRole="City" />
+    <NavigationProperty Name="Country" Relationship="Self.FK_Area_Country_CountryId" FromRole="Area" ToRole="Country" />
+    <NavigationProperty Name="StateMaster" Relationship="Self.FK_Area_State_StateId" FromRole="Area" ToRole="StateMaster" />
+    <NavigationProperty Name="Companies" Relationship="Self.FK_Company_Area_AreaId" FromRole="Area" ToRole="Company" />
+    <NavigationProperty Name="ProjectMasters" Relationship="Self.FK_ProjectMaster_Area_AreaId" FromRole="Area" ToRole="ProjectMaster" />
+  </EntityType>
+  <EntityType Name="CA_Category">
+    <Key>
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="CategoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CategoryName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CA_SubCategory" Relationship="Self.FK_CA_SubCategory_CA_Category_CategoryId" FromRole="CA_Category" ToRole="CA_SubCategory" />
+    <NavigationProperty Name="CA_Type" Relationship="Self.FK_CA_Type_CA_Category_CategoryId" FromRole="CA_Category" ToRole="CA_Type" />
+  </EntityType>
+  <EntityType Name="CA_SubCategory">
+    <Key>
+      <PropertyRef Name="SubCategoryId" />
+    </Key>
+    <Property Name="SubCategoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="SubCategoryCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SubCategoryName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CA_Category" Relationship="Self.FK_CA_SubCategory_CA_Category_CategoryId" FromRole="CA_SubCategory" ToRole="CA_Category" />
+    <NavigationProperty Name="CA_Type" Relationship="Self.FK_CA_Type_CA_SubCategory_SubCategoryId" FromRole="CA_SubCategory" ToRole="CA_Type" />
+  </EntityType>
+  <EntityType Name="CA_Type">
+    <Key>
+      <PropertyRef Name="TypeId" />
+    </Key>
+    <Property Name="TypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="SubCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="TypeName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CA_Category" Relationship="Self.FK_CA_Type_CA_Category_CategoryId" FromRole="CA_Type" ToRole="CA_Category" />
+    <NavigationProperty Name="CA_SubCategory" Relationship="Self.FK_CA_Type_CA_SubCategory_SubCategoryId" FromRole="CA_Type" ToRole="CA_SubCategory" />
+  </EntityType>
+  <EntityType Name="CategoryOfMachinery">
+    <Key>
+      <PropertyRef Name="COM_Id" />
+    </Key>
+    <Property Name="COM_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="COM_Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="COM_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="MachinerySubCategories" Relationship="Self.FK_MachinerySubCategory_CategoryOfMachinery_COM_Id" FromRole="CategoryOfMachinery" ToRole="MachinerySubCategory" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="CityId" />
+    </Key>
+    <Property Name="CityId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StateId" Type="Int32" Nullable="false" />
+    <Property Name="CountryId" Type="Int32" Nullable="false" />
+    <Property Name="CityName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Areas" Relationship="Self.FK_Area_City_CityId" FromRole="City" ToRole="Area" />
+    <NavigationProperty Name="Country" Relationship="Self.FK_City_Country_CountryId" FromRole="City" ToRole="Country" />
+    <NavigationProperty Name="StateMaster" Relationship="Self.FK_City_State_StateId" FromRole="City" ToRole="StateMaster" />
+    <NavigationProperty Name="Companies" Relationship="Self.FK_Company_City_CityId" FromRole="City" ToRole="Company" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="CompanyId" />
+    </Key>
+    <Property Name="CompanyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CompanyCode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CountryId" Type="Int32" Nullable="false" />
+    <Property Name="StateId" Type="Int32" />
+    <Property Name="CityId" Type="Int32" />
+    <Property Name="AreaId" Type="Int32" />
+    <Property Name="AddressLine1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ParentCompany" Type="Int32" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="EMail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Website" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="BusinessId" Type="Int32" />
+    <Property Name="TypeId" Type="Int32" />
+    <Property Name="CompanyLogo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="AddressLine2" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="FaxNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Pincode" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="OrgLvlId" Type="Int32" />
+    <NavigationProperty Name="Area" Relationship="Self.FK_Company_Area_AreaId" FromRole="Company" ToRole="Area" />
+    <NavigationProperty Name="City" Relationship="Self.FK_Company_City_CityId" FromRole="Company" ToRole="City" />
+    <NavigationProperty Name="UserMasters" Relationship="Self.FK__UserMaste__Compa__719CDDE7" FromRole="Company" ToRole="UserMaster" />
+    <NavigationProperty Name="Country" Relationship="Self.FK_Company_Country_CountryId" FromRole="Company" ToRole="Country" />
+    <NavigationProperty Name="NatureOfBusiness" Relationship="Self.FK_Company_NatureOfBusiness_BusinessId" FromRole="Company" ToRole="NatureOfBusiness" />
+    <NavigationProperty Name="OrganizationLevel" Relationship="Self.FK_Company_OrgLvl_OrgLvlId" FromRole="Company" ToRole="OrganizationLevel" />
+    <NavigationProperty Name="OwnershipType" Relationship="Self.FK_Company_OwnershipTypes_TypeId" FromRole="Company" ToRole="OwnershipTypes" />
+    <NavigationProperty Name="StateMaster" Relationship="Self.FK_Company_State_StateId" FromRole="Company" ToRole="StateMaster" />
+    <NavigationProperty Name="Departments" Relationship="Self.FK_Department_Company_CompanyId" FromRole="Company" ToRole="Department" />
+    <NavigationProperty Name="Designations" Relationship="Self.FK_Designation_Company_CompanyId" FromRole="Company" ToRole="Designation" />
+    <NavigationProperty Name="Employees" Relationship="Self.FK_Employee_Company_CompanyId" FromRole="Company" ToRole="Employee" />
+    <NavigationProperty Name="EmployeeAcademies" Relationship="Self.FK_EmployeeAcademy_Company_CompanyId" FromRole="Company" ToRole="EmployeeAcademy" />
+    <NavigationProperty Name="EmployeeAddresses" Relationship="Self.FK_EmployeeAddress_Company_CompanyId" FromRole="Company" ToRole="EmployeeAddress" />
+    <NavigationProperty Name="EmployeeDocuments" Relationship="Self.FK_EmployeeDocuments_Company_CompanyId" FromRole="Company" ToRole="EmployeeDocuments" />
+    <NavigationProperty Name="EmployeeExperiences" Relationship="Self.FK_EmployeeExperience_Company_CompanyId" FromRole="Company" ToRole="EmployeeExperience" />
+    <NavigationProperty Name="ProjectMasters" Relationship="Self.FK_ProjectMaster_Company_CompanyId" FromRole="Company" ToRole="ProjectMaster" />
+    <NavigationProperty Name="ProjectMasterTrailers" Relationship="Self.FK_ProjectMasterTrailer_Company_CompanyId" FromRole="Company" ToRole="ProjectMasterTrailer" />
+  </EntityType>
+  <EntityType Name="ConsumableCategory">
+    <Key>
+      <PropertyRef Name="ConsumableCategoryId" />
+    </Key>
+    <Property Name="ConsumableCategoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ConsumableCategoryCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CategoryOfWork" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="ConsumableTypes" Relationship="Self.FK_ConsumableType_ConsumableCategory_ConsumableCategoryId" FromRole="ConsumableCategory" ToRole="ConsumableType" />
+  </EntityType>
+  <EntityType Name="ConsumableType">
+    <Key>
+      <PropertyRef Name="ConsumeTypeId" />
+    </Key>
+    <Property Name="ConsumeTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ConsumeTypeCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ConsumableCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="TypeName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="ConsumableCategory" Relationship="Self.FK_ConsumableType_ConsumableCategory_ConsumableCategoryId" FromRole="ConsumableType" ToRole="ConsumableCategory" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryId" />
+    </Key>
+    <Property Name="CountryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CountryName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Areas" Relationship="Self.FK_Area_Country_CountryId" FromRole="Country" ToRole="Area" />
+    <NavigationProperty Name="Cities" Relationship="Self.FK_City_Country_CountryId" FromRole="Country" ToRole="City" />
+    <NavigationProperty Name="Companies" Relationship="Self.FK_Company_Country_CountryId" FromRole="Country" ToRole="Company" />
+    <NavigationProperty Name="ProjectMasters" Relationship="Self.FK_ProjectMaster_Country_CountryId" FromRole="Country" ToRole="ProjectMaster" />
+    <NavigationProperty Name="StateMasters" Relationship="Self.FK_State_Country_CountryId" FromRole="Country" ToRole="StateMaster" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DepartmentId" />
+    </Key>
+    <Property Name="DepartmentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmentName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyId" Type="Int32" />
+    <Property Name="ParentId" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="DepartmentCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_Department_Company_CompanyId" FromRole="Department" ToRole="Company" />
+    <NavigationProperty Name="Designations" Relationship="Self.FK_Designation_Department_DepartmentId" FromRole="Department" ToRole="Designation" />
+    <NavigationProperty Name="Employees" Relationship="Self.FK_Employee_Department_DepartmentId" FromRole="Department" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Designation">
+    <Key>
+      <PropertyRef Name="DesignationId" />
+    </Key>
+    <Property Name="DesignationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DesignationName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <Property Name="DepartmentId" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="Superior" Type="Int32" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_Designation_Company_CompanyId" FromRole="Designation" ToRole="Company" />
+    <NavigationProperty Name="Department" Relationship="Self.FK_Designation_Department_DepartmentId" FromRole="Designation" ToRole="Department" />
+    <NavigationProperty Name="Employees" Relationship="Self.FK_Employee_Designation_DesignationId" FromRole="Designation" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeId" />
+    </Key>
+    <Property Name="EmployeeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <Property Name="DepartmentId" Type="Int32" Nullable="false" />
+    <Property Name="DesignationId" Type="Int32" Nullable="false" />
+    <Property Name="DOJ" Type="DateTime" Precision="3" />
+    <Property Name="DOB" Type="DateTime" Precision="3" />
+    <Property Name="Gender" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="MaritalStatus" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="EmployeeCode" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="FatherName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ReportingTo" Type="Int32" />
+    <Property Name="BloodGroup" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="SpouseName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Children" Type="Int32" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_Employee_Company_CompanyId" FromRole="Employee" ToRole="Company" />
+    <NavigationProperty Name="Department" Relationship="Self.FK_Employee_Department_DepartmentId" FromRole="Employee" ToRole="Department" />
+    <NavigationProperty Name="Designation" Relationship="Self.FK_Employee_Designation_DesignationId" FromRole="Employee" ToRole="Designation" />
+    <NavigationProperty Name="EmployeeAcademies" Relationship="Self.FK_EmployeeAcademy_Employee_EmployeeId" FromRole="Employee" ToRole="EmployeeAcademy" />
+    <NavigationProperty Name="EmployeeAddress" Relationship="Self.FK_EmployeeAddress_Employee_EmployeeId" FromRole="Employee" ToRole="EmployeeAddress" />
+    <NavigationProperty Name="EmployeeDocuments" Relationship="Self.FK_EmployeeDocuments_Employee_EmployeeId" FromRole="Employee" ToRole="EmployeeDocuments" />
+    <NavigationProperty Name="EmployeeExperiences" Relationship="Self.FK_EmployeeExperience_Employee_EmployeeId" FromRole="Employee" ToRole="EmployeeExperience" />
+  </EntityType>
+  <EntityType Name="EmployeeAcademy">
+    <Key>
+      <PropertyRef Name="AcademyId" />
+    </Key>
+    <Property Name="AcademyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyId" Type="Int32" />
+    <Property Name="EmployeeId" Type="Int32" />
+    <Property Name="Graduation" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Degree" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Specialization" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="University" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Percentage" Type="Double" />
+    <Property Name="YearofPassing" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_EmployeeAcademy_Company_CompanyId" FromRole="EmployeeAcademy" ToRole="Company" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK_EmployeeAcademy_Employee_EmployeeId" FromRole="EmployeeAcademy" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="EmployeeAddress">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyId" Type="Int32" />
+    <Property Name="PerAddress1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="PerAddress2" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="PerArea" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PerCity" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PerState" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PerCountry" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PerPincode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="PerEmailId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PerMobile" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="PerPhone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="IsSameAddress" Type="Boolean" />
+    <Property Name="CommAddress1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CommAddress2" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CommArea" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CommCity" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CommState" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CommCountry" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CommPincode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CommEmailId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CommMobile" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CommPhone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_EmployeeAddress_Company_CompanyId" FromRole="EmployeeAddress" ToRole="Company" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK_EmployeeAddress_Employee_EmployeeId" FromRole="EmployeeAddress" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="EmployeeDocument">
+    <Key>
+      <PropertyRef Name="DocumentId" />
+    </Key>
+    <Property Name="DocumentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyId" Type="Int32" />
+    <Property Name="EmployeeId" Type="Int32" />
+    <Property Name="DocumentName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="DocAttachment" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_EmployeeDocuments_Company_CompanyId" FromRole="EmployeeDocuments" ToRole="Company" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK_EmployeeDocuments_Employee_EmployeeId" FromRole="EmployeeDocuments" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="EmployeeExperience">
+    <Key>
+      <PropertyRef Name="ExperienceId" />
+    </Key>
+    <Property Name="ExperienceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyId" Type="Int32" />
+    <Property Name="EmployeeId" Type="Int32" />
+    <Property Name="Organization" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Department" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Designation" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="FromDate" Type="DateTime" Precision="3" />
+    <Property Name="ToDate" Type="DateTime" Precision="3" />
+    <Property Name="YearsofExperience" Type="Double" />
+    <Property Name="Remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_EmployeeExperience_Company_CompanyId" FromRole="EmployeeExperience" ToRole="Company" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK_EmployeeExperience_Employee_EmployeeId" FromRole="EmployeeExperience" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="LabourCategory">
+    <Key>
+      <PropertyRef Name="LabrCategoryId" />
+    </Key>
+    <Property Name="LabrCategoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LabrCategoryName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LabrCategoryCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="LabourTypes" Relationship="Self.FK_LabourType_LabourCategory_LabrCategoryId" FromRole="LabourCategory" ToRole="LabourType" />
+  </EntityType>
+  <EntityType Name="LabourType">
+    <Key>
+      <PropertyRef Name="LabrTypeId" />
+    </Key>
+    <Property Name="LabrTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LabrCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="LabrTypeCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LabourTypeName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="LabourCategory" Relationship="Self.FK_LabourType_LabourCategory_LabrCategoryId" FromRole="LabourType" ToRole="LabourCategory" />
+  </EntityType>
+  <EntityType Name="MachinerySubCategory">
+    <Key>
+      <PropertyRef Name="MachSubCategoryId" />
+    </Key>
+    <Property Name="MachSubCategoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="COM_Id" Type="Int32" Nullable="false" />
+    <Property Name="MachSubCategoryCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SubCategoryName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CategoryOfMachinery" Relationship="Self.FK_MachinerySubCategory_CategoryOfMachinery_COM_Id" FromRole="MachinerySubCategory" ToRole="CategoryOfMachinery" />
+  </EntityType>
+  <EntityType Name="MaterialCategory">
+    <Key>
+      <PropertyRef Name="MaterialCategoryId" />
+    </Key>
+    <Property Name="MaterialCategoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaterialCategoryCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MaterialCategoryName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="MaterialSubCategories" Relationship="Self.FK_MaterialSubCategory_MaterialCategory_MaterialCategoryId" FromRole="MaterialCategory" ToRole="MaterialSubCategory" />
+    <NavigationProperty Name="MaterialTypes" Relationship="Self.FK_MaterialType_MaterialCategory_MaterialCategoryId" FromRole="MaterialCategory" ToRole="MaterialType" />
+  </EntityType>
+  <EntityType Name="MaterialSubCategory">
+    <Key>
+      <PropertyRef Name="MaterialSubCategoryId" />
+    </Key>
+    <Property Name="MaterialSubCategoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaterialCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="MaterialSubCategoryCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MaterialSubCategoryName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="MaterialCategory" Relationship="Self.FK_MaterialSubCategory_MaterialCategory_MaterialCategoryId" FromRole="MaterialSubCategory" ToRole="MaterialCategory" />
+    <NavigationProperty Name="MaterialTypes" Relationship="Self.FK_MaterialType_MaterialSubCategory_MaterialSubCategoryId" FromRole="MaterialSubCategory" ToRole="MaterialType" />
+  </EntityType>
+  <EntityType Name="MaterialType">
+    <Key>
+      <PropertyRef Name="MaterialTypeId" />
+    </Key>
+    <Property Name="MaterialTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaterialCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="MaterialSubCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="MaterialTypeName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MaterialTypeCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="MaterialCategory" Relationship="Self.FK_MaterialType_MaterialCategory_MaterialCategoryId" FromRole="MaterialType" ToRole="MaterialCategory" />
+    <NavigationProperty Name="MaterialSubCategory" Relationship="Self.FK_MaterialType_MaterialSubCategory_MaterialSubCategoryId" FromRole="MaterialType" ToRole="MaterialSubCategory" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Name="MenuId" Type="Int32" Nullable="false" />
+    <Property Name="MenuName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MenuUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MenuIcon" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MenuOrder" Type="Int32" />
+    <Property Name="ParentMenu" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Actions" Relationship="Self.FK_Action_Menu_MenuId" FromRole="Menu" ToRole="Action" />
+    <NavigationProperty Name="RoleMenuMappings" Relationship="Self.FK_RoleMenuMapping_Menu_MenuId" FromRole="Menu" ToRole="RoleMenuMapping" />
+    <NavigationProperty Name="UserMenuMappings" Relationship="Self.FK_UserMenuMapping_Menu_MenuId" FromRole="Menu" ToRole="UserMenuMapping" />
+  </EntityType>
+  <EntityType Name="NatureOfBusiness">
+    <Key>
+      <PropertyRef Name="BusinessId" />
+    </Key>
+    <Property Name="BusinessId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BusinessName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Companies" Relationship="Self.FK_Company_NatureOfBusiness_BusinessId" FromRole="NatureOfBusiness" ToRole="Company" />
+  </EntityType>
+  <EntityType Name="OrganizationLevel">
+    <Key>
+      <PropertyRef Name="OrgLvlId" />
+    </Key>
+    <Property Name="OrgLvlId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LevelName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Parent" Type="Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Companies" Relationship="Self.FK_Company_OrgLvl_OrgLvlId" FromRole="OrganizationLevel" ToRole="Company" />
+    <NavigationProperty Name="RoleMasters" Relationship="Self.FK_RoleMaster_OrgLvl_OrgLvlId" FromRole="OrganizationLevel" ToRole="RoleMaster" />
+  </EntityType>
+  <EntityType Name="OverHead">
+    <Key>
+      <PropertyRef Name="OverHeadId" />
+    </Key>
+    <Property Name="OverHeadId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OverHeadCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="OverHeadName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="OwnershipType">
+    <Key>
+      <PropertyRef Name="TypeId" />
+    </Key>
+    <Property Name="TypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OwnershipName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Companies" Relationship="Self.FK_Company_OwnershipTypes_TypeId" FromRole="OwnershipTypes" ToRole="Company" />
+  </EntityType>
+  <EntityType Name="ProjectMaster">
+    <Key>
+      <PropertyRef Name="ProjectId" />
+    </Key>
+    <Property Name="ProjectId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <Property Name="ProjectCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectTypeId" Type="Int32" Nullable="false" />
+    <Property Name="UOMType" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Land" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UnitId" Type="Int32" Nullable="false" />
+    <Property Name="SurveyNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <Property Name="EndDate" Type="DateTime" Precision="3" />
+    <Property Name="LocDoorNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AreaId" Type="Int32" Nullable="false" />
+    <Property Name="Pincode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CountryId" Type="Int32" Nullable="false" />
+    <Property Name="StateId" Type="Int32" Nullable="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <Property Name="SiteLayout" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="SitePlan" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="BuildingPerspective" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectBrief" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Area" Relationship="Self.FK_ProjectMaster_Area_AreaId" FromRole="ProjectMaster" ToRole="Area" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_ProjectMaster_Company_CompanyId" FromRole="ProjectMaster" ToRole="Company" />
+    <NavigationProperty Name="Country" Relationship="Self.FK_ProjectMaster_Country_CountryId" FromRole="ProjectMaster" ToRole="Country" />
+    <NavigationProperty Name="ProjectType" Relationship="Self.FK_ProjectMaster_ProjectType_ProjectTypeId" FromRole="ProjectMaster" ToRole="ProjectType" />
+    <NavigationProperty Name="StateMaster" Relationship="Self.FK_ProjectMaster_StateMaster_StateId" FromRole="ProjectMaster" ToRole="StateMaster" />
+    <NavigationProperty Name="UnitsMaster" Relationship="Self.FK_ProjectMaster_UnitsMaster_UnitId" FromRole="ProjectMaster" ToRole="UnitsMaster" />
+    <NavigationProperty Name="ProjectMasterTrailers" Relationship="Self.FK_ProjectMasterTrailer_ProjectMaster_ProjectId" FromRole="ProjectMaster" ToRole="ProjectMasterTrailer" />
+  </EntityType>
+  <EntityType Name="ProjectMasterTrailer">
+    <Key>
+      <PropertyRef Name="TrailerId" />
+    </Key>
+    <Property Name="TrailerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectId" Type="Int32" Nullable="false" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <Property Name="EndDate" Type="DateTime" Precision="3" />
+    <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_ProjectMasterTrailer_Company_CompanyId" FromRole="ProjectMasterTrailer" ToRole="Company" />
+    <NavigationProperty Name="ProjectMaster" Relationship="Self.FK_ProjectMasterTrailer_ProjectMaster_ProjectId" FromRole="ProjectMasterTrailer" ToRole="ProjectMaster" />
+  </EntityType>
+  <EntityType Name="ProjectType">
+    <Key>
+      <PropertyRef Name="ProjectTypeId" />
+    </Key>
+    <Property Name="ProjectTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="ProjectMasters" Relationship="Self.FK_ProjectMaster_ProjectType_ProjectTypeId" FromRole="ProjectType" ToRole="ProjectMaster" />
+  </EntityType>
+  <EntityType Name="RoleMaster">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OrgLvlId" Type="Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="OrganizationLevel" Relationship="Self.FK_RoleMaster_OrgLvl_OrgLvlId" FromRole="RoleMaster" ToRole="OrganizationLevel" />
+    <NavigationProperty Name="RoleMenuMappings" Relationship="Self.FK_RoleMenuMapping_RoleMaster_RoleId" FromRole="RoleMaster" ToRole="RoleMenuMapping" />
+    <NavigationProperty Name="UserMasters" Relationship="Self.FK_User_Role_RoleId" FromRole="RoleMaster" ToRole="UserMaster" />
+  </EntityType>
+  <EntityType Name="RoleMenuMapping">
+    <Key>
+      <PropertyRef Name="RoleId" />
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <Property Name="MenuId" Type="Int32" Nullable="false" />
+    <Property Name="ActionList" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Menu" Relationship="Self.FK_RoleMenuMapping_Menu_MenuId" FromRole="RoleMenuMapping" ToRole="Menu" />
+    <NavigationProperty Name="RoleMaster" Relationship="Self.FK_RoleMenuMapping_RoleMaster_RoleId" FromRole="RoleMenuMapping" ToRole="RoleMaster" />
+  </EntityType>
+  <EntityType Name="StateMaster">
+    <Key>
+      <PropertyRef Name="StateId" />
+    </Key>
+    <Property Name="StateId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CountryId" Type="Int32" Nullable="false" />
+    <Property Name="StateName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Areas" Relationship="Self.FK_Area_State_StateId" FromRole="StateMaster" ToRole="Area" />
+    <NavigationProperty Name="Cities" Relationship="Self.FK_City_State_StateId" FromRole="StateMaster" ToRole="City" />
+    <NavigationProperty Name="Companies" Relationship="Self.FK_Company_State_StateId" FromRole="StateMaster" ToRole="Company" />
+    <NavigationProperty Name="Country" Relationship="Self.FK_State_Country_CountryId" FromRole="StateMaster" ToRole="Country" />
+    <NavigationProperty Name="ProjectMasters" Relationship="Self.FK_ProjectMaster_StateMaster_StateId" FromRole="StateMaster" ToRole="ProjectMaster" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Token">
+    <Key>
+      <PropertyRef Name="TokenId" />
+    </Key>
+    <Property Name="TokenId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int64" Nullable="false" />
+    <Property Name="AuthToken" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IssuedOn" Type="DateTime" Precision="3" />
+    <Property Name="ExpiresOn" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="UserMaster" Relationship="Self.FK_Token_UserMaster_UserId" FromRole="Token" ToRole="UserMaster" />
+  </EntityType>
+  <EntityType Name="UnitsMaster">
+    <Key>
+      <PropertyRef Name="UnitId" />
+    </Key>
+    <Property Name="UnitId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UnitName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="UnitType" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="ProjectMasters" Relationship="Self.FK_ProjectMaster_UnitsMaster_UnitId" FromRole="UnitsMaster" ToRole="ProjectMaster" />
+  </EntityType>
+  <EntityType Name="UOM_Master">
+    <Key>
+      <PropertyRef Name="UOM_Id" />
+    </Key>
+    <Property Name="UOM_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NoOfInputs" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Formula" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Type" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UserMaster">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="UserName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PasswordKey" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ResetKey" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EmailId" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="RefId" Type="Int64" />
+    <Property Name="UserType" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyId" Type="Int32" />
+    <Property Name="SelectedCompany" Type="Int32" />
+    <NavigationProperty Name="Company" Relationship="Self.FK__UserMaste__Compa__719CDDE7" FromRole="UserMaster" ToRole="Company" />
+    <NavigationProperty Name="RoleMaster" Relationship="Self.FK_User_Role_RoleId" FromRole="UserMaster" ToRole="RoleMaster" />
+    <NavigationProperty Name="Tokens" Relationship="Self.FK_Token_UserMaster_UserId" FromRole="UserMaster" ToRole="Token" />
+    <NavigationProperty Name="UserMenuMappings" Relationship="Self.FK_UserMenuMapping_UserMaster_UserId" FromRole="UserMaster" ToRole="UserMenuMapping" />
+  </EntityType>
+  <EntityType Name="UserMenuMapping">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Name="UserId" Type="Int64" Nullable="false" />
+    <Property Name="MenuId" Type="Int32" Nullable="false" />
+    <Property Name="ActionList" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Menu" Relationship="Self.FK_UserMenuMapping_Menu_MenuId" FromRole="UserMenuMapping" ToRole="Menu" />
+    <NavigationProperty Name="UserMaster" Relationship="Self.FK_UserMenuMapping_UserMaster_UserId" FromRole="UserMenuMapping" ToRole="UserMaster" />
+  </EntityType>
+  <Association Name="FK_Action_Menu_MenuId">
+    <End Role="Menu" Type="Self.Menu" Multiplicity="1" />
+    <End Role="Action" Type="Self.Action" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="MenuId" />
+      </Principal>
+      <Dependent Role="Action">
+        <PropertyRef Name="MenuId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Area_City_CityId">
+    <End Role="City" Type="Self.City" Multiplicity="1" />
+    <End Role="Area" Type="Self.Area" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="CityId" />
+      </Principal>
+      <Dependent Role="Area">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Area_Country_CountryId">
+    <End Role="Country" Type="Self.Country" Multiplicity="1" />
+    <End Role="Area" Type="Self.Area" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="CountryId" />
+      </Principal>
+      <Dependent Role="Area">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Area_State_StateId">
+    <End Role="StateMaster" Type="Self.StateMaster" Multiplicity="1" />
+    <End Role="Area" Type="Self.Area" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StateMaster">
+        <PropertyRef Name="StateId" />
+      </Principal>
+      <Dependent Role="Area">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Company_Area_AreaId">
+    <End Role="Area" Type="Self.Area" Multiplicity="0..1" />
+    <End Role="Company" Type="Self.Company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Area">
+        <PropertyRef Name="AreaId" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="AreaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectMaster_Area_AreaId">
+    <End Role="Area" Type="Self.Area" Multiplicity="1" />
+    <End Role="ProjectMaster" Type="Self.ProjectMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Area">
+        <PropertyRef Name="AreaId" />
+      </Principal>
+      <Dependent Role="ProjectMaster">
+        <PropertyRef Name="AreaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CA_SubCategory_CA_Category_CategoryId">
+    <End Role="CA_Category" Type="Self.CA_Category" Multiplicity="1" />
+    <End Role="CA_SubCategory" Type="Self.CA_SubCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CA_Category">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="CA_SubCategory">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CA_Type_CA_Category_CategoryId">
+    <End Role="CA_Category" Type="Self.CA_Category" Multiplicity="1" />
+    <End Role="CA_Type" Type="Self.CA_Type" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CA_Category">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="CA_Type">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CA_Type_CA_SubCategory_SubCategoryId">
+    <End Role="CA_SubCategory" Type="Self.CA_SubCategory" Multiplicity="1" />
+    <End Role="CA_Type" Type="Self.CA_Type" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CA_SubCategory">
+        <PropertyRef Name="SubCategoryId" />
+      </Principal>
+      <Dependent Role="CA_Type">
+        <PropertyRef Name="SubCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MachinerySubCategory_CategoryOfMachinery_COM_Id">
+    <End Role="CategoryOfMachinery" Type="Self.CategoryOfMachinery" Multiplicity="1" />
+    <End Role="MachinerySubCategory" Type="Self.MachinerySubCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoryOfMachinery">
+        <PropertyRef Name="COM_Id" />
+      </Principal>
+      <Dependent Role="MachinerySubCategory">
+        <PropertyRef Name="COM_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_City_Country_CountryId">
+    <End Role="Country" Type="Self.Country" Multiplicity="1" />
+    <End Role="City" Type="Self.City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="CountryId" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_City_State_StateId">
+    <End Role="StateMaster" Type="Self.StateMaster" Multiplicity="1" />
+    <End Role="City" Type="Self.City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StateMaster">
+        <PropertyRef Name="StateId" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Company_City_CityId">
+    <End Role="City" Type="Self.City" Multiplicity="0..1" />
+    <End Role="Company" Type="Self.Company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="CityId" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserMaste__Compa__719CDDE7">
+    <End Role="Company" Type="Self.Company" Multiplicity="0..1" />
+    <End Role="UserMaster" Type="Self.UserMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyId" />
+      </Principal>
+      <Dependent Role="UserMaster">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Company_Country_CountryId">
+    <End Role="Country" Type="Self.Country" Multiplicity="1" />
+    <End Role="Company" Type="Self.Company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="CountryId" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Company_NatureOfBusiness_BusinessId">
+    <End Role="NatureOfBusiness" Type="Self.NatureOfBusiness" Multiplicity="0..1" />
+    <End Role="Company" Type="Self.Company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NatureOfBusiness">
+        <PropertyRef Name="BusinessId" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="BusinessId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Company_OrgLvl_OrgLvlId">
+    <End Role="OrganizationLevel" Type="Self.OrganizationLevel" Multiplicity="0..1" />
+    <End Role="Company" Type="Self.Company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganizationLevel">
+        <PropertyRef Name="OrgLvlId" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="OrgLvlId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Company_OwnershipTypes_TypeId">
+    <End Role="OwnershipTypes" Type="Self.OwnershipType" Multiplicity="0..1" />
+    <End Role="Company" Type="Self.Company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OwnershipTypes">
+        <PropertyRef Name="TypeId" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="TypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Company_State_StateId">
+    <End Role="StateMaster" Type="Self.StateMaster" Multiplicity="0..1" />
+    <End Role="Company" Type="Self.Company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StateMaster">
+        <PropertyRef Name="StateId" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Department_Company_CompanyId">
+    <End Role="Company" Type="Self.Company" Multiplicity="0..1" />
+    <End Role="Department" Type="Self.Department" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyId" />
+      </Principal>
+      <Dependent Role="Department">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Designation_Company_CompanyId">
+    <End Role="Company" Type="Self.Company" Multiplicity="1" />
+    <End Role="Designation" Type="Self.Designation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyId" />
+      </Principal>
+      <Dependent Role="Designation">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Company_CompanyId">
+    <End Role="Company" Type="Self.Company" Multiplicity="1" />
+    <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyId" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeAcademy_Company_CompanyId">
+    <End Role="Company" Type="Self.Company" Multiplicity="0..1" />
+    <End Role="EmployeeAcademy" Type="Self.EmployeeAcademy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyId" />
+      </Principal>
+      <Dependent Role="EmployeeAcademy">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeAddress_Company_CompanyId">
+    <End Role="Company" Type="Self.Company" Multiplicity="0..1" />
+    <End Role="EmployeeAddress" Type="Self.EmployeeAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyId" />
+      </Principal>
+      <Dependent Role="EmployeeAddress">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeDocuments_Company_CompanyId">
+    <End Role="Company" Type="Self.Company" Multiplicity="0..1" />
+    <End Role="EmployeeDocuments" Type="Self.EmployeeDocument" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyId" />
+      </Principal>
+      <Dependent Role="EmployeeDocuments">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeExperience_Company_CompanyId">
+    <End Role="Company" Type="Self.Company" Multiplicity="0..1" />
+    <End Role="EmployeeExperience" Type="Self.EmployeeExperience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyId" />
+      </Principal>
+      <Dependent Role="EmployeeExperience">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectMaster_Company_CompanyId">
+    <End Role="Company" Type="Self.Company" Multiplicity="1" />
+    <End Role="ProjectMaster" Type="Self.ProjectMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyId" />
+      </Principal>
+      <Dependent Role="ProjectMaster">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectMasterTrailer_Company_CompanyId">
+    <End Role="Company" Type="Self.Company" Multiplicity="1" />
+    <End Role="ProjectMasterTrailer" Type="Self.ProjectMasterTrailer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyId" />
+      </Principal>
+      <Dependent Role="ProjectMasterTrailer">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConsumableType_ConsumableCategory_ConsumableCategoryId">
+    <End Role="ConsumableCategory" Type="Self.ConsumableCategory" Multiplicity="1" />
+    <End Role="ConsumableType" Type="Self.ConsumableType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConsumableCategory">
+        <PropertyRef Name="ConsumableCategoryId" />
+      </Principal>
+      <Dependent Role="ConsumableType">
+        <PropertyRef Name="ConsumableCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectMaster_Country_CountryId">
+    <End Role="Country" Type="Self.Country" Multiplicity="1" />
+    <End Role="ProjectMaster" Type="Self.ProjectMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="CountryId" />
+      </Principal>
+      <Dependent Role="ProjectMaster">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_State_Country_CountryId">
+    <End Role="Country" Type="Self.Country" Multiplicity="1" />
+    <End Role="StateMaster" Type="Self.StateMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="CountryId" />
+      </Principal>
+      <Dependent Role="StateMaster">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Designation_Department_DepartmentId">
+    <End Role="Department" Type="Self.Department" Multiplicity="0..1" />
+    <End Role="Designation" Type="Self.Designation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DepartmentId" />
+      </Principal>
+      <Dependent Role="Designation">
+        <PropertyRef Name="DepartmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Department_DepartmentId">
+    <End Role="Department" Type="Self.Department" Multiplicity="1" />
+    <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DepartmentId" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="DepartmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Designation_DesignationId">
+    <End Role="Designation" Type="Self.Designation" Multiplicity="1" />
+    <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Designation">
+        <PropertyRef Name="DesignationId" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="DesignationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeAcademy_Employee_EmployeeId">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="EmployeeAcademy" Type="Self.EmployeeAcademy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="EmployeeAcademy">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeAddress_Employee_EmployeeId">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+    <End Role="EmployeeAddress" Type="Self.EmployeeAddress" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="EmployeeAddress">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeDocuments_Employee_EmployeeId">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="EmployeeDocuments" Type="Self.EmployeeDocument" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="EmployeeDocuments">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeExperience_Employee_EmployeeId">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="EmployeeExperience" Type="Self.EmployeeExperience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="EmployeeExperience">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LabourType_LabourCategory_LabrCategoryId">
+    <End Role="LabourCategory" Type="Self.LabourCategory" Multiplicity="1" />
+    <End Role="LabourType" Type="Self.LabourType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LabourCategory">
+        <PropertyRef Name="LabrCategoryId" />
+      </Principal>
+      <Dependent Role="LabourType">
+        <PropertyRef Name="LabrCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MaterialSubCategory_MaterialCategory_MaterialCategoryId">
+    <End Role="MaterialCategory" Type="Self.MaterialCategory" Multiplicity="1" />
+    <End Role="MaterialSubCategory" Type="Self.MaterialSubCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MaterialCategory">
+        <PropertyRef Name="MaterialCategoryId" />
+      </Principal>
+      <Dependent Role="MaterialSubCategory">
+        <PropertyRef Name="MaterialCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MaterialType_MaterialCategory_MaterialCategoryId">
+    <End Role="MaterialCategory" Type="Self.MaterialCategory" Multiplicity="1" />
+    <End Role="MaterialType" Type="Self.MaterialType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MaterialCategory">
+        <PropertyRef Name="MaterialCategoryId" />
+      </Principal>
+      <Dependent Role="MaterialType">
+        <PropertyRef Name="MaterialCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MaterialType_MaterialSubCategory_MaterialSubCategoryId">
+    <End Role="MaterialSubCategory" Type="Self.MaterialSubCategory" Multiplicity="1" />
+    <End Role="MaterialType" Type="Self.MaterialType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MaterialSubCategory">
+        <PropertyRef Name="MaterialSubCategoryId" />
+      </Principal>
+      <Dependent Role="MaterialType">
+        <PropertyRef Name="MaterialSubCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RoleMenuMapping_Menu_MenuId">
+    <End Role="Menu" Type="Self.Menu" Multiplicity="1" />
+    <End Role="RoleMenuMapping" Type="Self.RoleMenuMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="MenuId" />
+      </Principal>
+      <Dependent Role="RoleMenuMapping">
+        <PropertyRef Name="MenuId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserMenuMapping_Menu_MenuId">
+    <End Role="Menu" Type="Self.Menu" Multiplicity="1" />
+    <End Role="UserMenuMapping" Type="Self.UserMenuMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="MenuId" />
+      </Principal>
+      <Dependent Role="UserMenuMapping">
+        <PropertyRef Name="MenuId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RoleMaster_OrgLvl_OrgLvlId">
+    <End Role="OrganizationLevel" Type="Self.OrganizationLevel" Multiplicity="1" />
+    <End Role="RoleMaster" Type="Self.RoleMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganizationLevel">
+        <PropertyRef Name="OrgLvlId" />
+      </Principal>
+      <Dependent Role="RoleMaster">
+        <PropertyRef Name="OrgLvlId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectMaster_ProjectType_ProjectTypeId">
+    <End Role="ProjectType" Type="Self.ProjectType" Multiplicity="1" />
+    <End Role="ProjectMaster" Type="Self.ProjectMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectType">
+        <PropertyRef Name="ProjectTypeId" />
+      </Principal>
+      <Dependent Role="ProjectMaster">
+        <PropertyRef Name="ProjectTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectMaster_StateMaster_StateId">
+    <End Role="StateMaster" Type="Self.StateMaster" Multiplicity="1" />
+    <End Role="ProjectMaster" Type="Self.ProjectMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StateMaster">
+        <PropertyRef Name="StateId" />
+      </Principal>
+      <Dependent Role="ProjectMaster">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectMaster_UnitsMaster_UnitId">
+    <End Role="UnitsMaster" Type="Self.UnitsMaster" Multiplicity="1" />
+    <End Role="ProjectMaster" Type="Self.ProjectMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnitsMaster">
+        <PropertyRef Name="UnitId" />
+      </Principal>
+      <Dependent Role="ProjectMaster">
+        <PropertyRef Name="UnitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectMasterTrailer_ProjectMaster_ProjectId">
+    <End Role="ProjectMaster" Type="Self.ProjectMaster" Multiplicity="1" />
+    <End Role="ProjectMasterTrailer" Type="Self.ProjectMasterTrailer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectMaster">
+        <PropertyRef Name="ProjectId" />
+      </Principal>
+      <Dependent Role="ProjectMasterTrailer">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RoleMenuMapping_RoleMaster_RoleId">
+    <End Role="RoleMaster" Type="Self.RoleMaster" Multiplicity="1" />
+    <End Role="RoleMenuMapping" Type="Self.RoleMenuMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoleMaster">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="RoleMenuMapping">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Role_RoleId">
+    <End Role="RoleMaster" Type="Self.RoleMaster" Multiplicity="1" />
+    <End Role="UserMaster" Type="Self.UserMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoleMaster">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="UserMaster">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Token_UserMaster_UserId">
+    <End Role="UserMaster" Type="Self.UserMaster" Multiplicity="1" />
+    <End Role="Token" Type="Self.Token" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserMaster">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Token">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserMenuMapping_UserMaster_UserId">
+    <End Role="UserMaster" Type="Self.UserMaster" Multiplicity="1" />
+    <End Role="UserMenuMapping" Type="Self.UserMenuMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserMaster">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserMenuMapping">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="KPMES_DevEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Actions" EntityType="Self.Action" />
+    <EntitySet Name="Areas" EntityType="Self.Area" />
+    <EntitySet Name="CA_Category" EntityType="Self.CA_Category" />
+    <EntitySet Name="CA_SubCategory" EntityType="Self.CA_SubCategory" />
+    <EntitySet Name="CA_Type" EntityType="Self.CA_Type" />
+    <EntitySet Name="CategoryOfMachineries" EntityType="Self.CategoryOfMachinery" />
+    <EntitySet Name="Cities" EntityType="Self.City" />
+    <EntitySet Name="Companies" EntityType="Self.Company" />
+    <EntitySet Name="ConsumableCategories" EntityType="Self.ConsumableCategory" />
+    <EntitySet Name="ConsumableTypes" EntityType="Self.ConsumableType" />
+    <EntitySet Name="Countries" EntityType="Self.Country" />
+    <EntitySet Name="Departments" EntityType="Self.Department" />
+    <EntitySet Name="Designations" EntityType="Self.Designation" />
+    <EntitySet Name="Employees" EntityType="Self.Employee" />
+    <EntitySet Name="EmployeeAcademies" EntityType="Self.EmployeeAcademy" />
+    <EntitySet Name="EmployeeAddresses" EntityType="Self.EmployeeAddress" />
+    <EntitySet Name="EmployeeDocuments" EntityType="Self.EmployeeDocument" />
+    <EntitySet Name="EmployeeExperiences" EntityType="Self.EmployeeExperience" />
+    <EntitySet Name="LabourCategories" EntityType="Self.LabourCategory" />
+    <EntitySet Name="LabourTypes" EntityType="Self.LabourType" />
+    <EntitySet Name="MachinerySubCategories" EntityType="Self.MachinerySubCategory" />
+    <EntitySet Name="MaterialCategories" EntityType="Self.MaterialCategory" />
+    <EntitySet Name="MaterialSubCategories" EntityType="Self.MaterialSubCategory" />
+    <EntitySet Name="MaterialTypes" EntityType="Self.MaterialType" />
+    <EntitySet Name="Menus" EntityType="Self.Menu" />
+    <EntitySet Name="NatureOfBusinesses" EntityType="Self.NatureOfBusiness" />
+    <EntitySet Name="OrganizationLevels" EntityType="Self.OrganizationLevel" />
+    <EntitySet Name="OverHeads" EntityType="Self.OverHead" />
+    <EntitySet Name="OwnershipTypes" EntityType="Self.OwnershipType" />
+    <EntitySet Name="ProjectMasters" EntityType="Self.ProjectMaster" />
+    <EntitySet Name="ProjectMasterTrailers" EntityType="Self.ProjectMasterTrailer" />
+    <EntitySet Name="ProjectTypes" EntityType="Self.ProjectType" />
+    <EntitySet Name="RoleMasters" EntityType="Self.RoleMaster" />
+    <EntitySet Name="RoleMenuMappings" EntityType="Self.RoleMenuMapping" />
+    <EntitySet Name="StateMasters" EntityType="Self.StateMaster" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Tokens" EntityType="Self.Token" />
+    <EntitySet Name="UnitsMasters" EntityType="Self.UnitsMaster" />
+    <EntitySet Name="UOM_Master" EntityType="Self.UOM_Master" />
+    <EntitySet Name="UserMasters" EntityType="Self.UserMaster" />
+    <EntitySet Name="UserMenuMappings" EntityType="Self.UserMenuMapping" />
+    <AssociationSet Name="FK_Action_Menu_MenuId" Association="Self.FK_Action_Menu_MenuId">
+      <End Role="Menu" EntitySet="Menus" />
+      <End Role="Action" EntitySet="Actions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Area_City_CityId" Association="Self.FK_Area_City_CityId">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="Area" EntitySet="Areas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Area_Country_CountryId" Association="Self.FK_Area_Country_CountryId">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="Area" EntitySet="Areas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Area_State_StateId" Association="Self.FK_Area_State_StateId">
+      <End Role="StateMaster" EntitySet="StateMasters" />
+      <End Role="Area" EntitySet="Areas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Company_Area_AreaId" Association="Self.FK_Company_Area_AreaId">
+      <End Role="Area" EntitySet="Areas" />
+      <End Role="Company" EntitySet="Companies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectMaster_Area_AreaId" Association="Self.FK_ProjectMaster_Area_AreaId">
+      <End Role="Area" EntitySet="Areas" />
+      <End Role="ProjectMaster" EntitySet="ProjectMasters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CA_SubCategory_CA_Category_CategoryId" Association="Self.FK_CA_SubCategory_CA_Category_CategoryId">
+      <End Role="CA_Category" EntitySet="CA_Category" />
+      <End Role="CA_SubCategory" EntitySet="CA_SubCategory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CA_Type_CA_Category_CategoryId" Association="Self.FK_CA_Type_CA_Category_CategoryId">
+      <End Role="CA_Category" EntitySet="CA_Category" />
+      <End Role="CA_Type" EntitySet="CA_Type" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CA_Type_CA_SubCategory_SubCategoryId" Association="Self.FK_CA_Type_CA_SubCategory_SubCategoryId">
+      <End Role="CA_SubCategory" EntitySet="CA_SubCategory" />
+      <End Role="CA_Type" EntitySet="CA_Type" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MachinerySubCategory_CategoryOfMachinery_COM_Id" Association="Self.FK_MachinerySubCategory_CategoryOfMachinery_COM_Id">
+      <End Role="CategoryOfMachinery" EntitySet="CategoryOfMachineries" />
+      <End Role="MachinerySubCategory" EntitySet="MachinerySubCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_City_Country_CountryId" Association="Self.FK_City_Country_CountryId">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="City" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_City_State_StateId" Association="Self.FK_City_State_StateId">
+      <End Role="StateMaster" EntitySet="StateMasters" />
+      <End Role="City" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Company_City_CityId" Association="Self.FK_Company_City_CityId">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="Company" EntitySet="Companies" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserMaste__Compa__719CDDE7" Association="Self.FK__UserMaste__Compa__719CDDE7">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="UserMaster" EntitySet="UserMasters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Company_Country_CountryId" Association="Self.FK_Company_Country_CountryId">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="Company" EntitySet="Companies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Company_NatureOfBusiness_BusinessId" Association="Self.FK_Company_NatureOfBusiness_BusinessId">
+      <End Role="NatureOfBusiness" EntitySet="NatureOfBusinesses" />
+      <End Role="Company" EntitySet="Companies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Company_OrgLvl_OrgLvlId" Association="Self.FK_Company_OrgLvl_OrgLvlId">
+      <End Role="OrganizationLevel" EntitySet="OrganizationLevels" />
+      <End Role="Company" EntitySet="Companies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Company_OwnershipTypes_TypeId" Association="Self.FK_Company_OwnershipTypes_TypeId">
+      <End Role="OwnershipTypes" EntitySet="OwnershipTypes" />
+      <End Role="Company" EntitySet="Companies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Company_State_StateId" Association="Self.FK_Company_State_StateId">
+      <End Role="StateMaster" EntitySet="StateMasters" />
+      <End Role="Company" EntitySet="Companies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Department_Company_CompanyId" Association="Self.FK_Department_Company_CompanyId">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="Department" EntitySet="Departments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Designation_Company_CompanyId" Association="Self.FK_Designation_Company_CompanyId">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="Designation" EntitySet="Designations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Company_CompanyId" Association="Self.FK_Employee_Company_CompanyId">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="Employee" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeAcademy_Company_CompanyId" Association="Self.FK_EmployeeAcademy_Company_CompanyId">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="EmployeeAcademy" EntitySet="EmployeeAcademies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeAddress_Company_CompanyId" Association="Self.FK_EmployeeAddress_Company_CompanyId">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="EmployeeAddress" EntitySet="EmployeeAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeDocuments_Company_CompanyId" Association="Self.FK_EmployeeDocuments_Company_CompanyId">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="EmployeeDocuments" EntitySet="EmployeeDocuments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeExperience_Company_CompanyId" Association="Self.FK_EmployeeExperience_Company_CompanyId">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="EmployeeExperience" EntitySet="EmployeeExperiences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectMaster_Company_CompanyId" Association="Self.FK_ProjectMaster_Company_CompanyId">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="ProjectMaster" EntitySet="ProjectMasters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectMasterTrailer_Company_CompanyId" Association="Self.FK_ProjectMasterTrailer_Company_CompanyId">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="ProjectMasterTrailer" EntitySet="ProjectMasterTrailers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConsumableType_ConsumableCategory_ConsumableCategoryId" Association="Self.FK_ConsumableType_ConsumableCategory_ConsumableCategoryId">
+      <End Role="ConsumableCategory" EntitySet="ConsumableCategories" />
+      <End Role="ConsumableType" EntitySet="ConsumableTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectMaster_Country_CountryId" Association="Self.FK_ProjectMaster_Country_CountryId">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="ProjectMaster" EntitySet="ProjectMasters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_State_Country_CountryId" Association="Self.FK_State_Country_CountryId">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="StateMaster" EntitySet="StateMasters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Designation_Department_DepartmentId" Association="Self.FK_Designation_Department_DepartmentId">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="Designation" EntitySet="Designations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Department_DepartmentId" Association="Self.FK_Employee_Department_DepartmentId">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="Employee" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Designation_DesignationId" Association="Self.FK_Employee_Designation_DesignationId">
+      <End Role="Designation" EntitySet="Designations" />
+      <End Role="Employee" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeAcademy_Employee_EmployeeId" Association="Self.FK_EmployeeAcademy_Employee_EmployeeId">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="EmployeeAcademy" EntitySet="EmployeeAcademies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeAddress_Employee_EmployeeId" Association="Self.FK_EmployeeAddress_Employee_EmployeeId">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="EmployeeAddress" EntitySet="EmployeeAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeDocuments_Employee_EmployeeId" Association="Self.FK_EmployeeDocuments_Employee_EmployeeId">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="EmployeeDocuments" EntitySet="EmployeeDocuments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeExperience_Employee_EmployeeId" Association="Self.FK_EmployeeExperience_Employee_EmployeeId">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="EmployeeExperience" EntitySet="EmployeeExperiences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LabourType_LabourCategory_LabrCategoryId" Association="Self.FK_LabourType_LabourCategory_LabrCategoryId">
+      <End Role="LabourCategory" EntitySet="LabourCategories" />
+      <End Role="LabourType" EntitySet="LabourTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MaterialSubCategory_MaterialCategory_MaterialCategoryId" Association="Self.FK_MaterialSubCategory_MaterialCategory_MaterialCategoryId">
+      <End Role="MaterialCategory" EntitySet="MaterialCategories" />
+      <End Role="MaterialSubCategory" EntitySet="MaterialSubCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MaterialType_MaterialCategory_MaterialCategoryId" Association="Self.FK_MaterialType_MaterialCategory_MaterialCategoryId">
+      <End Role="MaterialCategory" EntitySet="MaterialCategories" />
+      <End Role="MaterialType" EntitySet="MaterialTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MaterialType_MaterialSubCategory_MaterialSubCategoryId" Association="Self.FK_MaterialType_MaterialSubCategory_MaterialSubCategoryId">
+      <End Role="MaterialSubCategory" EntitySet="MaterialSubCategories" />
+      <End Role="MaterialType" EntitySet="MaterialTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RoleMenuMapping_Menu_MenuId" Association="Self.FK_RoleMenuMapping_Menu_MenuId">
+      <End Role="Menu" EntitySet="Menus" />
+      <End Role="RoleMenuMapping" EntitySet="RoleMenuMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserMenuMapping_Menu_MenuId" Association="Self.FK_UserMenuMapping_Menu_MenuId">
+      <End Role="Menu" EntitySet="Menus" />
+      <End Role="UserMenuMapping" EntitySet="UserMenuMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RoleMaster_OrgLvl_OrgLvlId" Association="Self.FK_RoleMaster_OrgLvl_OrgLvlId">
+      <End Role="OrganizationLevel" EntitySet="OrganizationLevels" />
+      <End Role="RoleMaster" EntitySet="RoleMasters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectMaster_ProjectType_ProjectTypeId" Association="Self.FK_ProjectMaster_ProjectType_ProjectTypeId">
+      <End Role="ProjectType" EntitySet="ProjectTypes" />
+      <End Role="ProjectMaster" EntitySet="ProjectMasters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectMaster_StateMaster_StateId" Association="Self.FK_ProjectMaster_StateMaster_StateId">
+      <End Role="StateMaster" EntitySet="StateMasters" />
+      <End Role="ProjectMaster" EntitySet="ProjectMasters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectMaster_UnitsMaster_UnitId" Association="Self.FK_ProjectMaster_UnitsMaster_UnitId">
+      <End Role="UnitsMaster" EntitySet="UnitsMasters" />
+      <End Role="ProjectMaster" EntitySet="ProjectMasters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectMasterTrailer_ProjectMaster_ProjectId" Association="Self.FK_ProjectMasterTrailer_ProjectMaster_ProjectId">
+      <End Role="ProjectMaster" EntitySet="ProjectMasters" />
+      <End Role="ProjectMasterTrailer" EntitySet="ProjectMasterTrailers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RoleMenuMapping_RoleMaster_RoleId" Association="Self.FK_RoleMenuMapping_RoleMaster_RoleId">
+      <End Role="RoleMaster" EntitySet="RoleMasters" />
+      <End Role="RoleMenuMapping" EntitySet="RoleMenuMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Role_RoleId" Association="Self.FK_User_Role_RoleId">
+      <End Role="RoleMaster" EntitySet="RoleMasters" />
+      <End Role="UserMaster" EntitySet="UserMasters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Token_UserMaster_UserId" Association="Self.FK_Token_UserMaster_UserId">
+      <End Role="UserMaster" EntitySet="UserMasters" />
+      <End Role="Token" EntitySet="Tokens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserMenuMapping_UserMaster_UserId" Association="Self.FK_UserMenuMapping_UserMaster_UserId">
+      <End Role="UserMaster" EntitySet="UserMasters" />
+      <End Role="UserMenuMapping" EntitySet="UserMenuMappings" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

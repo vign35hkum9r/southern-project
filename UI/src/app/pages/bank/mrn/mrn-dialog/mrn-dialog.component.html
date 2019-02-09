@@ -1,0 +1,45 @@
+<div>
+    <div fxLayoutAlign="flex-end" fxLayoutGap="10px">
+        <button mat-icon-button color="warn" (click)="onNoClick()"><mat-icon>cancel</mat-icon></button> </div>
+
+    <mat-form-field class="w-p-50">
+        <input matInput disabled name="Land_Line_Number" >
+        <mat-placeholder class="placeholder">M-B91F1A1-10001</mat-placeholder>
+      </mat-form-field>
+     
+
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Position Column -->
+    <ng-container matColumnDef="SNO">
+      <th mat-header-cell *matHeaderCellDef> S.No </th>
+      <td mat-cell *matCellDef="let element"> {{element.SNO}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="MRN_Date">
+      <th mat-header-cell *matHeaderCellDef> MRN Date </th>
+      <td mat-cell *matCellDef="let element"> {{element.MRN_Date}} </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="MRN_No">
+      <th mat-header-cell *matHeaderCellDef> MRN No </th>
+      <td mat-cell *matCellDef="let element"> {{element.MRN_No}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="Received_Qty">
+      <th mat-header-cell *matHeaderCellDef> Received Qty </th>
+      <td mat-cell *matCellDef="let element"> {{element.Received_Qty}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    
+  </table>
+
+</div>

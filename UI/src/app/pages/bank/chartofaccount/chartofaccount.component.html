@@ -1,0 +1,114 @@
+
+  <app-card>
+      <form *ngIf="!isFormOpen">
+          <div [@myAnimationTrigger]="myValue"> 
+          <button mat-raised-button color="primary" (click)="create()">ADD</button>
+        </div>
+
+        <mat-form-field>
+            <input matInput (keyup)="applyFilter($event.target.value)" placeholder=" ">
+          <!-- </mat-form-field> -->
+          <mat-placeholder class="placeholder">Filter</mat-placeholder>
+        </mat-form-field>
+          
+          <div class="mat-elevation-z8">
+            <table mat-table [dataSource]="dataSource" matSort>
+          
+              <!-- ID Column -->
+              <ng-container matColumnDef="id">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+                <td mat-cell *matCellDef="let row"> {{row.id}} </td>
+              </ng-container>
+          
+              <!-- Progress Column -->
+              <ng-container matColumnDef="progress">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Progress </th>
+                <td mat-cell *matCellDef="let row"> {{row.progress}}% </td>
+              </ng-container>
+          
+              <!-- Name Column -->
+              <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+                <td mat-cell *matCellDef="let row"> {{row.name}} </td>
+              </ng-container>
+          
+              <!-- Color Column -->
+              <ng-container matColumnDef="color">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Color </th>
+                <td mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.color}} </td>
+              </ng-container>
+           
+                    <!-- Action Column -->
+                    
+                    <!-- <ng-container matColumnDef="Action">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
+                        <td mat-cell *matCellDef="let row" [style.Action]="row.Action"> {{row.Action}} </td>
+                      </ng-container> -->
+                      <ng-container cdkColumnDef="action">
+                          <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
+                          <td mat-cell *cdkCellDef="let row" >
+                               <button mat-icon-button color="primary" >
+                                  <mat-icon color="primary" >edit</mat-icon>
+                                  <mat-icon color="warn" >delete</mat-icon>  
+                               </button>  
+                              
+                          </td>
+                      </ng-container> 
+                  
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+              </tr>
+            </table>
+          
+            <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+          </div>
+      </form>
+      <form class="form-material" action="javascript:" *ngIf="isFormOpen">
+        <div fxFlex="100%" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+          <h6 class="">Chart of Account</h6>
+          <div fxFlex="50%" fxLayout="row" fxLayout.xs="column" fxFlex.gt-sm="100%" fxFlex.gt-xs="100%" fxLayoutGap="10px" fxLayoutAlign="start center"
+            class=" form">
+           
+            <mat-form-field class="w-p-50">    
+              <mat-select>
+                <mat-option *ngFor="let food of Food" [value]="food.value">
+                  {{food.viewValue}}
+                </mat-option>
+              </mat-select>
+              <mat-placeholder class="placeholder">Name of the Company</mat-placeholder>
+            </mat-form-field>
+
+            <mat-form-field class="w-p-50">
+    
+                <input matInput>
+                <mat-placeholder class="placeholder">Description of Chart of Account</mat-placeholder>
+              </mat-form-field>
+    
+            <mat-form-field class="w-p-50">
+    
+              <input matInput>
+              <mat-placeholder class="placeholder">Abbrevation of Chart of Account</mat-placeholder>
+            </mat-form-field>
+
+            <span class="w-p-50">
+              </span>
+          </div>
+          <div fxFlex="50%" fxLayout="row" fxLayout.xs="column" fxFlex.gt-sm="100%" fxFlex.gt-xs="100%" fxLayoutGap="10px" fxLayoutAlign="start start"
+            class=" form">
+    
+         
+            <div fxLayout="row" fxLayoutAlign="flex-end start" class="w-p-50" fxLayoutGap="5px">
+              <button mat-raised-button class="" color="primary">Save</button>
+    
+              <button mat-raised-button color="warn" (click)="clear()">Cancel</button>
+            </div>
+    
+          </div>
+    
+    
+        </div>
+      </form>  
+    
+    
+    
+    </app-card>

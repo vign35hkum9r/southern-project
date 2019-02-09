@@ -1,0 +1,97 @@
+<app-card>
+  <form *ngIf="!isFormOpen">
+    <div>
+
+      <button mat-raised-button color="primary" (click)="create()">ADD</button>
+    </div>
+
+    <mat-form-field>
+      <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+    </mat-form-field>
+    <div class="mat-elevation-z8" style="overflow-x:scroll">
+      <table id="tablePreview" class="table table-sm table-hover">
+        <!--Table head-->
+        <thead>
+          <tr>
+            <th class="text-center">S.No</th>
+            <th class="text-center">Group</th>
+            <th class="text-center">Parent Group</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tr *ngFor="let row of GroupList;let i=index">
+          <td class="text-center">{{i+1}}</td>
+          <td class="text-center">{{row.Descrip_Group}}</td>
+          <td class="text-center">{{row.ParentGroup}}</td>
+          <td>
+            <i class="fa fa-edit" (click)="Edit(row)" uib-tooltip="Edit" style="font-size:25px;color:blue"></i>
+          </td>
+        </tr>
+        <!--Table head-->
+        <!--Table body-->
+        <tbody>
+
+
+        </tbody>
+        <!--Table body-->
+      </table>
+
+      <!--Table-->
+    </div>
+
+  </form>
+  <form class="form-material" action="javascript:" *ngIf="isFormOpen">
+    <mat-horizontal-stepper linear #stepper>
+      <mat-step [stepControl]="firstFormGroup">
+        <ng-template matStepLabel>
+          <h5>Groups </h5>
+        </ng-template>
+        <div fxFlex="100%" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+
+          <div fxFlex="50%" fxLayout="row" fxLayout.xs="column" fxFlex.gt-sm="100%" fxFlex.gt-xs="100%" fxLayoutGap="10px"
+            fxLayoutAlign="start center" class=" form">
+
+
+            <mat-form-field class="w-p-50">
+              <input matInput autocomplete="off" [(ngModel)]="model.Descrip_Group" [ngModelOptions]="{standalone: true}">
+              <mat-placeholder class="placeholder">Description of Group/Subgroup</mat-placeholder>
+            </mat-form-field>
+
+
+            <mat-form-field class="w-p-50">
+              <mat-select [(ngModel)]="model.SelectedDescrip_Group" [ngModelOptions]="{standalone: true}">
+                <mat-option *ngFor="let group of GroupList" [value]="group">
+                  {{group.Descrip_Group}}
+                </mat-option>
+              </mat-select>
+              <mat-placeholder class="placeholder">Map to Group/Subgroup</mat-placeholder>
+            </mat-form-field>
+            <button mat-raised-button color="warn" (click)="clearSubgroup(model)">Clear</button>
+
+            <span class="w-p-50"> 
+            </span>
+            <div fxLayout="row" fxLayoutAlign="flex-end start" class="w-p-50" fxLayoutGap="5px">
+              <button mat-raised-button class="" [disabled]="model.Descrip_Group == undefined || model.Descrip_Group == ''"
+                color="primary" (click)="SaveGroup(model)">Save</button>
+
+              <button mat-raised-button color="warn" (click)="clear()">Cancel</button>
+            </div>
+          </div>
+          <div fxFlex="50%" fxLayout="row" fxLayout.xs="column" fxFlex.gt-sm="100%" fxFlex.gt-xs="100%" fxLayoutGap="10px"
+            fxLayoutAlign="start start" class=" form">
+
+
+            <!-- <div fxLayout="row" fxLayoutAlign="flex-end start" class="w-p-50" fxLayoutGap="5px">
+            <button mat-raised-button class="" color="primary">Save</button>
+  
+            <button mat-raised-button color="warn" (click)="clear()">Cancel</button>
+          </div> -->
+          </div>
+        </div>
+      </mat-step>
+    </mat-horizontal-stepper>
+  </form>
+
+
+  <ng2-toasty [position]="position"></ng2-toasty>
+</app-card>

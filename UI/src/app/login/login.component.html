@@ -1,0 +1,63 @@
+<div >
+  <section class="login-block" >
+    <!-- Container-fluid starts -->
+    <div class="container" >
+      <div class="row">
+        <div class="col-sm-12">
+          <!-- Authentication card start -->
+          <form  class="md-float-material form-material" style="margin-top:70px " action="javascript:" name="loginForm" novalidate>
+      
+            <div class="auth-box card">
+           
+              <div class="card-block  a"  >
+            
+                <div class="row m-b-20">
+          
+                  <div class="col-md-12" >
+                      <div>
+                          <div class="text-center">
+                              <!-- <div class="logo"></div> -->
+                            <h4 style="color:#e0b500">Southern Group</h4>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+                
+                <div class="form-group form-primary">
+                  <!-- style="border-radius: 10px; border: 0.5px solid #C4DFE6;"    -->
+                    <br>
+                  <input type="text" class="form-control"  name="Username" [(ngModel)]="User.Username" class="form-control"  placeholder="" required >
+                  <span class="form-bar"></span>
+                  <label style="color:#37474f" class="float-label"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;User Name</label>
+                   
+                </div>
+                <div class="form-group form-primary">
+                  <br>
+                  <input type="password" class="form-control"  name="password" [(ngModel)]="User.password" class="form-control" placeholder="" required >
+                 
+                  <span class="form-bar"></span>
+                  <label style="color:#37474f" class="float-label"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;&nbsp;Password</label>
+              
+                </div>
+           
+                <div class="row m-t-30 pull-right">
+                  <div class="col-md-12">
+                    <button type="submit" [disabled]="isCheck" style="border-radius:25px" class="btn btn-success"  (click)="login()">{{str}} &nbsp;<i class="fa fa-sign-in" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+             
+              
+              </div>
+            </div>
+          </form>
+          <!-- end of form -->
+        </div>
+        <!-- end of col-sm-12 -->
+      </div>
+      <!-- end of row -->
+    </div>
+    <!-- end of container-fluid -->
+    <ng2-toasty  [position]="position"  ></ng2-toasty>
+  </section>
+
+  </div>

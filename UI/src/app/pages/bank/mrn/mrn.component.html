@@ -1,0 +1,308 @@
+<mat-card>
+
+  <div fxLayout="column" fxLayoutAlign="start start">
+
+    <div *ngIf="!isFormOpen">
+
+      <button mat-raised-button color="primary" (click)="create()">ADD</button>
+    </div>
+
+    <div class="w-p-50" *ngIf="isFormOpen">
+
+      <mat-horizontal-stepper linear #stepper>
+        <mat-step>
+          <ng-template matStepLabel>
+            <h5>Material Receipt Note(MRN)</h5>
+          </ng-template>
+
+
+          <form class="w-p-50">
+
+            <div class="w-p-50 formsss" fxFlex="100%" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+              <mat-card-title class="Employee-title">
+                <ng-template matStepLabel>
+                  <h5>Material Receipt Note</h5>
+                </ng-template>
+              </mat-card-title>
+
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+                <mat-form-field class="w-p-50">
+                  <mat-placeholder class="placeholder">Company Name</mat-placeholder>
+                  <!-- <mat-placeholder  class="placeholder">Water Front Pier Hotel Pvt.Ltd</mat-placeholder> -->
+                  <input matInput disabled name="Company_Name">
+
+                </mat-form-field>
+
+
+                <mat-form-field class="w-p-50">
+
+                  <input matInput disabled name="Name_of_the_Project">
+                  <mat-placeholder class="placeholder">Name of the Project</mat-placeholder>
+                  <!-- <mat-placeholder class="placeholder">Sarojini Green Park Phase-1</mat-placeholder> -->
+                </mat-form-field>
+
+
+                <mat-form-field class="w-p-50">
+
+                  <input matInput disabled name="Name_of_the_Project">
+                  <mat-placeholder class="placeholder">Name of the Store</mat-placeholder>
+                  <!-- <mat-placeholder class="placeholder">Nellikuppam Project Store</mat-placeholder> -->
+                </mat-form-field>
+
+                <mat-form-field class="w-p-50">
+                  <input matInput disabled name="State">
+                  <mat-placeholder class="placeholder">Typeof the Store</mat-placeholder>
+                  <!-- <mat-placeholder class="placeholder">Building Material Store</mat-placeholder> -->
+                </mat-form-field>
+              </div>
+
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+                <mat-form-field class="w-p-50">
+                  <mat-select name="Country" required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Prepare MRN for</mat-placeholder>
+                </mat-form-field>
+
+
+                <mat-form-field class="w-p-50">
+                  <mat-select name="Country" required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Type of Purchase</mat-placeholder>
+                </mat-form-field>
+
+
+                <mat-form-field class="w-p-50">
+                  <input matInput name="Land_Line_Number" required>
+                  <mat-placeholder class="placeholder">MRN No</mat-placeholder>
+                </mat-form-field>
+
+
+                <div fxLayout="row" fxLayoutAlign="start start" *ngIf="mrns" class="w-p-50">
+                  <mat-form-field class="w-p-50">
+                    <mat-select name="Type_of_AccountCtrl" formControlName="Type_of_AccountCtrl" [(ngModel)]="model.foods" (selectionChange)="getProject()"
+                      required>
+                      <mat-option *ngFor="let f of Food" [value]="f.value">
+                        {{f.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-placeholder class="placeholder">Supplier Name</mat-placeholder>
+                  </mat-form-field>
+
+
+                  <div class="button-row ">
+                    <button mat-icon-button color="primary" (click)="MRN()">
+                      <mat-icon>add</mat-icon>
+                    </button>
+                  </div>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="start start" *ngIf="mrn" class="w-p-50">
+                  <mat-form-field class="w-p-50">
+                    <input matInput name="Type_of_AccountCtrl" formControlName="Type_of_AccountCtrl" required>
+                    <mat-placeholder class="placeholder">Supplier Name</mat-placeholder>
+                  </mat-form-field>
+
+                  <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="">
+                    <button mat-icon-button class="char">
+                      <mat-icon>save</mat-icon>
+                    </button>
+                    <button mat-icon-button color="warn" (click)="Cancel()">
+                      <mat-icon>cancel</mat-icon>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+
+
+                <mat-form-field class="w-p-50">
+                  <mat-select name="Country" required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Purchase Order No</mat-placeholder>
+                </mat-form-field>
+
+
+
+                <mat-form-field class="w-p-50">
+                  <mat-select name="Country" required>
+                    <mat-option *ngFor="let food of Food" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Type of Supplier Document</mat-placeholder>
+                </mat-form-field>
+
+
+                <mat-form-field class="w-p-50">
+                  <input matInput name="Land_Line_Number" required>
+                  <mat-placeholder class="placeholder">Supplier invoice No/Dc No</mat-placeholder>
+                </mat-form-field>
+
+
+
+                <mat-form-field class="w-p-50" class="example-full-width">
+                  <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker">
+                  <mat-placeholder class="placeholder">invoice/DC Date</mat-placeholder>
+                  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                  <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+              </div>
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start center" class=" form">
+                <mat-form-field>
+                  <mat-select [formControl]="toppings" multiple>
+                    <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+                  </mat-select>
+                  <mat-placeholder class="placeholder">Item of Material Description</mat-placeholder>
+                </mat-form-field>
+                <div class="button-row ">
+                  <button mat-mini-fab color="primary">Add</button>
+                </div>
+
+                <span class="w-p-50">
+                </span>
+                <span class="w-p-50">
+                </span>
+                <span class="w-p-50">
+                </span>
+              </div>
+
+              <h5>List of Material as in PO</h5>
+              <mat-form-field>
+                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+              </mat-form-field>
+
+              <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" fxLayoutGap="5px">
+
+                <!-- Checkbox Column -->
+                <ng-container matColumnDef="select">
+                  <th mat-header-cell *matHeaderCellDef>
+                    <mat-checkbox (change)="$event ? masterToggle() : null" [checked]="selection.hasValue() && isAllSelected()" [indeterminate]="selection.hasValue() && !isAllSelected()">
+                    </mat-checkbox>
+                  </th>
+                  <td mat-cell *matCellDef="let row">
+                    <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null" [checked]="selection.isSelected(row)">
+                    </mat-checkbox>
+                  </td>
+                </ng-container>
+
+                <!-- Position Column -->
+                <ng-container matColumnDef="S_No">
+                  <th mat-header-cell *matHeaderCellDef> S.No </th>
+                  <td mat-cell *matCellDef="let element"> {{element.S_No}} </td>
+                </ng-container>
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="Zucon">
+                  <th mat-header-cell *matHeaderCellDef> ZUCON </th>
+                  <td mat-cell *matCellDef="let element"> {{element.Zucon}} </td>
+                </ng-container>
+
+                <!-- Weight Column -->
+                <ng-container matColumnDef="item of Material Description">
+                  <th mat-header-cell *matHeaderCellDef> ITEM OF MATERIAL DESCRIPTION</th>
+                  <td mat-cell *matCellDef="let element"> {{element.item_of_Material_Description}} </td>
+                </ng-container>
+
+                <!-- Symbol Column -->
+                <ng-container matColumnDef="UOM">
+                  <th mat-header-cell *matHeaderCellDef> UOM </th>
+                  <td mat-cell *matCellDef="let element"> {{element.UOM}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="Packing Unit">
+                  <th mat-header-cell *matHeaderCellDef> PACKING UNIT </th>
+                  <td mat-cell *matCellDef="let element"> {{element.Packing_Unit}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="PO Qty">
+                  <th mat-header-cell *matHeaderCellDef> PO QUANTITY </th>
+                  <td mat-cell *matCellDef="let element">{{element.PO_Qty}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="Qty RECEIVED So For">
+                  <th mat-header-cell *matHeaderCellDef> Qty RECEIVED SO FOR </th>
+                  <td mat-cell *matCellDef="let element">{{element.Qty_RECEIVED_So_For}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="Received Qty">
+                  <th mat-header-cell *matHeaderCellDef>RECEIVED QTY</th>
+                  <td mat-cell *matCellDef="let element" (click)="$event.stopPropagation()">
+                    <mat-form-field>
+                      <input matInput> </mat-form-field>
+                  </td>
+                </ng-container>
+
+                <ng-container matColumnDef="Total Received Qty">
+                  <th mat-header-cell *matHeaderCellDef>TOTAL RECEIVED </th>
+                  <td mat-cell *matCellDef="let element"> {{element.Total_Received_Qty}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="Balance">
+                  <th mat-header-cell *matHeaderCellDef> BALANCE QTY </th>
+                  <td mat-cell *matCellDef="let element"> {{element.Balance}} </td>
+                </ng-container>
+
+
+
+                <ng-container matColumnDef="History">
+                  <th mat-header-cell *matHeaderCellDef>History </th>
+                  <td mat-cell *matCellDef="let element">
+                    <div (click)="$event.stopPropagation()">
+                      <button mat-icon-button color="accent" (click)="view()">
+                        <mat-icon>visibility</mat-icon>
+                      </button>
+                    </div>
+
+                  </td>
+                </ng-container>
+
+
+
+                <ng-container matColumnDef="Remove">
+                  <th mat-header-cell *matHeaderCellDef>Remove </th>
+                  <td mat-cell *matCellDef="let element">
+                    <div (click)="$event.stopPropagation()">
+                      <button mat-icon-button color="warn">
+                        <mat-icon>delete</mat-icon>
+                      </button>
+                    </div>
+
+                  </td>
+                </ng-container>
+
+
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="selection.toggle(row)">
+                </tr>
+              </table>
+
+
+
+            </div>
+          </form>
+
+        </mat-step>
+      </mat-horizontal-stepper>
+      <div fxLayout="row" fxLayoutAlign="flex-end start" class="w-p-50" fxLayoutGap="5px">
+
+        <div fxLayoutAlign="flex-end" fxLayoutGap="10px">
+          <button mat-raised-button color="primary">Save</button>
+          <button mat-raised-button color="warn" (click)="clear()">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-card>

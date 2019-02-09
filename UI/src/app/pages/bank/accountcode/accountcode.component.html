@@ -1,0 +1,176 @@
+<app-card [title]="'ACCOUNT CODE SETUP'">
+  <form class="form-material" action="javascript:" *ngIf="!isFormOpen">
+    <div>
+      <button *ngIf="!isChange" class="btnspace btn-primary btn-round ripple light" (click)="create()">ADD</button>
+    </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th class="text-center">
+            S.No
+          </th>
+          <th class="text-center">
+            Classification of Account
+          </th>
+          <th *ngIf="model.num == 'Anumeric'" class="text-center">
+            Account Code
+          </th>
+          <th class="text-center">
+            Starting Code
+          </th>
+          <th class="text-center">
+            Ending Code
+          </th>
+        </tr>
+        <tr *ngFor="let row of AccountCodeList;let i=index">
+          <td class="text-center">{{row.AccountCodeId}}</td>
+          <td class="text-center">{{row.Cls_of_Account}}</td>
+          <td class="text-center">{{row.Code}}</td>
+          <td class="text-center">{{row.StartingCode}}</td>
+          <td class="text-center">{{row.EndingCode}}</td>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </form>
+  <form class="form-material" action="javascript:" *ngIf="isFormOpen">
+    <hr>
+    <div class="row">
+      <div class="col-md-12">
+
+        <mat-radio-group [(ngModel)]="model.num" [ngModelOptions]="{standalone: true}"> Type of code
+          <mat-radio-button value="Anumeric" style="margin-left:10px">Alpha Numeric</mat-radio-button>
+
+          <mat-radio-button value="Numeric" style="margin-left:10px">Numeric</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="form-group row">
+
+          <label class="col-sm-4 col-form-label">Fix Maximum no.of Digits</label>
+          <div class="col-sm-8">
+            <select name="select" [(ngModel)]="model.digits" [ngModelOptions]="{standalone: true}" class="form-control">
+              <option value="1">Select One Value Only</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-sm-12 col-md-6">
+        <div>
+          <label class="label-control">Show
+            <select class="form-control input-sm full-data-show-entry">
+              <option [ngValue]="10">10</option>
+              <option [ngValue]="25">25</option>
+              <option [ngValue]="50">50</option>
+              <option [ngValue]="100">100</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6">
+        <div style="text-align: right;">
+          <mat-form-field>
+            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+    <div class="table-responsive" *ngIf="model.digits != undefined">
+      <table class="table table-striped table-bordered full-data-table">
+        <thead>
+          <tr>
+            <th class="text-center">
+              S.No
+            </th>
+            <th class="text-center">
+              Classification of Account
+            </th>
+            <th *ngIf="model.num == 'Anumeric'" class="text-center">
+              Account Code
+            </th>
+            <th class="text-center">
+              Starting Code
+            </th>
+            <th class="text-center">
+              Ending Code
+            </th>
+          </tr>
+          <tr *ngFor="let row of AccountCodeList;let i=index">
+            <td class="text-center">{{row.AccountCodeId}}</td>
+            <td class="text-center">{{row.Cls_of_Account}}</td>
+            <td #num *ngIf="model.num =='Anumeric'" class="text-center">
+              <mat-form-field>
+                <input matInput name="{{row.Code}}" (blur)="checkCode(row,i)" maxlength="1" (keypress)="keyPress1($event)"
+                  [(ngModel)]="row.Code" [ngModelOptions]="{standalone: true}">
+              </mat-form-field>
+            </td>
+            <td class="text-center">
+              <mat-form-field *ngIf="model.digits =='2'">
+                <input matInput name="{{row.StartingCode}}" (blur)="StartingCode(row,i)" maxlength="2" [(ngModel)]="row.StartingCode"
+                  (keypress)="keyPress($event)" [ngModelOptions]="{standalone: true}">
+              </mat-form-field>
+              <mat-form-field *ngIf="model.digits =='3'">
+                <input matInput name="{{row.StartingCode}}" (blur)="StartingCode(row,i)" maxlength="3" [(ngModel)]="row.StartingCode"
+                  (keypress)="keyPress($event)" [ngModelOptions]="{standalone: true}">
+              </mat-form-field>
+              <mat-form-field *ngIf="model.digits =='4'">
+                <input matInput name="{{row.StartingCode}}" (blur)="StartingCode(row,i)" maxlength="4" [(ngModel)]="row.StartingCode"
+                  (keypress)="keyPress($event)" [ngModelOptions]="{standalone: true}">
+              </mat-form-field>
+              <mat-form-field *ngIf="model.digits =='5'">
+                <input matInput name="{{row.StartingCode}}" (blur)="StartingCode(row,i)" maxlength="5" [(ngModel)]="row.StartingCode"
+                  (keypress)="keyPress($event)" [ngModelOptions]="{standalone: true}">
+              </mat-form-field>
+              <mat-form-field *ngIf="model.digits =='6'">
+                <input matInput name="{{row.StartingCode}}" (change)="StartingCode(row,i)" maxlength="6" [(ngModel)]="row.StartingCode"
+                  (keypress)="keyPress($event)" [ngModelOptions]="{standalone: true}">
+              </mat-form-field>
+            </td>
+            <td class="text-center">
+              <mat-form-field *ngIf="model.digits =='2'">
+                <input matInput name="{{row.EndingCode}}" maxlength="2" [(ngModel)]="row.EndingCode" (keypress)="keyPress($event)"
+                  [ngModelOptions]="{standalone: true}">
+              </mat-form-field>
+              <mat-form-field *ngIf="model.digits =='3'">
+                <input matInput name="{{row.EndingCode}}" maxlength="3" [(ngModel)]="row.EndingCode" (keypress)="keyPress($event)"
+                  [ngModelOptions]="{standalone: true}">
+              </mat-form-field>
+              <mat-form-field *ngIf="model.digits =='4'">
+                <input matInput name="{{row.EndingCode}}" maxlength="4" [(ngModel)]="row.EndingCode" (keypress)="keyPress($event)"
+                  [ngModelOptions]="{standalone: true}">
+              </mat-form-field>
+              <mat-form-field *ngIf="model.digits =='5'">
+                <input matInput name="{{row.EndingCode}}" maxlength="5" [(ngModel)]="row.EndingCode" (keypress)="keyPress($event)"
+                  [ngModelOptions]="{standalone: true}">
+              </mat-form-field>
+              <mat-form-field *ngIf="model.digits =='6'">
+                <input matInput name="{{row.EndingCode}}" maxlength="6" [(ngModel)]="row.EndingCode" (keypress)="keyPress($event)"
+                  [ngModelOptions]="{standalone: true}">
+              </mat-form-field>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+
+      </table>
+    </div>
+    <div class="pull-right">
+      <button class="btn btn-primary" (click)="Save(model)">Save</button>
+      <button class="  btn-danger " (click)="clear()">Cancel</button>
+    </div>
+  </form>
+  <ng2-toasty [position]="position"></ng2-toasty>
+</app-card>

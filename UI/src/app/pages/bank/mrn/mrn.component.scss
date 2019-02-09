@@ -1,0 +1,105 @@
+h6{
+    color:#5443ba;
+    margin-bottom: 10px;
+    /* background-color:#ccdef9;*/
+    
+  
+  }
+  
+  
+  .form-group{
+    margin-bottom: 15px !important;
+  }
+  
+  
+   label {
+       font-weight: bold;
+       font-size:13px; 
+      margin-bottom: 0.0rem; 
+  
+   }
+   input{
+    font-weight: 500;
+    font-size:14px; 
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   .form{
+    width:100%;
+    align-items: flex-start !important;
+     margin-bottom: 0px !important;
+   }
+   .mat-form-field{
+       padding: .1em 0;
+   }
+  .placeholder{
+    color:#000;
+    font-weight: bold;
+    font-size:13px; 
+  }
+  .button-row button,
+  .button-row a {
+    margin-right: 8px;
+  }
+  .success{
+      background-color:green;
+      color:white;
+  }
+  
+  
+  .formsss{
+      display: flex;
+  }
+
+  /* Structure */
+  table {
+    width: 100%;
+  }
+td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
+  color: #000;
+  font-size:12px; 
+  font-weight: bold;
+}
+
+th.mat-header-cell[_ngcontent-c5] {
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
+ h5{
+ color: #000;
+ font-size:16px;
+ font-weight: bold; 
+}
+.success{
+  background-color:green;
+  color:white;
+}
+.char{  
+  color:green;;
+}
+
+.example-user-input {
+  margin-right: 8px;
+}
+
+
+
+
+ /* table header */
+ th.mat-header-cell {
+  color: #000;
+  font-size:12px; 
+  background-color: bisque;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+}
+
+td.mat-cell, td.mat-footer-cell{
+  color: #000;
+  font-size:12px; 
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;  
+}
+ 

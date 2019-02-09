@@ -1,0 +1,113 @@
+E:\CMS_New\KPMES\API\BusinessEntities\bin\Debug\BusinessEntities.dll.config
+E:\CMS_New\KPMES\API\BusinessEntities\bin\Debug\BusinessEntities.dll
+E:\CMS_New\KPMES\API\BusinessEntities\bin\Debug\BusinessEntities.pdb
+E:\CMS_New\KPMES\API\BusinessEntities\bin\Debug\Newtonsoft.Json.dll
+E:\CMS_New\KPMES\API\BusinessEntities\bin\Debug\Newtonsoft.Json.xml
+E:\CMS_New\KPMES\API\BusinessEntities\obj\Debug\BusinessEntities.dll
+E:\CMS_New\KPMES\API\BusinessEntities\obj\Debug\BusinessEntities.pdb
+E:\CMS_New\KPMES\API\BusinessEntities\obj\Debug\BusinessEntities.csprojResolveAssemblyReference.cache
+F:\projects\ERP(Bangalore)\API\BusinessEntities\bin\Debug\BusinessEntities.dll.config
+F:\projects\ERP(Bangalore)\API\BusinessEntities\bin\Debug\BusinessEntities.dll
+F:\projects\ERP(Bangalore)\API\BusinessEntities\bin\Debug\BusinessEntities.pdb
+F:\projects\ERP(Bangalore)\API\BusinessEntities\bin\Debug\Newtonsoft.Json.dll
+F:\projects\ERP(Bangalore)\API\BusinessEntities\bin\Debug\Newtonsoft.Json.xml
+F:\projects\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.dll
+F:\projects\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.pdb
+F:\projects\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.csprojResolveAssemblyReference.cache
+E:\ERP(Bangalore)\API\BusinessEntities\bin\Debug\BusinessEntities.dll.config
+E:\ERP(Bangalore)\API\BusinessEntities\bin\Debug\BusinessEntities.dll
+E:\ERP(Bangalore)\API\BusinessEntities\bin\Debug\BusinessEntities.pdb
+E:\ERP(Bangalore)\API\BusinessEntities\bin\Debug\Newtonsoft.Json.dll
+E:\ERP(Bangalore)\API\BusinessEntities\bin\Debug\Newtonsoft.Json.xml
+E:\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.dll
+E:\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.pdb
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessEntities\bin\Debug\BusinessEntities.dll.config
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessEntities\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessEntities\bin\Debug\Newtonsoft.Json.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.csproj.CopyComplete
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.pdb
+G:\ERP\API\ERP(Bangalore)\API\BusinessEntities\bin\Debug\BusinessEntities.dll.config
+G:\ERP\API\ERP(Bangalore)\API\BusinessEntities\bin\Debug\BusinessEntities.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessEntities\bin\Debug\BusinessEntities.pdb
+G:\ERP\API\ERP(Bangalore)\API\BusinessEntities\bin\Debug\Newtonsoft.Json.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessEntities\bin\Debug\Newtonsoft.Json.xml
+G:\ERP\API\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
+G:\ERP\API\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+G:\ERP\API\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.csproj.CopyComplete
+G:\ERP\API\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.pdb
+E:\API\ERP(Bangalore)\API\BusinessEntities\bin\Debug\BusinessEntities.dll.config
+E:\API\ERP(Bangalore)\API\BusinessEntities\bin\Debug\BusinessEntities.dll
+E:\API\ERP(Bangalore)\API\BusinessEntities\bin\Debug\BusinessEntities.pdb
+E:\API\ERP(Bangalore)\API\BusinessEntities\bin\Debug\Newtonsoft.Json.dll
+E:\API\ERP(Bangalore)\API\BusinessEntities\bin\Debug\Newtonsoft.Json.xml
+E:\API\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
+E:\API\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+E:\API\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.csproj.CopyComplete
+E:\API\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.dll
+E:\API\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.pdb
+E:\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
+E:\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+E:\ERP(Bangalore)\API\BusinessEntities\obj\Debug\BusinessEntities.csproj.CopyComplete
+E:\ERP\API\BusinessEntities\bin\Debug\BusinessEntities.dll.config
+E:\ERP\API\BusinessEntities\bin\Debug\BusinessEntities.dll
+E:\ERP\API\BusinessEntities\bin\Debug\BusinessEntities.pdb
+E:\ERP\API\BusinessEntities\bin\Debug\Newtonsoft.Json.dll
+E:\ERP\API\BusinessEntities\bin\Debug\Newtonsoft.Json.xml
+E:\ERP\API\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
+E:\ERP\API\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+E:\ERP\API\BusinessEntities\obj\Debug\BusinessEntities.csproj.CopyComplete
+E:\ERP\API\BusinessEntities\obj\Debug\BusinessEntities.dll
+E:\ERP\API\BusinessEntities\obj\Debug\BusinessEntities.pdb
+C:\KRM\ERP\API\BusinessEntities\bin\Debug\BusinessEntities.dll.config
+C:\KRM\ERP\API\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\KRM\ERP\API\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\KRM\ERP\API\BusinessEntities\bin\Debug\Newtonsoft.Json.dll
+C:\KRM\ERP\API\BusinessEntities\bin\Debug\Newtonsoft.Json.xml
+C:\KRM\ERP\API\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
+C:\KRM\ERP\API\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+C:\KRM\ERP\API\BusinessEntities\obj\Debug\BusinessEntities.csproj.CopyComplete
+C:\KRM\ERP\API\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\KRM\ERP\API\BusinessEntities\obj\Debug\BusinessEntities.pdb
+E:\KRM\ERP\API\BusinessEntities\bin\Debug\BusinessEntities.dll.config
+E:\KRM\ERP\API\BusinessEntities\bin\Debug\BusinessEntities.dll
+E:\KRM\ERP\API\BusinessEntities\bin\Debug\BusinessEntities.pdb
+E:\KRM\ERP\API\BusinessEntities\bin\Debug\Newtonsoft.Json.dll
+E:\KRM\ERP\API\BusinessEntities\bin\Debug\Newtonsoft.Json.xml
+E:\KRM\ERP\API\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
+E:\KRM\ERP\API\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+E:\KRM\ERP\API\BusinessEntities\obj\Debug\BusinessEntities.csproj.CopyComplete
+E:\KRM\ERP\API\BusinessEntities\obj\Debug\BusinessEntities.dll
+E:\KRM\ERP\API\BusinessEntities\obj\Debug\BusinessEntities.pdb
+C:\Users\GK lingam\Downloads\API\BusinessEntities\bin\Debug\BusinessEntities.dll.config
+C:\Users\GK lingam\Downloads\API\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\Users\GK lingam\Downloads\API\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\Users\GK lingam\Downloads\API\BusinessEntities\bin\Debug\Newtonsoft.Json.dll
+C:\Users\GK lingam\Downloads\API\BusinessEntities\bin\Debug\Newtonsoft.Json.xml
+C:\Users\GK lingam\Downloads\API\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\Users\GK lingam\Downloads\API\BusinessEntities\obj\Debug\BusinessEntities.pdb
+E:\SouthernERP Angular 7\API\API\BusinessEntities\bin\Debug\BusinessEntities.dll.config
+E:\SouthernERP Angular 7\API\API\BusinessEntities\bin\Debug\BusinessEntities.dll
+E:\SouthernERP Angular 7\API\API\BusinessEntities\bin\Debug\BusinessEntities.pdb
+E:\SouthernERP Angular 7\API\API\BusinessEntities\bin\Debug\Newtonsoft.Json.dll
+E:\SouthernERP Angular 7\API\API\BusinessEntities\bin\Debug\Newtonsoft.Json.xml
+E:\SouthernERP Angular 7\API\API\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+E:\SouthernERP Angular 7\API\API\BusinessEntities\obj\Debug\BusinessEntities.csproj.CopyComplete
+E:\SouthernERP Angular 7\API\API\BusinessEntities\obj\Debug\BusinessEntities.dll
+E:\SouthernERP Angular 7\API\API\BusinessEntities\obj\Debug\BusinessEntities.pdb
+E:\SouthernERP Angular 7\API\API\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\BusinessEntities\bin\Debug\BusinessEntities.dll.config
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\BusinessEntities\bin\Debug\BusinessEntities.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\BusinessEntities\bin\Debug\BusinessEntities.pdb
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\BusinessEntities\bin\Debug\Newtonsoft.Json.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\BusinessEntities\bin\Debug\Newtonsoft.Json.xml
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\BusinessEntities\obj\Debug\BusinessEntities.csproj.CopyComplete
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\BusinessEntities\obj\Debug\BusinessEntities.dll
+F:\Southern Project\S_UI_26-01-2019\S_API_26-01-2019\BusinessEntities\obj\Debug\BusinessEntities.pdb
